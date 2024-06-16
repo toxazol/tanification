@@ -27,7 +27,7 @@ private void Awake()
         moveAction = gameInputs.Hermits.Move;
 
         // Subscribe to the interact action
-        gameInputs.Hermits.PickUp.performed += OnGrab;
+        gameInputs.Hermits.PickUp.performed += OnAction;
     }
 
     private void OnDisable()
@@ -36,7 +36,7 @@ private void Awake()
         gameInputs.Hermits.Disable();
 
         // Unsubscribe from the interact action
-        gameInputs.Hermits.PickUp.performed -= OnGrab;
+        gameInputs.Hermits.PickUp.performed -= OnAction;
     }
 
     private void Update()
@@ -59,20 +59,57 @@ private void Awake()
         }
     }
 
-    private void OnGrab(InputAction.CallbackContext context)
+    private void OnAction(InputAction.CallbackContext context)
     {
         if(heldItem != null) {
-            heldItem.transform.Translate(0f, -holdOffsetY, 0f);
-            // heldItem.transform.position.Set(0f, heldItemInitialY, 0f);
-            heldItem.GetComponent<SpriteRenderer>().sortingLayerName = "Default";
-            heldItem = null; // drop
-            return;
+            if(ExchangeShell()) return;
+            var here = new Vector3(
+                heldItem.transform.position.x, 
+                heldItemInitialY, 0f);
+            Drop(here);
+        } else {
+            Grab(GetCollidingObjectWithTag("EmptyShell"));
         }
-        heldItem = GetCollidingObjectWithTag("Draggable");
-        if(heldItem == null) return;
+        
+    }
+
+    private bool ExchangeShell() {
+        var shell = GetCollidingObjectWithTag("CrabShell");
+        if(shell == null) return false;
+        int newSize = shell.GetComponent<Shell>().size;
+        int diff =  heldItem.GetComponent<Shell>().size - newSize;
+        if(diff == 1) {
+            SwapShell(shell);
+            return true;
+        } else {
+            Debug.Log("Your shell is too " + (diff > 0 ? "big" : "small") + " for this crab.");
+        }
+        return false;
+    }
+
+    private void SwapShell(GameObject otherCrabsShell) {
+        otherCrabsShell.transform.GetChild(0).gameObject.SetActive(false);
+        heldItem.transform.GetChild(0).gameObject.SetActive(true);
+        otherCrabsShell.tag = "EmptyShell";
+        heldItem.tag = "CrabShell";
+        Drop(otherCrabsShell.transform.position);
+        Grab(otherCrabsShell);
+    }
+
+    private void Grab(GameObject item) {
+        if(item == null) return;
+        heldItem = item;
         heldItem.GetComponent<SpriteRenderer>().sortingLayerName = "Held";
-        // heldItemInitialY = heldItem.transform.position.y; // remember initail height for dropping later
-        heldItem.transform.Translate(0f, holdOffsetY, 0f);
+        heldItemInitialY = heldItem.transform.position.y; // remember initail height for dropping later
+        heldItem.transform.position = new Vector3(
+                transform.position.x, 
+                transform.position.y + holdOffsetY, 0f);
+    }
+
+    private void Drop(Vector3 pos) {
+        heldItem.transform.position = pos;
+        heldItem.GetComponent<SpriteRenderer>().sortingLayerName = "Default";
+        heldItem = null; // drop
     }
 
     GameObject GetCollidingObjectWithTag(string tag)

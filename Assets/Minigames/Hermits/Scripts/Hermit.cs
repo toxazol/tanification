@@ -5,9 +5,13 @@ using UnityEngine.InputSystem;
 
 public class Hermit : MonoBehaviour
 {
-    public float speed = 5f;
+    [SerializeField] private float speed = 5f;
+    [SerializeField] private float holdOffsetY = 1f;
     private InputActions gameInputs;
     private InputAction moveAction;
+    private GameObject heldItem;
+    private float heldItemInitialY;
+
 private void Awake()
     {
         // Initialize the auto-generated class
@@ -45,18 +49,47 @@ private void Awake()
 
     private void Move(Vector2 movement)
     {
-        if(movement.x != 0) {
-            gameObject.GetComponent<SpriteRenderer>().flipX = movement.x < 0;
+        if(movement.x != 0f) {
+            gameObject.GetComponent<SpriteRenderer>().flipX = movement.x < 0f;
         }
-        
-        transform.Translate(movement * Time.deltaTime * speed);
+        var translate = speed * Time.deltaTime * movement;
+        transform.Translate(translate);
+        if(heldItem != null) {
+            heldItem.transform.Translate(translate);
+        }
     }
 
     private void OnGrab(InputAction.CallbackContext context)
     {
-        Debug.Log("Grab action performed!");
-        // if(GetComponent<Collider2D>().) {
+        if(heldItem != null) {
+            heldItem.transform.Translate(0f, -holdOffsetY, 0f);
+            // heldItem.transform.position.Set(0f, heldItemInitialY, 0f);
+            heldItem.GetComponent<SpriteRenderer>().sortingLayerName = "Default";
+            heldItem = null; // drop
+            return;
+        }
+        heldItem = GetCollidingObjectWithTag("Draggable");
+        if(heldItem == null) return;
+        heldItem.GetComponent<SpriteRenderer>().sortingLayerName = "Held";
+        // heldItemInitialY = heldItem.transform.position.y; // remember initail height for dropping later
+        heldItem.transform.Translate(0f, holdOffsetY, 0f);
+    }
 
-        // }
+    GameObject GetCollidingObjectWithTag(string tag)
+    {
+        ContactFilter2D filter = new ContactFilter2D().NoFilter();
+        List<Collider2D> results = new List<Collider2D>();
+        
+        int colliderCount = GetComponent<Collider2D>().OverlapCollider(filter, results);
+
+        for (int i = 0; i < colliderCount; i++)
+        {
+            if (results[i].CompareTag(tag))
+            {
+                return results[i].gameObject;
+            }
+        }
+
+        return null;
     }
 }

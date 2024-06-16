@@ -487,7 +487,7 @@ MonoBehaviour:
   m_Intensity: 1
   m_LightVolumeIntensity: 1
   m_LightVolumeIntensityEnabled: 0
-  m_ApplyToSortingLayers: 000000006366fdf5c5a1d46cffc96119
+  m_ApplyToSortingLayers: 000000006366fdf5c5a1d46cffc96119c54bb3ab
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -832,6 +832,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+  holdOffsetY: 1
 --- !u!212 &1736014090
 SpriteRenderer:
   m_ObjectHideFlags: 0

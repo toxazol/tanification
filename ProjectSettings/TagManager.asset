@@ -50,6 +50,9 @@ TagManager:
   - name: Crab
     uniqueID: 1825874373
     locked: 0
+  - name: PlayerShell
+    uniqueID: 998934427
+    locked: 0
   - name: Player
     uniqueID: 425839103
     locked: 0

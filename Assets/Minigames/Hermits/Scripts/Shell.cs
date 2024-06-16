@@ -4,5 +4,5 @@ using UnityEngine;
 
 public class Shell : MonoBehaviour
 {
-    public int size = -1;
+    public int size = -100;
 }

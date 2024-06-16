@@ -6,11 +6,13 @@ using UnityEngine.InputSystem;
 public class Hermit : MonoBehaviour
 {
     [SerializeField] private float speed = 5f;
-    [SerializeField] private float holdOffsetY = 1f;
+    [SerializeField] private Vector2 holdOffset = new Vector2(2f, 2.5f);
+    [SerializeField] private GameObject myShell;
     private InputActions gameInputs;
     private InputAction moveAction;
     private GameObject heldItem;
     private float heldItemInitialY;
+    private bool isLookLeft = false;
 
 private void Awake()
     {
@@ -49,19 +51,31 @@ private void Awake()
 
     private void Move(Vector2 movement)
     {
-        if(movement.x != 0f) {
-            gameObject.GetComponent<SpriteRenderer>().flipX = movement.x < 0f;
+        if(movement.x == 0f) return;
+
+        isLookLeft = movement.x < 0f; // flip sprites if move left
+        gameObject.GetComponent<SpriteRenderer>().flipX = isLookLeft;
+        for(int i = 0; i < transform.childCount; i++) {
+            transform.GetChild(i).GetComponent<SpriteRenderer>().flipX = isLookLeft;
         }
+
         var translate = speed * Time.deltaTime * movement;
         transform.Translate(translate);
-        if(heldItem != null) {
-            heldItem.transform.Translate(translate);
-        }
+        HoldUp(heldItem);
+    }
+
+    private void HoldUp(GameObject item) {
+        if(item == null) return;
+        item.GetComponent<SpriteRenderer>().flipX = isLookLeft;
+        item.transform.position = new Vector3(
+            transform.position.x + holdOffset.x * (isLookLeft ? -1f : 1f),
+            transform.position.y + holdOffset.y, 0f);
     }
 
     private void OnAction(InputAction.CallbackContext context)
     {
-        if(heldItem != null) {
+        if(heldItem != null) { // try wear or exchange or drop shell
+            if(Wear(heldItem)) return;
             if(ExchangeShell()) return;
             var here = new Vector3(
                 heldItem.transform.position.x, 
@@ -73,13 +87,24 @@ private void Awake()
         
     }
 
+    private bool Wear(GameObject shell) {
+        int diff = shell.GetComponent<Shell>().size - myShell.GetComponent<Shell>().size;
+        if(diff != 1) return false;
+        SwapShells(shell, myShell);
+        var here = new Vector3(shell.transform.position.x, heldItemInitialY, 0f);
+        Drop(here);
+        Debug.Log("Congratulations, you found your new home!");
+        return true;
+    }
+
     private bool ExchangeShell() {
         var shell = GetCollidingObjectWithTag("CrabShell");
         if(shell == null) return false;
         int newSize = shell.GetComponent<Shell>().size;
         int diff =  heldItem.GetComponent<Shell>().size - newSize;
         if(diff == 1) {
-            SwapShell(shell);
+            // SwapShell(shell);
+            SwapShells(shell, heldItem);
             return true;
         } else {
             Debug.Log("Your shell is too " + (diff > 0 ? "big" : "small") + " for this crab.");
@@ -87,23 +112,30 @@ private void Awake()
         return false;
     }
 
-    private void SwapShell(GameObject otherCrabsShell) {
-        otherCrabsShell.transform.GetChild(0).gameObject.SetActive(false);
-        heldItem.transform.GetChild(0).gameObject.SetActive(true);
-        otherCrabsShell.tag = "EmptyShell";
-        heldItem.tag = "CrabShell";
-        Drop(otherCrabsShell.transform.position);
-        Grab(otherCrabsShell);
+    private void SwapShells(GameObject shell1, GameObject shell2) {
+        // swap spites
+        (shell1.GetComponent<SpriteRenderer>().sprite, shell2.GetComponent<SpriteRenderer>().sprite) = 
+            (shell2.GetComponent<SpriteRenderer>().sprite, shell1.GetComponent<SpriteRenderer>().sprite);
+        // swap sizes
+        (shell1.GetComponent<Shell>().size, shell2.GetComponent<Shell>().size) =
+            (shell2.GetComponent<Shell>().size, shell1.GetComponent<Shell>().size);
     }
+
+    // private void SwapShell(GameObject otherCrabShell) {
+    //     otherCrabShell.transform.GetChild(0).gameObject.SetActive(false);
+    //     heldItem.transform.GetChild(0).gameObject.SetActive(true);
+    //     otherCrabShell.tag = "EmptyShell";
+    //     heldItem.tag = "CrabShell";
+    //     Drop(otherCrabShell.transform.position);
+    //     Grab(otherCrabShell);
+    // }
 
     private void Grab(GameObject item) {
         if(item == null) return;
         heldItem = item;
         heldItem.GetComponent<SpriteRenderer>().sortingLayerName = "Held";
         heldItemInitialY = heldItem.transform.position.y; // remember initail height for dropping later
-        heldItem.transform.position = new Vector3(
-                transform.position.x, 
-                transform.position.y + holdOffsetY, 0f);
+        HoldUp(heldItem);
     }
 
     private void Drop(Vector3 pos) {

@@ -2,27 +2,36 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class DialogueManager : MonoBehaviour
 {
+    [SerializeField] private PlayerInput _input;
     [SerializeField] private Typewriter typewriter;
     [SerializeField] private List<DialogueEntry> dialogue;
+    [SerializeField] private int currLine;
+
+    void Awake()
+    {
+        DontDestroyOnLoad(this.gameObject);
+    }
+
 
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine(PlayDialogue());
+        currLine = 0;
     }
 
-    IEnumerator PlayDialogue()
+    void OnNext(InputValue value)
     {
-        yield return new WaitForSeconds(1);
-        foreach (DialogueEntry e in dialogue)
-        {
-            typewriter.StartTyping(e.phrase);
-            yield return new WaitUntil(() => { return typewriter.typing == false; });
+        if (!value.isPressed) return;
+        if (this.typewriter.typing) {
+            this.typewriter.ShowText();
+        } else {
+            this.typewriter.StartTyping(dialogue[currLine].phrase);
+            currLine++;
         }
-        yield return null;
     }
 
     [System.Serializable]
@@ -30,6 +39,6 @@ public class DialogueManager : MonoBehaviour
     {
         
         public string phrase;
-        public Boolean excited;
+        public bool excited;
     }
 }

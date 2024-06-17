@@ -169,6 +169,34 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
                     ""isPartOfComposite"": false
                 }
             ]
+        },
+        {
+            ""name"": ""DialogueControl"",
+            ""id"": ""2f6775b3-1091-41f4-a5fb-ffd2abce082e"",
+            ""actions"": [
+                {
+                    ""name"": ""Next"",
+                    ""type"": ""Button"",
+                    ""id"": ""653f26c1-fea4-4882-ba2b-59aab345e87e"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""98f18dc0-12d3-4c4d-852f-3956adb66af8"",
+                    ""path"": ""<Mouse>/leftButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Next"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
         }
     ],
     ""controlSchemes"": []
@@ -177,6 +205,9 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
         m_Hermits = asset.FindActionMap("Hermits", throwIfNotFound: true);
         m_Hermits_Move = m_Hermits.FindAction("Move", throwIfNotFound: true);
         m_Hermits_PickUp = m_Hermits.FindAction("PickUp", throwIfNotFound: true);
+        // DialogueControl
+        m_DialogueControl = asset.FindActionMap("DialogueControl", throwIfNotFound: true);
+        m_DialogueControl_Next = m_DialogueControl.FindAction("Next", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -288,9 +319,59 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
         }
     }
     public HermitsActions @Hermits => new HermitsActions(this);
+
+    // DialogueControl
+    private readonly InputActionMap m_DialogueControl;
+    private List<IDialogueControlActions> m_DialogueControlActionsCallbackInterfaces = new List<IDialogueControlActions>();
+    private readonly InputAction m_DialogueControl_Next;
+    public struct DialogueControlActions
+    {
+        private @InputActions m_Wrapper;
+        public DialogueControlActions(@InputActions wrapper) { m_Wrapper = wrapper; }
+        public InputAction @Next => m_Wrapper.m_DialogueControl_Next;
+        public InputActionMap Get() { return m_Wrapper.m_DialogueControl; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(DialogueControlActions set) { return set.Get(); }
+        public void AddCallbacks(IDialogueControlActions instance)
+        {
+            if (instance == null || m_Wrapper.m_DialogueControlActionsCallbackInterfaces.Contains(instance)) return;
+            m_Wrapper.m_DialogueControlActionsCallbackInterfaces.Add(instance);
+            @Next.started += instance.OnNext;
+            @Next.performed += instance.OnNext;
+            @Next.canceled += instance.OnNext;
+        }
+
+        private void UnregisterCallbacks(IDialogueControlActions instance)
+        {
+            @Next.started -= instance.OnNext;
+            @Next.performed -= instance.OnNext;
+            @Next.canceled -= instance.OnNext;
+        }
+
+        public void RemoveCallbacks(IDialogueControlActions instance)
+        {
+            if (m_Wrapper.m_DialogueControlActionsCallbackInterfaces.Remove(instance))
+                UnregisterCallbacks(instance);
+        }
+
+        public void SetCallbacks(IDialogueControlActions instance)
+        {
+            foreach (var item in m_Wrapper.m_DialogueControlActionsCallbackInterfaces)
+                UnregisterCallbacks(item);
+            m_Wrapper.m_DialogueControlActionsCallbackInterfaces.Clear();
+            AddCallbacks(instance);
+        }
+    }
+    public DialogueControlActions @DialogueControl => new DialogueControlActions(this);
     public interface IHermitsActions
     {
         void OnMove(InputAction.CallbackContext context);
         void OnPickUp(InputAction.CallbackContext context);
+    }
+    public interface IDialogueControlActions
+    {
+        void OnNext(InputAction.CallbackContext context);
     }
 }

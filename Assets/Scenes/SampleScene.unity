@@ -291,13 +291,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _input: {fileID: 586073161}
   typewriter: {fileID: 895436639}
+  speakerRenderer: {fileID: 895436640}
   dialogue:
   - phrase: So... We have to start small.
-    excited: 0
+    character: {fileID: 11400000, guid: 86fb86ff7dffee44d8b310d37bfc48f2, type: 2}
+    emotion: neutral
   - phrase: Yeah, we actually have one idea already!
-    excited: 0
+    character: {fileID: 11400000, guid: 91dd0d23654ae9b4ca68ba119065d25a, type: 2}
+    emotion: neutral
   - phrase: Do you know about hermit crabs?
-    excited: 0
+    character: {fileID: 11400000, guid: 859d3e346855ad445a35acdd07a1fb6e, type: 2}
+    emotion: neutral
   currLine: 0
 --- !u!4 &586073160
 Transform:
@@ -450,6 +454,7 @@ GameObject:
   - component: {fileID: 895436638}
   - component: {fileID: 895436637}
   - component: {fileID: 895436639}
+  - component: {fileID: 895436640}
   m_Layer: 0
   m_Name: DialogueUI
   m_TagString: Untagged
@@ -471,7 +476,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PanelSettings: {fileID: 11400000, guid: 007b81cc495ae4d438fe88e51d590d5c, type: 2}
   m_ParentUI: {fileID: 0}
-  sourceAsset: {fileID: 9197481963319205126, guid: 39309d79b84ed4b4dac28695f4962c6a, type: 3}
+  sourceAsset: {fileID: 9197481963319205126, guid: 320fd99b38a3cd645a8fb4f0e7012a3a, type: 3}
   m_SortingOrder: 0
 --- !u!4 &895436638
 Transform:
@@ -504,6 +509,21 @@ MonoBehaviour:
   dialogueTextElementID: dialogueText
   typingDelay: 0.05
   typing: 0
+--- !u!114 &895436640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 895436636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e10724d0ebb90264fb707f097fa590b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uiDocument: {fileID: 895436637}
+  spriteElementID: portraitSprite
+  nameElementID: speakerName
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

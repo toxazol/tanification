@@ -8,6 +8,7 @@ public class DialogueManager : MonoBehaviour
 {
     [SerializeField] private PlayerInput _input;
     [SerializeField] private Typewriter typewriter;
+    [SerializeField] private SpeakerRenderer speakerRenderer;
     [SerializeField] private List<DialogueEntry> dialogue;
     [SerializeField] private int currLine;
 
@@ -30,6 +31,7 @@ public class DialogueManager : MonoBehaviour
             this.typewriter.ShowText();
         } else {
             this.typewriter.StartTyping(dialogue[currLine].phrase);
+            this.speakerRenderer.DisplaySpeaker(dialogue[currLine].character, dialogue[currLine].emotion);
             currLine++;
         }
     }
@@ -37,8 +39,8 @@ public class DialogueManager : MonoBehaviour
     [System.Serializable]
     public class DialogueEntry 
     {
-        
         public string phrase;
-        public bool excited;
+        public CharacterSO character;
+        public string emotion;
     }
 }

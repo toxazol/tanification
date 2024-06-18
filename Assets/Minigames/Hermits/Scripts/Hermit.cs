@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -24,10 +25,8 @@ private void Awake()
     {
         // Enable the entire action map
         gameInputs.Hermits.Enable();
-
         // Cache the move action for efficiency
         moveAction = gameInputs.Hermits.Move;
-
         // Subscribe to the interact action
         gameInputs.Hermits.PickUp.performed += OnAction;
     }
@@ -43,9 +42,7 @@ private void Awake()
 
     private void Update()
     {
-        // Read value from the Move action
         Vector2 moveInput = moveAction.ReadValue<Vector2>();
-        // Use moveInput to move your character
         Move(moveInput);
     }
 
@@ -54,7 +51,6 @@ private void Awake()
         if(movement.x == 0f) return;
 
         isLookLeft = movement.x < 0f; // flip sprites if move left
-        gameObject.GetComponent<SpriteRenderer>().flipX = isLookLeft;
         for(int i = 0; i < transform.childCount; i++) {
             transform.GetChild(i).GetComponent<SpriteRenderer>().flipX = isLookLeft;
         }
@@ -104,7 +100,7 @@ private void Awake()
         int diff =  heldItem.GetComponent<Shell>().size - newSize;
         if(diff == 1) {
             // SwapShell(shell);
-            SwapShells(shell, heldItem);
+            SwapShells(heldItem, shell);
             return true;
         } else {
             Debug.Log("Your shell is too " + (diff > 0 ? "big" : "small") + " for this crab.");
@@ -113,23 +109,27 @@ private void Awake()
     }
 
     private void SwapShells(GameObject shell1, GameObject shell2) {
-        // swap spites
-        (shell1.GetComponent<SpriteRenderer>().sprite, shell2.GetComponent<SpriteRenderer>().sprite) = 
-            (shell2.GetComponent<SpriteRenderer>().sprite, shell1.GetComponent<SpriteRenderer>().sprite);
-        // swap sizes
-        (shell1.GetComponent<Shell>().size, shell2.GetComponent<Shell>().size) =
-            (shell2.GetComponent<Shell>().size, shell1.GetComponent<Shell>().size);
+        Transform temp = shell1.transform.parent;
+        shell1.transform.SetParent(shell2.transform.parent);
+        shell2.transform.SetParent(temp);
+
+        shell1.transform.GetPositionAndRotation(out Vector3 tempPosition, out Quaternion tempRotation);
+        shell1.transform.SetPositionAndRotation(shell2.transform.position, shell2.transform.rotation);
+        shell2.transform.SetPositionAndRotation(tempPosition, tempRotation);
+        
+        //swap sprite x flips
+        (shell1.GetComponent<SpriteRenderer>().flipX, shell2.GetComponent<SpriteRenderer>().flipX) =
+            (shell2.GetComponent<SpriteRenderer>().flipX, shell1.GetComponent<SpriteRenderer>().flipX);
+        // swap sorting layers
+        (shell1.GetComponent<SpriteRenderer>().sortingLayerID, shell2.GetComponent<SpriteRenderer>().sortingLayerID) =
+            (shell2.GetComponent<SpriteRenderer>().sortingLayerID, shell1.GetComponent<SpriteRenderer>().sortingLayerID);
+        //swap tags
+        (shell1.tag, shell2.tag) = (shell2.tag, shell1.tag);
+        //play swap animation on given out object
+        shell1.GetComponentInChildren<ParticleSystem>(true).gameObject.SetActive(true);
+        // update held item reference
+        heldItem = shell2;
     }
-
-    // private void SwapShell(GameObject otherCrabShell) {
-    //     otherCrabShell.transform.GetChild(0).gameObject.SetActive(false);
-    //     heldItem.transform.GetChild(0).gameObject.SetActive(true);
-    //     otherCrabShell.tag = "EmptyShell";
-    //     heldItem.tag = "CrabShell";
-    //     Drop(otherCrabShell.transform.position);
-    //     Grab(otherCrabShell);
-    // }
-
     private void Grab(GameObject item) {
         if(item == null) return;
         heldItem = item;
@@ -140,7 +140,7 @@ private void Awake()
 
     private void Drop(Vector3 pos) {
         heldItem.transform.position = pos;
-        heldItem.GetComponent<SpriteRenderer>().sortingLayerName = "Default";
+        heldItem.GetComponent<SpriteRenderer>().sortingLayerName = "Drop";
         heldItem = null; // drop
     }
 

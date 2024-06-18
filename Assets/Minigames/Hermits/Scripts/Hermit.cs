@@ -9,6 +9,8 @@ public class Hermit : MonoBehaviour
     [SerializeField] private float speed = 5f;
     [SerializeField] private Vector2 holdOffset = new Vector2(2f, 2.5f);
     [SerializeField] private GameObject myShell;
+    [SerializeField] private GameObject myClaws;
+    [SerializeField] private GameObject me;
     private InputActions gameInputs;
     private InputAction moveAction;
     private GameObject heldItem;
@@ -48,7 +50,12 @@ private void Awake()
 
     private void Move(Vector2 movement)
     {
-        if(movement.x == 0f) return;
+        if(movement.x == 0f) {
+            me.GetComponent<Animator>().SetBool("isWalk", false);
+            return;
+        }
+
+        me.GetComponent<Animator>().SetBool("isWalk", true);
 
         isLookLeft = movement.x < 0f; // flip sprites if move left
         for(int i = 0; i < transform.childCount; i++) {
@@ -64,20 +71,24 @@ private void Awake()
         if(item == null) return;
         item.GetComponent<SpriteRenderer>().flipX = isLookLeft;
         item.transform.position = new Vector3(
-            transform.position.x + holdOffset.x * (isLookLeft ? -1f : 1f),
+            transform.position.x + holdOffset.x * (isLookLeft ? -1f : 1f) , // * item.transform.localScale.x
             transform.position.y + holdOffset.y, 0f);
     }
 
     private void OnAction(InputAction.CallbackContext context)
     {
         if(heldItem != null) { // try wear or exchange or drop shell
-            if(Wear(heldItem)) return;
-            if(ExchangeShell()) return;
+            if(Wear(heldItem) || ExchangeShell()) {
+                return;
+            }
             var here = new Vector3(
                 heldItem.transform.position.x, 
                 heldItemInitialY, 0f);
             Drop(here);
         } else {
+            // claws up or down
+            me.GetComponent<Animator>().SetBool("isGrab", !myClaws.activeSelf);
+            myClaws.SetActive(!myClaws.activeSelf);
             Grab(GetCollidingObjectWithTag("EmptyShell"));
         }
         
@@ -132,6 +143,8 @@ private void Awake()
     }
     private void Grab(GameObject item) {
         if(item == null) return;
+        me.GetComponent<Animator>().SetBool("isGrab", true);
+        myClaws.SetActive(true);
         heldItem = item;
         heldItem.GetComponent<SpriteRenderer>().sortingLayerName = "Held";
         heldItemInitialY = heldItem.transform.position.y; // remember initail height for dropping later
@@ -139,6 +152,8 @@ private void Awake()
     }
 
     private void Drop(Vector3 pos) {
+        me.GetComponent<Animator>().SetBool("isGrab", false);
+        myClaws.SetActive(false);
         heldItem.transform.position = pos;
         heldItem.GetComponent<SpriteRenderer>().sortingLayerName = "Drop";
         heldItem = null; // drop

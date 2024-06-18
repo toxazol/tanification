@@ -56,6 +56,9 @@ TagManager:
   - name: PlayerShell
     uniqueID: 998934427
     locked: 0
+  - name: PlayerClaws
+    uniqueID: 1314203855
+    locked: 0
   - name: Player
     uniqueID: 425839103
     locked: 0

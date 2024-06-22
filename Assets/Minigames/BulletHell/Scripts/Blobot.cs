@@ -3,14 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class RobotBobot : MonoBehaviour
+public class Blobot : MonoBehaviour
 {
     [SerializeField] private float speed = 5f;
     private InputActions gameInputs;
     private InputAction moveAction;
     private bool isLookLeft = false;
+    private Rigidbody2D rBody;
 
-private void Awake()
+    private void Start() 
+    {
+        rBody = GetComponent<Rigidbody2D>();
+    }
+    private void Awake()
     {
         // Initialize the auto-generated class
         gameInputs = new InputActions();
@@ -55,6 +60,7 @@ private void Awake()
 
         var translate = speed * Time.deltaTime * movement;
         transform.Translate(translate);
+        // rBody.AddForce(translate);
     }
 
     private void OnFire(InputAction.CallbackContext context)

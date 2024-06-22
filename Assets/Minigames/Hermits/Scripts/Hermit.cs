@@ -10,6 +10,7 @@ public class Hermit : MonoBehaviour
     [SerializeField] private GameObject myShell;
     [SerializeField] private GameObject myClaws;
     [SerializeField] private GameObject me;
+    [SerializeField] private List<AudioClip> steps;
     private InputActions gameInputs;
     private InputAction moveAction;
     private AudioSource sound;
@@ -58,7 +59,7 @@ public class Hermit : MonoBehaviour
         }
 
         if(!sound.isPlaying) {
-            sound.Play();
+            sound.PlayOneShot(steps[Random.Range(0, steps.Count)]);
         }
 
         me.GetComponent<Animator>().SetBool("isWalk", true);

@@ -56,11 +56,14 @@ public class Blobot : MonoBehaviour
         // GetComponent<Animator>().SetBool("isWalk", true);
 
         isLookLeft = movement.x < 0f; // flip sprites if move left
-        GetComponent<SpriteRenderer>().flipX = !isLookLeft;
+        GetComponent<SpriteRenderer>().flipX = isLookLeft;
 
         var translate = speed * Time.deltaTime * movement;
-        transform.Translate(translate);
-        // rBody.AddForce(translate);
+        // transform.Translate(translate);
+        rBody.AddForce(translate * 100);
+        // rBody.velocity = Vector2.zero;
+        // rBody.totalForce = Vector2.zero;
+        // rBody.MovePosition(rBody.position + translate);
     }
 
     private void OnFire(InputAction.CallbackContext context)

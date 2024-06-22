@@ -12,14 +12,17 @@ public class Hermit : MonoBehaviour
     [SerializeField] private GameObject me;
     private InputActions gameInputs;
     private InputAction moveAction;
+    private AudioSource sound;
     private GameObject heldItem;
     private float heldItemInitialY;
     private bool isLookLeft = false;
 
-private void Awake()
+    private void Awake()
     {
         // Initialize the auto-generated class
         gameInputs = new InputActions();
+
+        sound = GetComponent<AudioSource>();
     }
 
     private void OnEnable()
@@ -52,6 +55,10 @@ private void Awake()
         if(movement.x == 0f) {
             me.GetComponent<Animator>().SetBool("isWalk", false);
             return;
+        }
+
+        if(!sound.isPlaying) {
+            sound.Play();
         }
 
         me.GetComponent<Animator>().SetBool("isWalk", true);
@@ -109,7 +116,6 @@ private void Awake()
         int newSize = shell.GetComponent<Shell>().size;
         int diff =  heldItem.GetComponent<Shell>().size - newSize;
         if(diff == 1) {
-            // SwapShell(shell);
             SwapShells(heldItem, shell);
             return true;
         } else {

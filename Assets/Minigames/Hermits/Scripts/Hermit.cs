@@ -10,7 +10,9 @@ public class Hermit : MonoBehaviour
     [SerializeField] private GameObject myShell;
     [SerializeField] private GameObject myClaws;
     [SerializeField] private GameObject me;
-    [SerializeField] private List<AudioClip> steps;
+    [SerializeField] private List<AudioClip> stepSounds;
+    [SerializeField] private AudioClip shellPickSound;
+    [SerializeField] private AudioClip shellDropSound;
     private InputActions gameInputs;
     private InputAction moveAction;
     private AudioSource sound;
@@ -59,7 +61,7 @@ public class Hermit : MonoBehaviour
         }
 
         if(!sound.isPlaying) {
-            sound.PlayOneShot(steps[Random.Range(0, steps.Count)]);
+            sound.PlayOneShot(stepSounds[Random.Range(0, stepSounds.Count)]);
         }
 
         me.GetComponent<Animator>().SetBool("isWalk", true);
@@ -149,6 +151,7 @@ public class Hermit : MonoBehaviour
     }
     private void Grab(GameObject item) {
         if(item == null) return;
+        sound.PlayOneShot(shellPickSound);
         me.GetComponent<Animator>().SetBool("isGrab", true);
         myClaws.SetActive(true);
         heldItem = item;
@@ -158,6 +161,7 @@ public class Hermit : MonoBehaviour
     }
 
     private void Drop(Vector3 pos) {
+        sound.PlayOneShot(shellDropSound);
         me.GetComponent<Animator>().SetBool("isGrab", false);
         myClaws.SetActive(false);
         heldItem.transform.position = pos;

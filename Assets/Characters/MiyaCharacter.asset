@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: Miya
   characterColor: {r: 0.63529414, g: 0.2784314, b: 0.6431373, a: 1}
-  characterVoice: {fileID: 0}
-  neutralSprite: {fileID: 2800000, guid: 390058ae3b6b306498fe5f244f9c6d04, type: 3}
+  characterPitch: 2.5
+  neutralSprite: {fileID: 2800000, guid: 010b90471dce64e458a38c464acdd70d, type: 3}

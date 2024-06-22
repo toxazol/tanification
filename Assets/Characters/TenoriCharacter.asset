@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: Tenori
   characterColor: {r: 1, g: 0.78431374, b: 0.047058824, a: 1}
-  characterVoice: {fileID: 0}
-  neutralSprite: {fileID: 2800000, guid: d9e3a4919cf883a4081bcad45f585879, type: 3}
+  characterPitch: 2
+  neutralSprite: {fileID: 2800000, guid: 4a9dc76f8513751438d16d393bb22ddb, type: 3}

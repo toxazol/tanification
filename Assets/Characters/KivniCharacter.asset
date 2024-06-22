@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: Kitvni
   characterColor: {r: 0.007843138, g: 0.627451, b: 0.90588236, a: 1}
-  characterVoice: {fileID: 0}
-  neutralSprite: {fileID: 2800000, guid: d6c290cf4d92ec747acb697b8038a55b, type: 3}
+  characterPitch: 1
+  neutralSprite: {fileID: 2800000, guid: 76d0bbd695947ca44b556f8cf1238739, type: 3}

@@ -8,6 +8,7 @@ public class Typewriter : MonoBehaviour
     [SerializeField] private UIDocument uiDocument;
     [SerializeField] string dialogueTextElementID;
     [SerializeField] float typingDelay;
+    [SerializeField] DialogueSoundController soundController;
     private Label dialogueTextElement;
     private StringBuilder dialogueTextBuilder = new StringBuilder();
     private WaitForSeconds delayTimer;
@@ -36,10 +37,14 @@ public class Typewriter : MonoBehaviour
             {
                 dialogueTextBuilder.Clear();
                 dialogueTextBuilder.Append(text);
+                soundController.PlaySound();
                 dialogueTextElement.text = dialogueTextBuilder.ToString();
+                soundController.PlaySound();
+                soundController.PlaySound();
                 yield break;
             }
             dialogueTextBuilder.Append(c);
+            if (char.IsLetter(c)) soundController.PlaySound();
             dialogueTextElement.text = dialogueTextBuilder.ToString();
             yield return delayTimer;
         }

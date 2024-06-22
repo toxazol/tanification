@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: Toxazol
   characterColor: {r: 0.13333334, g: 0.6901961, b: 0.29803923, a: 1}
-  characterVoice: {fileID: 0}
-  neutralSprite: {fileID: 2800000, guid: c07324a4ed7711f419c30e94fac1b503, type: 3}
+  characterPitch: 1.5
+  neutralSprite: {fileID: 2800000, guid: 3b5acdeac19abdd4783d5e3ad525cc5e, type: 3}

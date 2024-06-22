@@ -21,10 +21,6 @@ public class SpeakerRenderer : MonoBehaviour
     public void DisplaySpeaker(CharacterSO character, string emotion)
     {
         spriteElement.style.backgroundImage = character.GetSprite(emotion);
-        spriteElement.style.borderBottomColor = character.characterColor;
-        spriteElement.style.borderTopColor = character.characterColor;
-        spriteElement.style.borderLeftColor = character.characterColor;
-        spriteElement.style.borderRightColor = character.characterColor;
         nameElement.text = character.characterName;
         nameElement.style.color = character.characterColor;
     }

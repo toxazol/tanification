@@ -7,7 +7,7 @@ public class CharacterSO : ScriptableObject
 {
     public string characterName;
     public Color characterColor;
-    public AudioClip characterVoice;
+    public float characterPitch;
     public Texture2D neutralSprite;
 
     public Texture2D GetSprite(string key)

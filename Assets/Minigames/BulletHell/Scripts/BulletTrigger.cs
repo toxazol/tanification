@@ -7,5 +7,7 @@ public class BulletTrigger : MonoBehaviour
     public void OnParticleTrigger()
     {
         Debug.Log("Bullet successfully received by Player");
+        
+        GlobalEventManager.Instance.TriggerEvent("BulletHell:Death");
     }
 }

@@ -5,13 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class MinigamesManager : MonoBehaviour
 {
-    [SerializeField] UnityEditor.SceneAsset mainScene;
-
-    [Header("Minigame Scenes")]
-    [SerializeField] UnityEditor.SceneAsset hermitCrabs;
-    [SerializeField] UnityEditor.SceneAsset bulletHell;
-    [SerializeField] UnityEditor.SceneAsset cult;
-
     [Header("Events")]
     [SerializeField] StringEventChannelSO gameStart;
     [SerializeField] StringEventChannelSO gameEnd;
@@ -43,25 +36,13 @@ public class MinigamesManager : MonoBehaviour
         gameEnd.OnEventRaised -= unloadMinigame;
     }
 
-    void startMinigame(string game)
+    void startMinigame(string gameName)
     {
-        switch (game)
-        {
-            case "hermitCrabs":
-                SceneManager.LoadSceneAsync(hermitCrabs.name);
-                break;
-            case "bulletHell":
-                SceneManager.LoadSceneAsync(bulletHell.name);
-                break;
-            case "cult":
-                SceneManager.LoadSceneAsync(cult.name);
-                break;
-            default: break;
-        }
+        SceneManager.LoadSceneAsync(gameName);
     }
 
     void unloadMinigame(string game)
     {
-        SceneManager.LoadSceneAsync(mainScene.name);
+        SceneManager.LoadSceneAsync("SampleScene");
     }
 }

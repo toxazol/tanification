@@ -11,14 +11,14 @@ public class Typewriter : MonoBehaviour
     [SerializeField] DialogueSoundController soundController;
     private Label dialogueTextElement;
     private StringBuilder dialogueTextBuilder = new StringBuilder();
-    private WaitForSeconds delayTimer;
+    private WaitForSecondsRealtime delayTimer;
     public bool typing = false;
 
     // Start is called before the first frame update
     void Start()
     {
         dialogueTextElement = uiDocument.rootVisualElement.Q<Label>(dialogueTextElementID);
-        delayTimer = new WaitForSeconds(typingDelay);
+        delayTimer = new WaitForSecondsRealtime(typingDelay);
         dialogueTextBuilder = new StringBuilder();
     }
     public void StartTyping(string text)

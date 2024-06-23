@@ -613,75 +613,108 @@ MonoBehaviour:
   startGameEvent: {fileID: 11400000, guid: 4b22c18827894cd47a53f5a5ad6d0dbe, type: 2}
   endGameEvent: {fileID: 11400000, guid: b2672031ab1ebc247a7b8e9d871df23d, type: 2}
   dialogue:
-  - phrase: So... We have to start small.
-    character: {fileID: 11400000, guid: 86fb86ff7dffee44d8b310d37bfc48f2, type: 2}
-    emotion: neutral
-    startGame: 
-  - phrase: Yeah, that's the jam's theme.
-    character: {fileID: 11400000, guid: 859d3e346855ad445a35acdd07a1fb6e, type: 2}
-    emotion: neutral
-    startGame: 
-  - phrase: I like it! "Start small" is a nice one!
-    character: {fileID: 11400000, guid: 1c501611fc7fdb245b9f44201a9c1e24, type: 2}
-    emotion: neutral
-    startGame: 
-  - phrase: Any ideas?
-    character: {fileID: 11400000, guid: 1c501611fc7fdb245b9f44201a9c1e24, type: 2}
-    emotion: neutral
-    startGame: 
-  - phrase: Actually, me and Tenori discussed it a bit already.
-    character: {fileID: 11400000, guid: 91dd0d23654ae9b4ca68ba119065d25a, type: 2}
-    emotion: neutral
-    startGame: 
-  - phrase: We have one.
-    character: {fileID: 11400000, guid: 91dd0d23654ae9b4ca68ba119065d25a, type: 2}
-    emotion: neutral
-    startGame: 
-  - phrase: I'm not sure it's good enough...
-    character: {fileID: 11400000, guid: 859d3e346855ad445a35acdd07a1fb6e, type: 2}
-    emotion: neutral
-    startGame: 
-  - phrase: But do you know about hermit crabs?
-    character: {fileID: 11400000, guid: 859d3e346855ad445a35acdd07a1fb6e, type: 2}
-    emotion: neutral
-    startGame: 
-  - phrase: The ones that use shells of other sea creatures?
-    character: {fileID: 11400000, guid: 86fb86ff7dffee44d8b310d37bfc48f2, type: 2}
-    emotion: neutral
-    startGame: 
-  - phrase: 'Yeah! So we had an idea:'
-    character: {fileID: 11400000, guid: 91dd0d23654ae9b4ca68ba119065d25a, type: 2}
-    emotion: neutral
-    startGame: 
-  - phrase: You play as a tiny hermit crab.
-    character: {fileID: 11400000, guid: 91dd0d23654ae9b4ca68ba119065d25a, type: 2}
-    emotion: neutral
-    startGame: 
-  - phrase: And your shell is reeeeally small.
-    character: {fileID: 11400000, guid: 91dd0d23654ae9b4ca68ba119065d25a, type: 2}
-    emotion: neutral
-    startGame: 
-  - phrase: But you are growing.
-    character: {fileID: 11400000, guid: 91dd0d23654ae9b4ca68ba119065d25a, type: 2}
-    emotion: neutral
-    startGame: 
-  - phrase: And a crack appears in your shell.
-    character: {fileID: 11400000, guid: 859d3e346855ad445a35acdd07a1fb6e, type: 2}
-    emotion: neutral
-    startGame: 
-  - phrase: So you know it's time to look for a bigger one!
-    character: {fileID: 11400000, guid: 91dd0d23654ae9b4ca68ba119065d25a, type: 2}
-    emotion: neutral
-    startGame: 
-  - phrase: Ah! I also imagine this game in some cute soft style,
-    character: {fileID: 11400000, guid: 859d3e346855ad445a35acdd07a1fb6e, type: 2}
-    emotion: neutral
-    startGame: 
-  - phrase: that looks like a pencil sketch, or watercolors.
-    character: {fileID: 11400000, guid: 859d3e346855ad445a35acdd07a1fb6e, type: 2}
-    emotion: neutral
-    startGame: hermitCrabs
+  - globalEventName: 
+    dialogueList:
+    - phrase: So...
+      character: {fileID: 11400000, guid: 86fb86ff7dffee44d8b310d37bfc48f2, type: 2}
+      emotion: 
+      startGame: 
+    - phrase: We have to start small.
+      character: {fileID: 11400000, guid: 86fb86ff7dffee44d8b310d37bfc48f2, type: 2}
+      emotion: 
+      startGame: 
+    - phrase: Yea, that's the jam's theme.
+      character: {fileID: 11400000, guid: 859d3e346855ad445a35acdd07a1fb6e, type: 2}
+      emotion: 
+      startGame: 
+    - phrase: I like it. "Start small" is a nice one.
+      character: {fileID: 11400000, guid: 1c501611fc7fdb245b9f44201a9c1e24, type: 2}
+      emotion: 
+      startGame: 
+    - phrase: Any ideas?
+      character: {fileID: 11400000, guid: 1c501611fc7fdb245b9f44201a9c1e24, type: 2}
+      emotion: 
+      startGame: 
+    - phrase: Actually, me and Tenori discussed it a bit before you came.
+      character: {fileID: 11400000, guid: 91dd0d23654ae9b4ca68ba119065d25a, type: 2}
+      emotion: 
+      startGame: 
+    - phrase: We have one.
+      character: {fileID: 11400000, guid: 91dd0d23654ae9b4ca68ba119065d25a, type: 2}
+      emotion: 
+      startGame: 
+    - phrase: I'm not sure it's good enough...
+      character: {fileID: 11400000, guid: 859d3e346855ad445a35acdd07a1fb6e, type: 2}
+      emotion: 
+      startGame: 
+    - phrase: But do you know about hermit crabs?
+      character: {fileID: 11400000, guid: 859d3e346855ad445a35acdd07a1fb6e, type: 2}
+      emotion: 
+      startGame: 
+    - phrase: The ones using shells of other creatures?
+      character: {fileID: 11400000, guid: 86fb86ff7dffee44d8b310d37bfc48f2, type: 2}
+      emotion: 
+      startGame: 
+    - phrase: Yeah. So we have an idea...
+      character: {fileID: 11400000, guid: 91dd0d23654ae9b4ca68ba119065d25a, type: 2}
+      emotion: 
+      startGame: 
+    - phrase: ...where you play as a tiny hermit crab.
+      character: {fileID: 11400000, guid: 91dd0d23654ae9b4ca68ba119065d25a, type: 2}
+      emotion: 
+      startGame: 
+    - phrase: Your shell is like reeeally small.
+      character: {fileID: 11400000, guid: 91dd0d23654ae9b4ca68ba119065d25a, type: 2}
+      emotion: 
+      startGame: 
+    - phrase: You're also small, but you're growing.
+      character: {fileID: 11400000, guid: 91dd0d23654ae9b4ca68ba119065d25a, type: 2}
+      emotion: 
+      startGame: 
+    - phrase: And a crack appears in your shell.
+      character: {fileID: 11400000, guid: 859d3e346855ad445a35acdd07a1fb6e, type: 2}
+      emotion: 
+      startGame: 
+    - phrase: ...So you know it's time to look for a bigger one.
+      character: {fileID: 11400000, guid: 91dd0d23654ae9b4ca68ba119065d25a, type: 2}
+      emotion: 
+      startGame: 
+    - phrase: Ah, I also imagine this game in some cute soft style...
+      character: {fileID: 11400000, guid: 859d3e346855ad445a35acdd07a1fb6e, type: 2}
+      emotion: 
+      startGame: 
+    - phrase: ...that looks like a pencil sketch or watercolors.
+      character: {fileID: 11400000, guid: 859d3e346855ad445a35acdd07a1fb6e, type: 2}
+      emotion: 
+      startGame: hermitCrabs
+    - phrase: So what do you need to do?
+      character: {fileID: 11400000, guid: 1c501611fc7fdb245b9f44201a9c1e24, type: 2}
+      emotion: 
+      startGame: 
+    - phrase: Just find a larger shell?
+      character: {fileID: 11400000, guid: 1c501611fc7fdb245b9f44201a9c1e24, type: 2}
+      emotion: 
+      startGame: 
+    - phrase: That's a good first step.
+      character: {fileID: 11400000, guid: 91dd0d23654ae9b4ca68ba119065d25a, type: 2}
+      emotion: 
+      startGame: 
+    - phrase: By the way, "E" goes for interact.
+      character: {fileID: 11400000, guid: 91dd0d23654ae9b4ca68ba119065d25a, type: 2}
+      emotion: 
+      startGame: 
+    - phrase: ...enteract?
+      character: {fileID: 11400000, guid: 91dd0d23654ae9b4ca68ba119065d25a, type: 2}
+      emotion: 
+      startGame: 
+  - globalEventName: Hermits:LargestShell
+    dialogueList:
+    - phrase: This one seems too big for us.
+      character: {fileID: 11400000, guid: 859d3e346855ad445a35acdd07a1fb6e, type: 2}
+      emotion: 
+      startGame: 
   currLine: 0
+  currDialog: []
 --- !u!4 &586073160
 Transform:
   m_ObjectHideFlags: 0
@@ -1157,6 +1190,50 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1050742268
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1050742270}
+  - component: {fileID: 1050742269}
+  m_Layer: 0
+  m_Name: GlobalEventManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1050742269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1050742268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bab3b0f02e5625b408d08708c710c820, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1050742270
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1050742268}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.0747399, y: 0.5643413, z: 0.07009185}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1474211314
 GameObject:
   m_ObjectHideFlags: 0
@@ -1250,3 +1327,4 @@ SceneRoots:
   - {fileID: 164765382}
   - {fileID: 586073160}
   - {fileID: 181791510}
+  - {fileID: 1050742270}

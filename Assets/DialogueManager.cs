@@ -16,8 +16,9 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] private DialogueSoundController dialogueSoundController;
     [SerializeField] private StringEventChannelSO startGameEvent;
     [SerializeField] private StringEventChannelSO endGameEvent;
-    [SerializeField] private List<DialogueEntry> dialogue;
+    [SerializeField] private List<EventDialogueListEntry> dialogue;
     [SerializeField] private int currLine;
+    [SerializeField] private List<DialogueEntry> currDialog;
     private bool end;
 
     void Awake()
@@ -33,11 +34,25 @@ public class DialogueManager : MonoBehaviour
         end = false;
         currLine = 0;
         dialogueBox = uiDocument.rootVisualElement.Q<VisualElement>(dialogueBoxId);
-    }
+        currDialog = dialogue[0].dialogueList; // start with firtst dialogue list (no event needed)
 
+        // change current dialog based on dialog events
+        dialogue.ForEach(eventDialog => {
+            GlobalEventManager.Instance.AddListener(eventDialog.globalEventName, () => {
+                currDialog = eventDialog.dialogueList;
+                currLine = 0;
+                end = false;
+                OnNext(null);
+            });
+        });
+    }
     void OnNext(InputValue value)
     {
-        if (!value.isPressed || end) return;
+        if (end) {
+            dialogueBox.visible = false;
+            return;
+        } 
+        if (value != null && !value.isPressed) return;
         if (this.typewriter.typing) {
             this.typewriter.ShowText();
         } else {
@@ -45,12 +60,12 @@ public class DialogueManager : MonoBehaviour
             {
                 dialogueBox.visible = true;
             }
-            if (!string.IsNullOrEmpty(dialogue[currLine].startGame)) startGameEvent.RaiseEvent(dialogue[currLine].startGame);
-            this.dialogueSoundController.PitchShift(dialogue[currLine].character.characterPitch);
-            this.typewriter.StartTyping(dialogue[currLine].phrase);
-            this.speakerRenderer.DisplaySpeaker(dialogue[currLine].character, dialogue[currLine].emotion);
+            if (!string.IsNullOrEmpty(currDialog[currLine].startGame)) startGameEvent.RaiseEvent(currDialog[currLine].startGame);
+            this.dialogueSoundController.PitchShift(currDialog[currLine].character.characterPitch);
+            this.typewriter.StartTyping(currDialog[currLine].phrase);
+            this.speakerRenderer.DisplaySpeaker(currDialog[currLine].character, currDialog[currLine].emotion);
             currLine++;
-            end = currLine >= dialogue.Count;
+            end = currLine >= currDialog.Count;
         }
     }
 
@@ -66,5 +81,12 @@ public class DialogueManager : MonoBehaviour
         public CharacterSO character;
         public string emotion;
         public string startGame;
+    }
+
+    [System.Serializable]
+    public class EventDialogueListEntry 
+    {
+        public String globalEventName;
+        public List<DialogueEntry> dialogueList;
     }
 }

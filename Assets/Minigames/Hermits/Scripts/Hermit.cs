@@ -93,7 +93,7 @@ public class Hermit : MonoBehaviour
     private void OnAction(InputAction.CallbackContext context)
     {
         if(heldItem != null) { // try wear or exchange or drop shell
-            if(Wear(heldItem) || ExchangeShell()) {
+            if(TryWear(heldItem) || TryExchangeShell()) {
                 return;
             }
             var here = new Vector3(
@@ -109,7 +109,7 @@ public class Hermit : MonoBehaviour
         
     }
 
-    private bool Wear(GameObject shell) {
+    private bool TryWear(GameObject shell) {
         int diff = shell.GetComponent<Shell>().size - myShell.GetComponent<Shell>().size;
         if(diff != 1) return false;
         SwapShells(shell, myShell);
@@ -119,7 +119,7 @@ public class Hermit : MonoBehaviour
         return true;
     }
 
-    private bool ExchangeShell() {
+    private bool TryExchangeShell() {
         var shell = GetCollidingObjectWithTag("CrabShell");
         if(shell == null) return false;
         int newSize = shell.GetComponent<Shell>().size;
@@ -157,6 +157,9 @@ public class Hermit : MonoBehaviour
     }
     private void Grab(GameObject item) {
         if(item == null) return;
+        if(item.GetComponent<Shell>().size == 6) { // biggest shell
+            GlobalEventManager.Instance.TriggerEvent("Hermits:LargestShell");
+        }
         sound.PlayOneShot(shellPickSound);
         me.GetComponent<Animator>().SetBool("isGrab", true);
         myClaws.SetActive(true);

@@ -253,7 +253,7 @@ MonoBehaviour:
   mainScene: {fileID: 0}
   hermitCrabs: {fileID: 102900000, guid: b840d4c97abd9754bba8406da105fd16, type: 3}
   bulletHell: {fileID: 102900000, guid: b968d872b3ffd1247950e8a94e95cf2f, type: 3}
-  cult: {fileID: 0}
+  cult: {fileID: 102900000, guid: 49798d7663fdcf940864d0b0d09485b4, type: 3}
   gameStart: {fileID: 11400000, guid: 4b22c18827894cd47a53f5a5ad6d0dbe, type: 2}
   gameEnd: {fileID: 11400000, guid: b2672031ab1ebc247a7b8e9d871df23d, type: 2}
 --- !u!1 &181791509

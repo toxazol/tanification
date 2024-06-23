@@ -16,7 +16,6 @@ public class MinigamesManager : MonoBehaviour
     [SerializeField] StringEventChannelSO gameStart;
     [SerializeField] StringEventChannelSO gameEnd;
 
-    // Singleton
     public static MinigamesManager Instance { get; private set; }
     void Awake()
     {
@@ -30,7 +29,7 @@ public class MinigamesManager : MonoBehaviour
             Destroy(gameObject);
         }
     }
-    // Start is called before the first frame update
+
     void Start()
     {
         gameStart.OnEventRaised += startMinigame;

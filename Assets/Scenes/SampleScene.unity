@@ -148,7 +148,7 @@ Transform:
   m_GameObject: {fileID: 5414659}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1, y: 0.6, z: 0}
+  m_LocalPosition: {x: 1, y: -0.21000004, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -251,10 +251,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hermitCrabs: {fileID: 102900000, guid: b840d4c97abd9754bba8406da105fd16, type: 3}
-  bulletHell:
-    m_Handle: 0
-  cult:
-    m_Handle: 0
+  bulletHell: {fileID: 0}
+  cult: {fileID: 0}
   gameStart: {fileID: 11400000, guid: 4b22c18827894cd47a53f5a5ad6d0dbe, type: 2}
   gameEnd: {fileID: 11400000, guid: b2672031ab1ebc247a7b8e9d871df23d, type: 2}
 --- !u!1 &181791509
@@ -851,7 +849,7 @@ Transform:
   m_GameObject: {fileID: 676069928}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.2, y: -0.65, z: 0}
+  m_LocalPosition: {x: 2.2, y: -1.46, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1017,7 +1015,7 @@ Transform:
   m_GameObject: {fileID: 951208073}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1, y: 0.6, z: 0}
+  m_LocalPosition: {x: -1, y: -0.21000004, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1101,7 +1099,7 @@ Transform:
   m_GameObject: {fileID: 981786547}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.2, y: -0.65, z: 0}
+  m_LocalPosition: {x: -2.2, y: -1.46, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

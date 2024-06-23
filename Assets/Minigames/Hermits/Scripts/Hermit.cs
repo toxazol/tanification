@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -11,16 +10,22 @@ public class Hermit : MonoBehaviour
     [SerializeField] private GameObject myShell;
     [SerializeField] private GameObject myClaws;
     [SerializeField] private GameObject me;
+    [SerializeField] private List<AudioClip> stepSounds;
+    [SerializeField] private AudioClip shellPickSound;
+    [SerializeField] private AudioClip shellDropSound;
     private InputActions gameInputs;
     private InputAction moveAction;
+    private AudioSource sound;
     private GameObject heldItem;
     private float heldItemInitialY;
     private bool isLookLeft = false;
 
-private void Awake()
+    private void Awake()
     {
         // Initialize the auto-generated class
         gameInputs = new InputActions();
+
+        sound = GetComponent<AudioSource>();
     }
 
     private void OnEnable()
@@ -53,6 +58,10 @@ private void Awake()
         if(movement.x == 0f) {
             me.GetComponent<Animator>().SetBool("isWalk", false);
             return;
+        }
+
+        if(!sound.isPlaying) {
+            sound.PlayOneShot(stepSounds[Random.Range(0, stepSounds.Count)]);
         }
 
         me.GetComponent<Animator>().SetBool("isWalk", true);
@@ -110,7 +119,6 @@ private void Awake()
         int newSize = shell.GetComponent<Shell>().size;
         int diff =  heldItem.GetComponent<Shell>().size - newSize;
         if(diff == 1) {
-            // SwapShell(shell);
             SwapShells(heldItem, shell);
             return true;
         } else {
@@ -143,6 +151,7 @@ private void Awake()
     }
     private void Grab(GameObject item) {
         if(item == null) return;
+        sound.PlayOneShot(shellPickSound);
         me.GetComponent<Animator>().SetBool("isGrab", true);
         myClaws.SetActive(true);
         heldItem = item;
@@ -152,6 +161,7 @@ private void Awake()
     }
 
     private void Drop(Vector3 pos) {
+        sound.PlayOneShot(shellDropSound);
         me.GetComponent<Animator>().SetBool("isGrab", false);
         myClaws.SetActive(false);
         heldItem.transform.position = pos;

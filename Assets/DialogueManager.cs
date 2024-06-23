@@ -61,9 +61,9 @@ public class DialogueManager : MonoBehaviour
             this.typewriter.ShowText();
             return;
         }
-        if (end) {
+        if (end && dialogueBox.visible) { // for now let's allow firing events from dialogs and ending games only on dialog ends
             dialogueBox.visible = false;
-            // for now let's allow firing events from dialogs and ending games only on dialog ends
+            
             if (currDialog[currLine-1].endsGame) {
                 endGameEvent.RaiseEvent("aaaaaaaaaaaaaaaaaaaaaaaaaaa");
             }
@@ -71,7 +71,8 @@ public class DialogueManager : MonoBehaviour
                 GlobalEventManager.Instance.TriggerEvent(currDialog[currLine-1].globalEvent);
             }
             return;
-        } 
+        }
+        if (currLine >= currDialog.Count) return;
         if (value != null && !value.isPressed) return;
    
         if (!dialogueBox.visible)

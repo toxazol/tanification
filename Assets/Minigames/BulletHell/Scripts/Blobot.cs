@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class Blobot : MonoBehaviour
 {
@@ -14,6 +15,17 @@ public class Blobot : MonoBehaviour
     private void Start() 
     {
         rBody = GetComponent<Rigidbody2D>();
+        // pause
+        GlobalEventManager.Instance.AddListener("BulletHell:Death", ()=>{
+            Time.timeScale = 0f;
+        });
+        GlobalEventManager.Instance.AddListener("BulletHell:Win", ()=>{
+            Time.timeScale = 0f;
+        });
+        GlobalEventManager.Instance.AddListener("BulletHell:Restart", ()=>{
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            Time.timeScale = 1f;
+        });
     }
     private void Awake()
     {

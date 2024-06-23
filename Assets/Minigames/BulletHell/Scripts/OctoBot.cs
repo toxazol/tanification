@@ -51,5 +51,12 @@ public class OctoBot : MonoBehaviour
         transform.GetComponentsInChildren<Joint2D>()
             .ToList()
             .ForEach(t => t.enabled = false);
+        
+        Invoke("DelayedWin", 5f);
+    }
+
+    void DelayedWin()
+    {
+        GlobalEventManager.Instance.TriggerEvent("BulletHell:Win");
     }
 }

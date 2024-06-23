@@ -250,7 +250,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89adedf6b21cfa041bb312293952c711, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainScene: {fileID: 0}
+  mainScene: {fileID: 102900000, guid: 8c9cfa26abfee488c85f1582747f6a02, type: 3}
   hermitCrabs: {fileID: 102900000, guid: b840d4c97abd9754bba8406da105fd16, type: 3}
   bulletHell: {fileID: 102900000, guid: b968d872b3ffd1247950e8a94e95cf2f, type: 3}
   cult: {fileID: 0}
@@ -961,6 +961,587 @@ MonoBehaviour:
       character: {fileID: 11400000, guid: 859d3e346855ad445a35acdd07a1fb6e, type: 2}
       emotion: 
       startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: Hmm... Growing a business?
+      character: {fileID: 11400000, guid: 1c501611fc7fdb245b9f44201a9c1e24, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: But now I can't help but imagine something like the Spore.
+      character: {fileID: 11400000, guid: 1c501611fc7fdb245b9f44201a9c1e24, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: Growing, evolving...
+      character: {fileID: 11400000, guid: 1c501611fc7fdb245b9f44201a9c1e24, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: Oh, by the way!
+      character: {fileID: 11400000, guid: 86fb86ff7dffee44d8b310d37bfc48f2, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: I recently played a cozy zen game about koi fish.
+      character: {fileID: 11400000, guid: 86fb86ff7dffee44d8b310d37bfc48f2, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: You swim around, gather food particles and then choose an ability.
+      character: {fileID: 11400000, guid: 86fb86ff7dffee44d8b310d37bfc48f2, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: Become faster, more agile or something else.
+      character: {fileID: 11400000, guid: 86fb86ff7dffee44d8b310d37bfc48f2, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: You start eating just simple zooplankton...
+      character: {fileID: 11400000, guid: 86fb86ff7dffee44d8b310d37bfc48f2, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: But then you become strong enough to hunt other fish.
+      character: {fileID: 11400000, guid: 86fb86ff7dffee44d8b310d37bfc48f2, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: Hunt other fish? Sounds kinda violent for a zen game....
+      character: {fileID: 11400000, guid: 91dd0d23654ae9b4ca68ba119065d25a, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: Haha.
+      character: {fileID: 11400000, guid: 859d3e346855ad445a35acdd07a1fb6e, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: Well, it doesn't feel violent.
+      character: {fileID: 11400000, guid: 86fb86ff7dffee44d8b310d37bfc48f2, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: Not like violence is that bad.
+      character: {fileID: 11400000, guid: 859d3e346855ad445a35acdd07a1fb6e, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: Some hyper-aggressive bullet hell is also an option.
+      character: {fileID: 11400000, guid: 859d3e346855ad445a35acdd07a1fb6e, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: I love slashers, by the way.
+      character: {fileID: 11400000, guid: 1c501611fc7fdb245b9f44201a9c1e24, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: Let's make a slasher with crabs!
+      character: {fileID: 11400000, guid: 91dd0d23654ae9b4ca68ba119065d25a, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: Right! They evolve, build their civilization...
+      character: {fileID: 11400000, guid: 1c501611fc7fdb245b9f44201a9c1e24, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: And then go to the space and we get space battles with giant enemies.
+      character: {fileID: 11400000, guid: 1c501611fc7fdb245b9f44201a9c1e24, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: With robots?
+      character: {fileID: 11400000, guid: 859d3e346855ad445a35acdd07a1fb6e, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: Robo crabs?
+      character: {fileID: 11400000, guid: 91dd0d23654ae9b4ca68ba119065d25a, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: You sure love crabs...
+      character: {fileID: 11400000, guid: 859d3e346855ad445a35acdd07a1fb6e, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: Who doesn't?
+      character: {fileID: 11400000, guid: 1c501611fc7fdb245b9f44201a9c1e24, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: So you're fighting giant robo crabs.
+      character: {fileID: 11400000, guid: 1c501611fc7fdb245b9f44201a9c1e24, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: And you're... a tiny crab?
+      character: {fileID: 11400000, guid: 1c501611fc7fdb245b9f44201a9c1e24, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: Maybe you're a blob?
+      character: {fileID: 11400000, guid: 859d3e346855ad445a35acdd07a1fb6e, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: Oh! You're a blob and you can't attack...
+      character: {fileID: 11400000, guid: 859d3e346855ad445a35acdd07a1fb6e, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: But you can sneak inside giant enemies and destroy them from inside!
+      character: {fileID: 11400000, guid: 859d3e346855ad445a35acdd07a1fb6e, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: Oohh.
+      character: {fileID: 11400000, guid: 1c501611fc7fdb245b9f44201a9c1e24, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: And then it gives you some abilities?
+      character: {fileID: 11400000, guid: 86fb86ff7dffee44d8b310d37bfc48f2, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: How about taking control over those robots?
+      character: {fileID: 11400000, guid: 91dd0d23654ae9b4ca68ba119065d25a, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: It could work, I think!
+      character: {fileID: 11400000, guid: 1c501611fc7fdb245b9f44201a9c1e24, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: And everything goes BOOM! BANG! KABOOM!
+      character: {fileID: 11400000, guid: 1c501611fc7fdb245b9f44201a9c1e24, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: And enemies go pew-pew-pew.
+      character: {fileID: 11400000, guid: 1c501611fc7fdb245b9f44201a9c1e24, type: 2}
+      emotion: 
+      startGame: bulletHell
+      endsGame: 0
+      globalEvent: 
+  - globalEventName: BulletHell:Death
+    dialogueList:
+    - phrase: Oh no. Stay determined!
+      character: {fileID: 11400000, guid: 1c501611fc7fdb245b9f44201a9c1e24, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: BulletHell:Restart
+  - globalEventName: BulletHell:Win
+    dialogueList:
+    - phrase: Yay! You defeated it!
+      character: {fileID: 11400000, guid: 859d3e346855ad445a35acdd07a1fb6e, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: Now you could grab his hand and use it as a weapon...
+      character: {fileID: 11400000, guid: 859d3e346855ad445a35acdd07a1fb6e, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: ...becoming armed and extremely dangerous.
+      character: {fileID: 11400000, guid: 859d3e346855ad445a35acdd07a1fb6e, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: I thought we'd control the whole robot...
+      character: {fileID: 11400000, guid: 91dd0d23654ae9b4ca68ba119065d25a, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: Well, it's fallen apart.
+      character: {fileID: 11400000, guid: 859d3e346855ad445a35acdd07a1fb6e, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: I think the harder the boss, the bigger the award.
+      character: {fileID: 11400000, guid: 86fb86ff7dffee44d8b310d37bfc48f2, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: The first one gives you a weapon, the second one something better.
+      character: {fileID: 11400000, guid: 86fb86ff7dffee44d8b310d37bfc48f2, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: And so on.
+      character: {fileID: 11400000, guid: 86fb86ff7dffee44d8b310d37bfc48f2, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: True, I think we'd need many bosses.
+      character: {fileID: 11400000, guid: 1c501611fc7fdb245b9f44201a9c1e24, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: Hmm, that's a large scope.
+      character: {fileID: 11400000, guid: 859d3e346855ad445a35acdd07a1fb6e, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 1
+      globalEvent: Dialogue:AfterBulletHell
+  - globalEventName: Dialogue:AfterBulletHell
+    dialogueList:
+    - phrase: Robot game sounds so fun, I like the mechanics.
+      character: {fileID: 11400000, guid: 91dd0d23654ae9b4ca68ba119065d25a, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: Yeah. But let's discuss some more ideas before we pick the one.
+      character: {fileID: 11400000, guid: 859d3e346855ad445a35acdd07a1fb6e, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: 'Starting small... '
+      character: {fileID: 11400000, guid: 1c501611fc7fdb245b9f44201a9c1e24, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: The theme is broad. There is a lot of room for imagination.
+      character: {fileID: 11400000, guid: 86fb86ff7dffee44d8b310d37bfc48f2, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: Tenori complained a bit that the theme is too broad.
+      character: {fileID: 11400000, guid: 91dd0d23654ae9b4ca68ba119065d25a, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: That's right... I mean, almost in any genre you might start small.
+      character: {fileID: 11400000, guid: 859d3e346855ad445a35acdd07a1fb6e, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: Strategy? Metroidvania? RPG?
+      character: {fileID: 11400000, guid: 859d3e346855ad445a35acdd07a1fb6e, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: 'In most of those games you start small anyways. '
+      character: {fileID: 11400000, guid: 859d3e346855ad445a35acdd07a1fb6e, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: Should we handle "Start small" a bit more metaphorically?
+      character: {fileID: 11400000, guid: 1c501611fc7fdb245b9f44201a9c1e24, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: Maybe. By the way, you had an idea about growing a business, right?
+      character: {fileID: 11400000, guid: 86fb86ff7dffee44d8b310d37bfc48f2, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: Yeah. Growing a start-up.
+      character: {fileID: 11400000, guid: 1c501611fc7fdb245b9f44201a9c1e24, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: Either like your typical cafe game or something more like Factorio
+        or Satisfactory.
+      character: {fileID: 11400000, guid: 1c501611fc7fdb245b9f44201a9c1e24, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: What about growing a political movement?
+      character: {fileID: 11400000, guid: 86fb86ff7dffee44d8b310d37bfc48f2, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: To fight capitalism?
+      character: {fileID: 11400000, guid: 91dd0d23654ae9b4ca68ba119065d25a, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: To fight capitalism.
+      character: {fileID: 11400000, guid: 86fb86ff7dffee44d8b310d37bfc48f2, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: Sounds neat, actually!
+      character: {fileID: 11400000, guid: 859d3e346855ad445a35acdd07a1fb6e, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: Maybe the player could customize the political movement?
+      character: {fileID: 11400000, guid: 859d3e346855ad445a35acdd07a1fb6e, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: So that they're not limited with socialism, capitalism or anything
+        else specifically.
+      character: {fileID: 11400000, guid: 859d3e346855ad445a35acdd07a1fb6e, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: Do you imagine it like a strategy?
+      character: {fileID: 11400000, guid: 91dd0d23654ae9b4ca68ba119065d25a, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: Like... Crusader Kings, Europa Universalis and so on?
+      character: {fileID: 11400000, guid: 91dd0d23654ae9b4ca68ba119065d25a, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: More like Plague Inc.?
+      character: {fileID: 11400000, guid: 859d3e346855ad445a35acdd07a1fb6e, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: Hmm. Right, "start small" is not necessarily about positive things.
+      character: {fileID: 11400000, guid: 1c501611fc7fdb245b9f44201a9c1e24, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: It can also be about negative ones, like lying.
+      character: {fileID: 11400000, guid: 1c501611fc7fdb245b9f44201a9c1e24, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: "I know some stories from real life about how a small lie\u2026"
+      character: {fileID: 11400000, guid: 1c501611fc7fdb245b9f44201a9c1e24, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: "\u2026becomes bigger and bigger."
+      character: {fileID: 11400000, guid: 1c501611fc7fdb245b9f44201a9c1e24, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: 'And then you can''t help but keep lying. '
+      character: {fileID: 11400000, guid: 1c501611fc7fdb245b9f44201a9c1e24, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: Because otherwise your first small lies will also fall apart.
+      character: {fileID: 11400000, guid: 1c501611fc7fdb245b9f44201a9c1e24, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: Oh, that's deep...
+      character: {fileID: 11400000, guid: 859d3e346855ad445a35acdd07a1fb6e, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: So what choices do you have in this game?
+      character: {fileID: 11400000, guid: 91dd0d23654ae9b4ca68ba119065d25a, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: Do you choose "the lesser of two evils"?
+      character: {fileID: 11400000, guid: 91dd0d23654ae9b4ca68ba119065d25a, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: Yeah. You choose the most convincing lie.
+      character: {fileID: 11400000, guid: 1c501611fc7fdb245b9f44201a9c1e24, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: And then realize you shouldn't have lied in the first place.
+      character: {fileID: 11400000, guid: 1c501611fc7fdb245b9f44201a9c1e24, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: It could be like an interactive story.
+      character: {fileID: 11400000, guid: 1c501611fc7fdb245b9f44201a9c1e24, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: Hmm. I combined it in my mind with the business idea.
+      character: {fileID: 11400000, guid: 86fb86ff7dffee44d8b310d37bfc48f2, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: Hmm? Like a lie factory?
+      character: {fileID: 11400000, guid: 859d3e346855ad445a35acdd07a1fb6e, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: A game about leading a cult!
+      character: {fileID: 11400000, guid: 86fb86ff7dffee44d8b310d37bfc48f2, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: You start small, with just a few followers and some main idea.
+      character: {fileID: 11400000, guid: 86fb86ff7dffee44d8b310d37bfc48f2, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: Then you make decisions and balance resources.
+      character: {fileID: 11400000, guid: 86fb86ff7dffee44d8b310d37bfc48f2, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: Your main resources could be... Faith and people.
+      character: {fileID: 11400000, guid: 86fb86ff7dffee44d8b310d37bfc48f2, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: You promise them happiness and serenity. Or anything else.
+      character: {fileID: 11400000, guid: 86fb86ff7dffee44d8b310d37bfc48f2, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: You send them to "spread the message".
+      character: {fileID: 11400000, guid: 86fb86ff7dffee44d8b310d37bfc48f2, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: You create rules and punishments.
+      character: {fileID: 11400000, guid: 86fb86ff7dffee44d8b310d37bfc48f2, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: But you need to be careful not to lose the trust of your followers
+        too early.
+      character: {fileID: 11400000, guid: 86fb86ff7dffee44d8b310d37bfc48f2, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: Oh, like you can't tell them the world will end tomorrow unless their
+        faith is super strong?
+      character: {fileID: 11400000, guid: 859d3e346855ad445a35acdd07a1fb6e, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: Yeah. They'll see the world didn't end and you'll lose many people.
+      character: {fileID: 11400000, guid: 86fb86ff7dffee44d8b310d37bfc48f2, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: But if their faith is strong, they'll believe and make something like
+        that one cult did?
+      character: {fileID: 11400000, guid: 91dd0d23654ae9b4ca68ba119065d25a, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: Was it scientologists?
+      character: {fileID: 11400000, guid: 91dd0d23654ae9b4ca68ba119065d25a, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: The ones who massively took their lives in a ritual?
+      character: {fileID: 11400000, guid: 859d3e346855ad445a35acdd07a1fb6e, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: Yeah, I guess it was them.
+      character: {fileID: 11400000, guid: 86fb86ff7dffee44d8b310d37bfc48f2, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: So we're creating our own cult?
+      character: {fileID: 11400000, guid: 1c501611fc7fdb245b9f44201a9c1e24, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: Let's go!
+      character: {fileID: 11400000, guid: 1c501611fc7fdb245b9f44201a9c1e24, type: 2}
+      emotion: 
+      startGame: cult
       endsGame: 0
       globalEvent: 
   currLine: 0

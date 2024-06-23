@@ -12,6 +12,8 @@ public class ActionsManager : MonoBehaviour
     [SerializeField] private StatsManager statsManager;
     [SerializeField] private List<CultAction> actions;
     [SerializeField] private List<int> usedButtons = new List<int>();
+    [SerializeField] private AudioClip clickSound;
+    private int btnClickCount = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -37,13 +39,20 @@ public class ActionsManager : MonoBehaviour
 
     private void ActionButtonClick(EventBase target)
     {
+        GetComponent<AudioSource>().PlayOneShot(clickSound);
         Button btn = (Button)target.target;
         int index = int.Parse(btn.name.Substring(btn.name.IndexOf("_") + 1));
         CultAction action = actions[index];
         CultStats inc = statsManager.RequrementCheck(action.requred) ? action.goodOutcome : action.badOutcome;
         statsManager.UpdateStats(inc);
         buttonsContainer.Remove(btn);
-        if (usedButtons.Count < actions.Count) AddRandomButton();
+        btnClickCount++;
+        if (usedButtons.Count < actions.Count) {
+            AddRandomButton();
+        } 
+        if (btnClickCount >= actions.Count && !statsManager.isVictory){
+            GlobalEventManager.Instance.TriggerEvent("Cult:Defeat");
+        }
     }
 
     private void AddRandomButton()
@@ -68,5 +77,6 @@ public class ActionsManager : MonoBehaviour
     {
         public int followers;
         public int faith;
+        public string globalEvent;
     }
 }

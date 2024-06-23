@@ -22,6 +22,7 @@ public class StatsManager : MonoBehaviour
     [SerializeField] int followerThreshold_1;
     [SerializeField] int followerThreshold_2;
     private CultStats cultStats = new CultStats();
+    public bool isVictory = false;
 
     // Start is called before the first frame update
     void Start()
@@ -58,6 +59,15 @@ public class StatsManager : MonoBehaviour
         } else if (oldFollowers >= followerThreshold_1 && cultStats.followers < followerThreshold_1)
         {
             cultBGD.sprite = bgd_1;
+        }
+        if (cultStats.followers == 0 || cultStats.faith == 0) {
+            GlobalEventManager.Instance.TriggerEvent("Cult:Defeat");
+        }
+        if (!string.IsNullOrEmpty(inc.globalEvent)) {
+            GlobalEventManager.Instance.TriggerEvent(inc.globalEvent);
+            if(inc.globalEvent == "Cult:Victory") {
+                isVictory = true;
+            }
         }
     }
 

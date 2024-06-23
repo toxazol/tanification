@@ -250,10 +250,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89adedf6b21cfa041bb312293952c711, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainScene: {fileID: 102900000, guid: 8c9cfa26abfee488c85f1582747f6a02, type: 3}
-  hermitCrabs: {fileID: 102900000, guid: b840d4c97abd9754bba8406da105fd16, type: 3}
-  bulletHell: {fileID: 102900000, guid: b968d872b3ffd1247950e8a94e95cf2f, type: 3}
-  cult: {fileID: 102900000, guid: 49798d7663fdcf940864d0b0d09485b4, type: 3}
   gameStart: {fileID: 11400000, guid: 4b22c18827894cd47a53f5a5ad6d0dbe, type: 2}
   gameEnd: {fileID: 11400000, guid: b2672031ab1ebc247a7b8e9d871df23d, type: 2}
 --- !u!1 &181791509
@@ -897,7 +893,7 @@ MonoBehaviour:
       startGame: 
       endsGame: 0
       globalEvent: 
-    - phrase: I like how cooperative and socialistic hermit crabs are.
+    - phrase: I like how cooperative and social hermit crabs are.
       character: {fileID: 11400000, guid: 86fb86ff7dffee44d8b310d37bfc48f2, type: 2}
       emotion: 
       startGame: 
@@ -927,7 +923,7 @@ MonoBehaviour:
       startGame: 
       endsGame: 0
       globalEvent: 
-    - phrase: What if then they evolve?
+    - phrase: What if they evolve?
       character: {fileID: 11400000, guid: 1c501611fc7fdb245b9f44201a9c1e24, type: 2}
       emotion: 
       startGame: 
@@ -1299,8 +1295,7 @@ MonoBehaviour:
       startGame: 
       endsGame: 0
       globalEvent: 
-    - phrase: Either like your typical cafe game or something more like Factorio
-        or Satisfactory.
+    - phrase: Either like your typical cafe game or something more like Factorio.
       character: {fileID: 11400000, guid: 1c501611fc7fdb245b9f44201a9c1e24, type: 2}
       emotion: 
       startGame: 
@@ -1312,19 +1307,19 @@ MonoBehaviour:
       startGame: 
       endsGame: 0
       globalEvent: 
-    - phrase: To fight capitalism?
+    - phrase: To "fight capitalism"?
       character: {fileID: 11400000, guid: 91dd0d23654ae9b4ca68ba119065d25a, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
-    - phrase: To fight capitalism.
+    - phrase: To fight capitalism, lol.
       character: {fileID: 11400000, guid: 86fb86ff7dffee44d8b310d37bfc48f2, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
-    - phrase: Sounds neat, actually!
+    - phrase: That's funny. But actually, I unironically like this idea.
       character: {fileID: 11400000, guid: 859d3e346855ad445a35acdd07a1fb6e, type: 2}
       emotion: 
       startGame: 
@@ -1344,12 +1339,6 @@ MonoBehaviour:
       endsGame: 0
       globalEvent: 
     - phrase: Do you imagine it like a strategy?
-      character: {fileID: 11400000, guid: 91dd0d23654ae9b4ca68ba119065d25a, type: 2}
-      emotion: 
-      startGame: 
-      endsGame: 0
-      globalEvent: 
-    - phrase: Like... Crusader Kings, Europa Universalis and so on?
       character: {fileID: 11400000, guid: 91dd0d23654ae9b4ca68ba119065d25a, type: 2}
       emotion: 
       startGame: 
@@ -1494,14 +1483,13 @@ MonoBehaviour:
       startGame: 
       endsGame: 0
       globalEvent: 
-    - phrase: Oh, like you can't tell them the world will end tomorrow unless their
-        faith is super strong?
+    - phrase: Oh, like you can't just tell them the world will end tomorrow?
       character: {fileID: 11400000, guid: 859d3e346855ad445a35acdd07a1fb6e, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
-    - phrase: Yeah. They'll see the world didn't end and you'll lose many people.
+    - phrase: Yeah. They'd see the world didn't end and you'd lose many followers.
       character: {fileID: 11400000, guid: 86fb86ff7dffee44d8b310d37bfc48f2, type: 2}
       emotion: 
       startGame: 
@@ -1544,6 +1532,315 @@ MonoBehaviour:
       startGame: cult
       endsGame: 0
       globalEvent: 
+    - phrase: "So the main theme could be\u2026 happiness."
+      character: {fileID: 11400000, guid: 86fb86ff7dffee44d8b310d37bfc48f2, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: Who doesn't want to be happy?
+      character: {fileID: 11400000, guid: 86fb86ff7dffee44d8b310d37bfc48f2, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: Make your decisions, but be careful with them.
+      character: {fileID: 11400000, guid: 86fb86ff7dffee44d8b310d37bfc48f2, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: And let the sadness disappear.
+      character: {fileID: 11400000, guid: 86fb86ff7dffee44d8b310d37bfc48f2, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+  - globalEventName: Cult:Victory
+    dialogueList:
+    - phrase: They love you! All their fate is in your hands now.
+      character: {fileID: 11400000, guid: 86fb86ff7dffee44d8b310d37bfc48f2, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: Let's bring the Happiness to this world, bwahaha.
+      character: {fileID: 11400000, guid: 859d3e346855ad445a35acdd07a1fb6e, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: Hallelujah!
+      character: {fileID: 11400000, guid: 1c501611fc7fdb245b9f44201a9c1e24, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 1
+      globalEvent: Dialogue:AfterCult
+  - globalEventName: Cult:Defeat
+    dialogueList:
+    - phrase: This won't do. Wanna try again?
+      character: {fileID: 11400000, guid: 86fb86ff7dffee44d8b310d37bfc48f2, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: Make them believe.
+      character: {fileID: 11400000, guid: 86fb86ff7dffee44d8b310d37bfc48f2, type: 2}
+      emotion: 
+      startGame: cult
+      endsGame: 0
+      globalEvent: 
+  - globalEventName: Dialogue:AfterCult
+    dialogueList:
+    - phrase: There are loads of real cults we could take the inspiration from.
+      character: {fileID: 11400000, guid: 86fb86ff7dffee44d8b310d37bfc48f2, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: What a treat, right?
+      character: {fileID: 11400000, guid: 859d3e346855ad445a35acdd07a1fb6e, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: Could we also make a cult that worships hermit crabs?
+      character: {fileID: 11400000, guid: 91dd0d23654ae9b4ca68ba119065d25a, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: You can create it in real life.
+      character: {fileID: 11400000, guid: 86fb86ff7dffee44d8b310d37bfc48f2, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: Oohh!
+      character: {fileID: 11400000, guid: 1c501611fc7fdb245b9f44201a9c1e24, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: Good idea!
+      character: {fileID: 11400000, guid: 91dd0d23654ae9b4ca68ba119065d25a, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: I'm in.
+      character: {fileID: 11400000, guid: 1c501611fc7fdb245b9f44201a9c1e24, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: Oh no...
+      character: {fileID: 11400000, guid: 859d3e346855ad445a35acdd07a1fb6e, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: Oh yes.
+      character: {fileID: 11400000, guid: 86fb86ff7dffee44d8b310d37bfc48f2, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: Okay, on a serious note, the cult game sounds awesome.
+      character: {fileID: 11400000, guid: 859d3e346855ad445a35acdd07a1fb6e, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: I'd like to make it...
+      character: {fileID: 11400000, guid: 859d3e346855ad445a35acdd07a1fb6e, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: But isn't it too much of work?
+      character: {fileID: 11400000, guid: 859d3e346855ad445a35acdd07a1fb6e, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: Would we be able to finish it in 10 days?
+      character: {fileID: 11400000, guid: 859d3e346855ad445a35acdd07a1fb6e, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: Because I don't think so...
+      character: {fileID: 11400000, guid: 859d3e346855ad445a35acdd07a1fb6e, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: Good point... That sounds a bit too much for 10 days.
+      character: {fileID: 11400000, guid: 1c501611fc7fdb245b9f44201a9c1e24, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: Yeah, it would be better to build a game around something small.
+      character: {fileID: 11400000, guid: 91dd0d23654ae9b4ca68ba119065d25a, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: Around one mechanic or some succinct concept.
+      character: {fileID: 11400000, guid: 91dd0d23654ae9b4ca68ba119065d25a, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: But oh my dude, it's so hard to keep the concept simple when you start
+        thinking about it.
+      character: {fileID: 11400000, guid: 91dd0d23654ae9b4ca68ba119065d25a, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: Keep it simple? So the "Start small" applies to us, too, huh.
+      character: {fileID: 11400000, guid: 1c501611fc7fdb245b9f44201a9c1e24, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: ... Let's make a game about ourselves!
+      character: {fileID: 11400000, guid: 859d3e346855ad445a35acdd07a1fb6e, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: A metagame about us discussing our game ideas!
+      character: {fileID: 11400000, guid: 859d3e346855ad445a35acdd07a1fb6e, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: Oh. My. Gosh.
+      character: {fileID: 11400000, guid: 1c501611fc7fdb245b9f44201a9c1e24, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: Wait.
+      character: {fileID: 11400000, guid: 1c501611fc7fdb245b9f44201a9c1e24, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: So everything I'm saying now is a part of our future game?
+      character: {fileID: 11400000, guid: 1c501611fc7fdb245b9f44201a9c1e24, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: Riight.
+      character: {fileID: 11400000, guid: 859d3e346855ad445a35acdd07a1fb6e, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: Maybe we should've recorded our discussion. I'll take some notes!
+      character: {fileID: 11400000, guid: 86fb86ff7dffee44d8b310d37bfc48f2, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: Now I feel so weird talking knowing it's all gonna be in the game.
+      character: {fileID: 11400000, guid: 1c501611fc7fdb245b9f44201a9c1e24, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: Hahaha.
+      character: {fileID: 11400000, guid: 859d3e346855ad445a35acdd07a1fb6e, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: But really. I feel like I'm talking inside the game already. This moment
+        is a game.
+      character: {fileID: 11400000, guid: 1c501611fc7fdb245b9f44201a9c1e24, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: Blob blob bloop bloop.
+      character: {fileID: 11400000, guid: 91dd0d23654ae9b4ca68ba119065d25a, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: ... bloop.
+      character: {fileID: 11400000, guid: 859d3e346855ad445a35acdd07a1fb6e, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: Okay, and if we don't manage to finish something...
+      character: {fileID: 11400000, guid: 91dd0d23654ae9b4ca68ba119065d25a, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: ...we'll just make it a part of the game!
+      character: {fileID: 11400000, guid: 91dd0d23654ae9b4ca68ba119065d25a, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: Right! We can wrap it up any moment.
+      character: {fileID: 11400000, guid: 86fb86ff7dffee44d8b310d37bfc48f2, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: Just say "sorry, we didn't have time to finish it, we should've started
+        small".
+      character: {fileID: 11400000, guid: 86fb86ff7dffee44d8b310d37bfc48f2, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: And thank them for playing.
+      character: {fileID: 11400000, guid: 859d3e346855ad445a35acdd07a1fb6e, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: Thanks for playing! We were happy to have you here.
+      character: {fileID: 11400000, guid: 86fb86ff7dffee44d8b310d37bfc48f2, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: Hope you've enjoyed our game.
+      character: {fileID: 11400000, guid: 91dd0d23654ae9b4ca68ba119065d25a, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: If so, please press the like button...
+      character: {fileID: 11400000, guid: 859d3e346855ad445a35acdd07a1fb6e, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: "\u2026leave a comment and subscribe to our channel. Hehe."
+      character: {fileID: 11400000, guid: 859d3e346855ad445a35acdd07a1fb6e, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: Take care, fellow blobs. Have a nice time!
+      character: {fileID: 11400000, guid: 1c501611fc7fdb245b9f44201a9c1e24, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: MainGame:End
   currLine: 0
   currDialog: []
 --- !u!4 &586073160

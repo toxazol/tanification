@@ -13,6 +13,8 @@ public class Hermit : MonoBehaviour
     [SerializeField] private List<AudioClip> stepSounds;
     [SerializeField] private AudioClip shellPickSound;
     [SerializeField] private AudioClip shellDropSound;
+    [SerializeField] private float leftWallX;
+    [SerializeField] private float rightWallX;
     private InputActions gameInputs;
     private InputAction moveAction;
     private AudioSource sound;
@@ -72,7 +74,11 @@ public class Hermit : MonoBehaviour
         }
 
         var translate = speed * Time.deltaTime * movement;
-        transform.Translate(translate);
+        var newX = transform.position.x + translate.x;
+
+        if(newX > leftWallX && newX < rightWallX) { // world borders
+            transform.Translate(translate);
+        }
         HoldUp(heldItem);
     }
 

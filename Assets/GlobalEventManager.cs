@@ -18,6 +18,14 @@ public class GlobalEventManager : MonoBehaviour
             return _instance;
         }
     }
+    // Singleton
+    void Awake()
+    {
+        if (_instance != null)
+        {
+            Destroy(gameObject);
+        }
+    }
 
     private Dictionary<string, Action> eventDictionary = new Dictionary<string, Action>();
 

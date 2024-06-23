@@ -21,6 +21,7 @@ public class Hermit : MonoBehaviour
     private GameObject heldItem;
     private float heldItemInitialY;
     private bool isLookLeft = false;
+    private bool isLargestShellEventFired = false;
 
     private void Awake()
     {
@@ -115,6 +116,7 @@ public class Hermit : MonoBehaviour
         SwapShells(shell, myShell);
         var here = new Vector3(shell.transform.position.x, heldItemInitialY, 0f);
         Drop(here);
+        GlobalEventManager.Instance.TriggerEvent("Hermits:Victory");
         Debug.Log("Congratulations, you found your new home!");
         return true;
     }
@@ -128,6 +130,7 @@ public class Hermit : MonoBehaviour
             SwapShells(heldItem, shell);
             return true;
         } else {
+            GlobalEventManager.Instance.TriggerEvent("Hermits:Too" + (diff > 0 ? "Big" : "Little") + "Shell");
             Debug.Log("Your shell is too " + (diff > 0 ? "big" : "small") + " for this crab.");
         }
         return false;
@@ -157,8 +160,9 @@ public class Hermit : MonoBehaviour
     }
     private void Grab(GameObject item) {
         if(item == null) return;
-        if(item.GetComponent<Shell>().size == 6) { // biggest shell
+        if(item.GetComponent<Shell>().size == 6 && !isLargestShellEventFired) { // biggest shell
             GlobalEventManager.Instance.TriggerEvent("Hermits:LargestShell");
+            isLargestShellEventFired = true;
         }
         sound.PlayOneShot(shellPickSound);
         me.GetComponent<Animator>().SetBool("isGrab", true);

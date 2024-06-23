@@ -21,16 +21,25 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] private List<DialogueEntry> currDialog;
     private bool end;
 
+    // Singleton
+    public static DialogueManager Instance { get; private set; }
     void Awake()
     {
-        DontDestroyOnLoad(this.gameObject);
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
-
 
     // Start is called before the first frame update
     void Start()
     {
-        endGameEvent.OnEventRaised += continueDialogue;
+        // endGameEvent.OnEventRaised += continueDialogue;
         end = false;
         currLine = 0;
         dialogueBox = uiDocument.rootVisualElement.Q<VisualElement>(dialogueBoxId);
@@ -48,25 +57,38 @@ public class DialogueManager : MonoBehaviour
     }
     void OnNext(InputValue value)
     {
+        if (this.typewriter.typing) {
+            this.typewriter.ShowText();
+            return;
+        }
         if (end) {
             dialogueBox.visible = false;
+            // for now let's allow firing events from dialogs and ending games only on dialog ends
+            if (currDialog[currLine-1].endsGame) {
+                endGameEvent.RaiseEvent("aaaaaaaaaaaaaaaaaaaaaaaaaaa");
+            }
+            if (!string.IsNullOrEmpty(currDialog[currLine-1].globalEvent)) {
+                GlobalEventManager.Instance.TriggerEvent(currDialog[currLine-1].globalEvent);
+            }
             return;
         } 
         if (value != null && !value.isPressed) return;
-        if (this.typewriter.typing) {
-            this.typewriter.ShowText();
-        } else {
-            if (!dialogueBox.visible)
-            {
-                dialogueBox.visible = true;
-            }
-            if (!string.IsNullOrEmpty(currDialog[currLine].startGame)) startGameEvent.RaiseEvent(currDialog[currLine].startGame);
-            this.dialogueSoundController.PitchShift(currDialog[currLine].character.characterPitch);
-            this.typewriter.StartTyping(currDialog[currLine].phrase);
-            this.speakerRenderer.DisplaySpeaker(currDialog[currLine].character, currDialog[currLine].emotion);
-            currLine++;
-            end = currLine >= currDialog.Count;
+   
+        if (!dialogueBox.visible)
+        {
+            dialogueBox.visible = true;
         }
+        
+        if (!string.IsNullOrEmpty(currDialog[currLine].startGame)) {
+            startGameEvent.RaiseEvent(currDialog[currLine].startGame);
+        }
+
+        
+        this.dialogueSoundController.PitchShift(currDialog[currLine].character.characterPitch);
+        this.typewriter.StartTyping(currDialog[currLine].phrase);
+        this.speakerRenderer.DisplaySpeaker(currDialog[currLine].character, currDialog[currLine].emotion);
+        currLine++;
+        end = currLine >= currDialog.Count;
     }
 
     void continueDialogue(string text)
@@ -81,6 +103,8 @@ public class DialogueManager : MonoBehaviour
         public CharacterSO character;
         public string emotion;
         public string startGame;
+        public bool endsGame;
+        public string globalEvent;
     }
 
     [System.Serializable]

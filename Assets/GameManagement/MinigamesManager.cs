@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class MinigamesManager : MonoBehaviour
 {
+    [SerializeField] UnityEditor.SceneAsset mainScene;
+
     [Header("Minigame Scenes")]
     [SerializeField] UnityEditor.SceneAsset hermitCrabs;
     [SerializeField] UnityEditor.SceneAsset bulletHell;
@@ -14,6 +16,20 @@ public class MinigamesManager : MonoBehaviour
     [SerializeField] StringEventChannelSO gameStart;
     [SerializeField] StringEventChannelSO gameEnd;
 
+    // Singleton
+    public static MinigamesManager Instance { get; private set; }
+    void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
     // Start is called before the first frame update
     void Start()
     {
@@ -33,13 +49,13 @@ public class MinigamesManager : MonoBehaviour
         switch (game)
         {
             case "hermitCrabs":
-                SceneManager.LoadScene(hermitCrabs.name);
+                SceneManager.LoadSceneAsync(hermitCrabs.name);
                 break;
             case "bulletHell":
-                SceneManager.LoadScene(bulletHell.name);
+                SceneManager.LoadSceneAsync(bulletHell.name);
                 break;
             case "cult":
-                SceneManager.LoadScene(cult.name);
+                SceneManager.LoadSceneAsync(cult.name);
                 break;
             default: break;
         }
@@ -47,18 +63,6 @@ public class MinigamesManager : MonoBehaviour
 
     void unloadMinigame(string game)
     {
-        switch (game)
-        {
-            case "hermitCrabs":
-                SceneManager.UnloadSceneAsync(hermitCrabs.name);
-                break;
-            case "bulletHell":
-                SceneManager.UnloadSceneAsync(bulletHell.name);
-                break;
-            case "cult":
-                SceneManager.UnloadSceneAsync(cult.name);
-                break;
-            default: break;
-        }
+        SceneManager.LoadSceneAsync(mainScene.name);
     }
 }

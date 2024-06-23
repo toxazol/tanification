@@ -5,19 +5,24 @@ using UnityEngine;
 
 public class OctoBot : MonoBehaviour
 {
-    [SerializeField] private float rotationSpeed = 1f;
+    [SerializeField] private float bodyRotationSpeed = 32f;
+    // [SerializeField] private float armsRotationSpeed = 32f;
+    [SerializeField] private GameObject body;
+    [SerializeField] private GameObject arms;
+    [SerializeField] private AudioClip deathSound;
+    private AudioSource sound;
     private bool isDead = false;
-    // private Rigidbody2D rBody;
     void Start()
     {
-        // rBody = GetComponent<Rigidbody2D>();
+        sound = GetComponent<AudioSource>();
     }
 
     void FixedUpdate()
     {
         if (isDead) return;
 
-        transform.Rotate(0, 0, rotationSpeed * Time.fixedDeltaTime);
+        transform.Rotate(0, 0, bodyRotationSpeed * Time.fixedDeltaTime);
+        // arms.transform.Rotate(0, 0, armsRotationSpeed * Time.fixedDeltaTime);
         // rBody.rotation += rotationSpeed;
     }
 
@@ -30,6 +35,7 @@ public class OctoBot : MonoBehaviour
 
     private void Die() {
         isDead = true;
+        sound.PlayOneShot(deathSound);
         transform.GetComponentsInChildren<Transform>()
             .Where(t => t.name == "working")
             .ToList()

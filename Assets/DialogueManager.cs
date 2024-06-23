@@ -84,10 +84,13 @@ public class DialogueManager : MonoBehaviour
             startGameEvent.RaiseEvent(currDialog[currLine].startGame);
         }
 
+        if(currDialog[currLine].character != null) {
+            this.dialogueSoundController.PitchShift(currDialog[currLine].character.characterPitch);
+            this.speakerRenderer.DisplaySpeaker(currDialog[currLine].character, currDialog[currLine].emotion);
+        }
         
-        this.dialogueSoundController.PitchShift(currDialog[currLine].character.characterPitch);
         this.typewriter.StartTyping(currDialog[currLine].phrase);
-        this.speakerRenderer.DisplaySpeaker(currDialog[currLine].character, currDialog[currLine].emotion);
+        
         currLine++;
         end = currLine >= currDialog.Count;
     }

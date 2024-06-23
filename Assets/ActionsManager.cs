@@ -37,10 +37,15 @@ public class ActionsManager : MonoBehaviour
         usedButtons.Add(index);
     }
 
-    private void ActionButtonClick(EventBase target)
+    private void ActionButtonClick(EventBase eventBase)
     {
+        // Allow only mouse clicks to avoid conflicts with main dialog skip inputs
+        if (!(eventBase is MouseUpEvent || eventBase is PointerUpEvent))
+        {
+            return;
+        }
         GetComponent<AudioSource>().PlayOneShot(clickSound);
-        Button btn = (Button)target.target;
+        Button btn = (Button)eventBase.target;
         int index = int.Parse(btn.name.Substring(btn.name.IndexOf("_") + 1));
         CultAction action = actions[index];
         CultStats inc = statsManager.RequrementCheck(action.requred) ? action.goodOutcome : action.badOutcome;

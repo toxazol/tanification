@@ -14,6 +14,8 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] private Typewriter typewriter;
     [SerializeField] private SpeakerRenderer speakerRenderer;
     [SerializeField] private DialogueSoundController dialogueSoundController;
+    [SerializeField] private StringEventChannelSO startGameEvent;
+    [SerializeField] private StringEventChannelSO endGameEvent;
     [SerializeField] private List<DialogueEntry> dialogue;
     [SerializeField] private int currLine;
     private bool end;
@@ -27,6 +29,7 @@ public class DialogueManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        endGameEvent.OnEventRaised += continueDialogue;
         end = false;
         currLine = 0;
         dialogueBox = uiDocument.rootVisualElement.Q<VisualElement>(dialogueBoxId);
@@ -38,12 +41,11 @@ public class DialogueManager : MonoBehaviour
         if (this.typewriter.typing) {
             this.typewriter.ShowText();
         } else {
-            Debug.Log("Вialogue box visibility: " + dialogueBox.visible + ", = none? - " + (dialogueBox.style.display == DisplayStyle.None));
             if (!dialogueBox.visible)
             {
-                Debug.Log("Show the dialogue box.");
                 dialogueBox.visible = true;
             }
+            if (!string.IsNullOrEmpty(dialogue[currLine].startGame)) startGameEvent.RaiseEvent(dialogue[currLine].startGame);
             this.dialogueSoundController.PitchShift(dialogue[currLine].character.characterPitch);
             this.typewriter.StartTyping(dialogue[currLine].phrase);
             this.speakerRenderer.DisplaySpeaker(dialogue[currLine].character, dialogue[currLine].emotion);
@@ -52,11 +54,17 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
+    void continueDialogue(string text)
+    {
+        return;
+    }
+
     [System.Serializable]
     public class DialogueEntry 
     {
         public string phrase;
         public CharacterSO character;
         public string emotion;
+        public string startGame;
     }
 }

@@ -14,6 +14,11 @@ public class MinigamesManager : MonoBehaviour
     [SerializeField] StringEventChannelSO gameStart;
     [SerializeField] StringEventChannelSO gameEnd;
 
+    void Awake()
+    {
+        DontDestroyOnLoad(this.gameObject);
+    }
+
     // Start is called before the first frame update
     void Start()
     {

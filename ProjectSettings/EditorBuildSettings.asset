@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/BulletHell.unity
     guid: b968d872b3ffd1247950e8a94e95cf2f
+  - enabled: 1
+    path: Assets/Scenes/Cult.unity
+    guid: 49798d7663fdcf940864d0b0d09485b4
   m_configObjects: {}

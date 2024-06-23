@@ -791,7 +791,7 @@ MonoBehaviour:
     - phrase: Yea, that's the jam's theme.
       character: {fileID: 11400000, guid: 859d3e346855ad445a35acdd07a1fb6e, type: 2}
       emotion: 
-      startGame: cult
+      startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: I like it. "Start small" is a nice one.

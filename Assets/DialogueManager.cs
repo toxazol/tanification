@@ -89,7 +89,7 @@ public class DialogueManager : MonoBehaviour
             this.speakerRenderer.DisplaySpeaker(currDialog[currLine].character, currDialog[currLine].emotion);
         }
         
-        this.typewriter.StartTyping(currDialog[currLine].phrase);
+        this.typewriter.StartTyping(currDialog[currLine].phrase_ua);
         
         currLine++;
         end = currLine >= currDialog.Count;
@@ -104,6 +104,7 @@ public class DialogueManager : MonoBehaviour
     public class DialogueEntry 
     {
         public string phrase;
+        public string phrase_ua;
         public CharacterSO character;
         public string emotion;
         public string startGame;

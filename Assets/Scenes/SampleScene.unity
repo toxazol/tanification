@@ -777,138 +777,186 @@ MonoBehaviour:
   - globalEventName: 
     dialogueList:
     - phrase: So...
+      phrase_ua: "\u041E\u0442\u0436\u0435\u2026"
       character: {fileID: 11400000, guid: 86fb86ff7dffee44d8b310d37bfc48f2, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: We have to start small.
+      phrase_ua: "\u0422\u0440\u0435\u0431\u0430 \u043F\u043E\u0447\u0430\u0442\u0438
+        \u0437 \u043C\u0430\u043B\u043E\u0433\u043E."
       character: {fileID: 11400000, guid: 86fb86ff7dffee44d8b310d37bfc48f2, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: Yea, that's the jam's theme.
+      phrase_ua: "\u0410\u0433\u0430, \u0442\u0435\u043C\u0430 \u0434\u0436\u0435\u043C\u0443
+        \u0441\u0430\u043C\u0435 \u0442\u0430\u043A\u0430. \"Start small\"."
       character: {fileID: 11400000, guid: 859d3e346855ad445a35acdd07a1fb6e, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: I like it. "Start small" is a nice one.
+      phrase_ua: "\u041C\u0435\u043D\u0456 \u043F\u043E\u0434\u043E\u0431\u0430\u0454\u0442\u044C\u0441\u044F.
+        \u201CStart small\u201D \u2013 \u0442\u043E\u043F\u043E\u0432\u0430 \u0442\u0435\u043C\u0430."
       character: {fileID: 11400000, guid: 1c501611fc7fdb245b9f44201a9c1e24, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: Any ideas?
+      phrase_ua: "\u0404 \u0456\u0434\u0435\u0457?"
       character: {fileID: 11400000, guid: 1c501611fc7fdb245b9f44201a9c1e24, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: Actually, me and Tenori discussed it a bit before you came.
+      phrase_ua: "\u041D\u0430\u0441\u043F\u0440\u0430\u0432\u0434\u0456, \u043C\u0438
+        \u0437 \u0422\u0435\u043D\u043E\u0440\u0456 \u0442\u0440\u043E\u0445\u0438
+        \u043E\u0431\u0433\u043E\u0432\u043E\u0440\u0438\u043B\u0438 \u0446\u0435
+        \u0432\u0441\u0435, \u043F\u043E\u043A\u0438 \u0432\u0430\u0441 \u0447\u0435\u043A\u0430\u043B\u0438."
       character: {fileID: 11400000, guid: 91dd0d23654ae9b4ca68ba119065d25a, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: We have one.
+      phrase_ua: "\u041E\u0434\u043D\u0430 \u0456\u0434\u0435\u044F \u0454."
       character: {fileID: 11400000, guid: 91dd0d23654ae9b4ca68ba119065d25a, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: I'm not sure it's good enough...
+      phrase_ua: "\u041D\u0435 \u0432\u043F\u0435\u0432\u043D\u0435\u043D\u0430,
+        \u0447\u0438 \u0432\u043E\u043D\u0430 \u0434\u043E\u0441\u0442\u0430\u0442\u043D\u044C\u043E
+        \u0446\u0456\u043A\u0430\u0432\u0430\u2026"
       character: {fileID: 11400000, guid: 859d3e346855ad445a35acdd07a1fb6e, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: But do you know about hermit crabs?
+      phrase_ua: "\u0410\u043B\u0435 \u0437\u043D\u0430\u0454\u0442\u0435 \u043F\u0440\u043E
+        \u0440\u0430\u043A\u0456\u0432-\u0441\u0430\u043C\u0456\u0442\u043D\u0438\u043A\u0456\u0432?"
       character: {fileID: 11400000, guid: 859d3e346855ad445a35acdd07a1fb6e, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: The ones using shells of other creatures?
+      phrase_ua: "\u0422\u0438\u0445, \u044F\u043A\u0456 \u044E\u0437\u0430\u044E\u0442\u044C
+        \u0447\u0443\u0436\u0456 \u043C\u0443\u0448\u043B\u0456?"
       character: {fileID: 11400000, guid: 86fb86ff7dffee44d8b310d37bfc48f2, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: Yeah. So we have an idea...
+      phrase_ua: "\u0410\u0433\u0430. \u041D\u0443 \u0442\u0430\u043A \u043E\u0442,
+        \u0443 \u043D\u0430\u0441 \u0454 \u0456\u0434\u0435\u044F\u2026"
       character: {fileID: 11400000, guid: 91dd0d23654ae9b4ca68ba119065d25a, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: ...where you play as a tiny hermit crab.
+      phrase_ua: "\u2026\u0434\u0435 \u0442\u0438 \u0433\u0440\u0430\u0454\u0448
+        \u0437\u0430 \u043C\u0430\u043B\u0435\u043D\u044C\u043A\u043E\u0433\u043E
+        \u0442\u0430\u043A\u043E\u0433\u043E \u0440\u0430\u0447\u043A\u0430."
       character: {fileID: 11400000, guid: 91dd0d23654ae9b4ca68ba119065d25a, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: Your shell is like reeeally small.
+      phrase_ua: "\u0406 \u0442\u0432\u043E\u044F \u043C\u0443\u0448\u043B\u044F
+        \u0442\u0438\u043F\u0443 \u0434\u0443\u0443\u0436\u0435 \u043C\u0430\u043B\u0435\u043D\u044C\u043A\u0430."
       character: {fileID: 11400000, guid: 91dd0d23654ae9b4ca68ba119065d25a, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: You're also small, but you're growing.
+      phrase_ua: "\u041D\u0443 \u0442\u0438 \u0442\u0435\u0436 \u043C\u0430\u043B\u0435\u043D\u044C\u043A\u0438\u0439,
+        \u0430\u043B\u0435 \u0440\u043E\u0441\u0442\u0435\u0448."
       character: {fileID: 11400000, guid: 91dd0d23654ae9b4ca68ba119065d25a, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: And a crack appears in your shell.
+      phrase_ua: "\u0406 \u0443 \u043C\u0443\u0448\u043B\u0456 \u0437'\u044F\u0432\u043B\u044F\u0454\u0442\u044C\u0441\u044F
+        \u0442\u0440\u0456\u0449\u0438\u043D\u0430."
       character: {fileID: 11400000, guid: 859d3e346855ad445a35acdd07a1fb6e, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: ...So you know it's time to look for a bigger one.
+      phrase_ua: "\u0406 \u0440\u0430\u0447\u043E\u043A \u0440\u043E\u0437\u0443\u043C\u0456\u0454,
+        \u0449\u043E \u043D\u0430\u0441\u0442\u0430\u0432 \u0447\u0430\u0441 \u0448\u0443\u043A\u0430\u0442\u0438
+        \u043C\u0443\u0448\u043B\u044E \u043F\u043E\u0431\u0456\u043B\u044C\u0448\u0435."
       character: {fileID: 11400000, guid: 91dd0d23654ae9b4ca68ba119065d25a, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: Ah, I also imagine this game in some cute soft style...
+      phrase_ua: "\u041E, \u0430 \u0449\u0435 \u044F \u0443\u044F\u0432\u0438\u043B\u0430
+        \u0446\u044E \u0433\u0440\u0443 \u0432 \u044F\u043A\u0456\u0439\u0441\u044C
+        \u043C\u0438\u043B\u0456\u0439 \u043C'\u044F\u043A\u0456\u0439 \u043C\u0430\u043B\u044C\u043E\u0432\u0446\u0456\u2026"
       character: {fileID: 11400000, guid: 859d3e346855ad445a35acdd07a1fb6e, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: ...that looks like a pencil sketch or watercolors.
+      phrase_ua: "\u2026\u0441\u0442\u0438\u043B\u0456\u0437\u043E\u0432\u0430\u043D\u0456\u0439
+        \u043F\u0456\u0434 \u0435\u0441\u043A\u0456\u0437 \u043E\u043B\u0456\u0432\u0446\u0435\u043C
+        \u0447\u0438 \u0430\u043A\u0432\u0430\u0440\u0435\u043B\u044C."
       character: {fileID: 11400000, guid: 859d3e346855ad445a35acdd07a1fb6e, type: 2}
       emotion: 
       startGame: hermitCrabs
       endsGame: 0
       globalEvent: 
     - phrase: So what do you need to do?
+      phrase_ua: "\u0425\u043C\u043C, \u0442\u043E \u0449\u043E \u043F\u043E\u0442\u0440\u0456\u0431\u043D\u043E
+        \u0440\u043E\u0431\u0438\u0442\u0438?"
       character: {fileID: 11400000, guid: 1c501611fc7fdb245b9f44201a9c1e24, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: Just find a larger shell?
+      phrase_ua: "\u041F\u0440\u043E\u0441\u0442\u043E \u0437\u043D\u0430\u0439\u0442\u0438
+        \u0431\u0456\u043B\u044C\u0448\u0443 \u043C\u0443\u0448\u043B\u044E?"
       character: {fileID: 11400000, guid: 1c501611fc7fdb245b9f44201a9c1e24, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: That's a good first step.
+      phrase_ua: "\u041D\u0435\u043F\u043E\u0433\u0430\u043D\u0438\u0439 \u043F\u043E\u0447\u0430\u0442\u043E\u043A."
       character: {fileID: 11400000, guid: 91dd0d23654ae9b4ca68ba119065d25a, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: By the way, "E" goes for interact.
+      phrase_ua: "\u0414\u043E \u0440\u0435\u0447\u0456, \u0434\u0456\u044F - \u0446\u0435
+        \u043A\u043D\u043E\u043F\u043A\u0430 \xABE\xBB (\u0430\u043D\u0433\u043B\u0456\u0439\u0441\u044C\u043A\u0430)."
       character: {fileID: 11400000, guid: 91dd0d23654ae9b4ca68ba119065d25a, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: ...enteract?
+      phrase_ua: "\u2026\u0454\u0414\u0456\u044F? \u0412\u0437\u0430\xABEEE\xBB\u043C\u043E\u0434\u0456\u044F?"
       character: {fileID: 11400000, guid: 91dd0d23654ae9b4ca68ba119065d25a, type: 2}
       emotion: 
       startGame: 
@@ -917,6 +965,8 @@ MonoBehaviour:
   - globalEventName: Hermits:LargestShell
     dialogueList:
     - phrase: This one seems too big for us.
+      phrase_ua: "\u0417\u0434\u0430\u0454\u0442\u044C\u0441\u044F, \u0434\u043B\u044F
+        \u043D\u0430\u0441 \u0446\u044F \u043C\u0443\u0448\u043B\u044F \u0437\u0430\u0432\u0435\u043B\u0438\u043A\u0430."
       character: {fileID: 11400000, guid: 859d3e346855ad445a35acdd07a1fb6e, type: 2}
       emotion: 
       startGame: 
@@ -925,6 +975,9 @@ MonoBehaviour:
   - globalEventName: Hermits:TooLittleShell
     dialogueList:
     - phrase: This shell is too small for this dude.
+      phrase_ua: "\u0414\u043B\u044F \u0446\u044C\u043E\u0433\u043E \u0434\u044E\u0434\u0430
+        \u043C\u0443\u0448\u043B\u044F \u043C\u0430\u043B\u0443\u0432\u0430\u0442\u0430,
+        \u043D\u0435 \u0432\u043B\u0456\u0437\u0435 \u0432\u0456\u043D."
       character: {fileID: 11400000, guid: 91dd0d23654ae9b4ca68ba119065d25a, type: 2}
       emotion: 
       startGame: 
@@ -933,6 +986,9 @@ MonoBehaviour:
   - globalEventName: Hermits:TooBigShell
     dialogueList:
     - phrase: This shell is too big for this dude.
+      phrase_ua: "\u0414\u043B\u044F \u0446\u044C\u043E\u0433\u043E \u0434\u044E\u0434\u0430
+        \u043C\u0443\u0448\u043B\u044F \u0432\u0435\u043B\u0438\u043A\u0443\u0432\u0430\u0442\u0430,
+        \u0441\u043F\u0430\u0434\u0430\u0442\u0438 \u0431\u0443\u0434\u0435."
       character: {fileID: 11400000, guid: 91dd0d23654ae9b4ca68ba119065d25a, type: 2}
       emotion: 
       startGame: 
@@ -941,12 +997,16 @@ MonoBehaviour:
   - globalEventName: Hermits:Victory
     dialogueList:
     - phrase: Yay! This shell looks perfect on you.
+      phrase_ua: "\u0419\u0435\u0439! \u0426\u044F \u043C\u0443\u0448\u043B\u044F
+        \u0441\u0438\u0434\u0438\u0442\u044C \u043D\u0430 \u0442\u043E\u0431\u0456
+        \u043F\u0440\u043E\u0441\u0442\u043E \u0456\u0434\u0435\u0430\u043B\u044C\u043D\u043E!"
       character: {fileID: 11400000, guid: 91dd0d23654ae9b4ca68ba119065d25a, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: Congrats~
+      phrase_ua: "\u0412\u0456\u0442\u0430\u044E, \u0441\u0442\u0438\u043B\u044F\u0433\u0430~"
       character: {fileID: 11400000, guid: 859d3e346855ad445a35acdd07a1fb6e, type: 2}
       emotion: 
       startGame: 
@@ -955,270 +1015,376 @@ MonoBehaviour:
   - globalEventName: Dialogue:AfterHermits
     dialogueList:
     - phrase: So that's basically it. What do you think?
+      phrase_ua: "\u041D\u0443, \u044F\u043A\u043E\u0441\u044C \u0442\u0430\u043A.
+        \u0429\u043E \u0434\u0443\u043C\u0430\u0454\u0442\u0435?"
       character: {fileID: 11400000, guid: 91dd0d23654ae9b4ca68ba119065d25a, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: I like how cooperative and social hermit crabs are.
+      phrase_ua: "\u041C\u0435\u043D\u0456 \u043F\u043E\u0434\u043E\u0431\u0430\u0454\u0442\u044C\u0441\u044F,
+        \u0449\u043E \u0440\u0430\u043A\u0438-\u0441\u0430\u043C\u0456\u0442\u043D\u0438\u043A\u0438
+        \u0442\u0430\u043A\u0456 \u043A\u043E\u043E\u043F\u0435\u0440\u0430\u0442\u0438\u0432\u043D\u0456
+        \u0442\u0430 \u0441\u043E\u0446\u0456\u0430\u043B\u044C\u043D\u0456."
       character: {fileID: 11400000, guid: 86fb86ff7dffee44d8b310d37bfc48f2, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: Such a cool cooperation to get a nice shell for everyone!
+      phrase_ua: "\u0422\u0430\u043A \u043A\u043B\u0430\u0441\u043D\u043E \u0441\u043F\u0456\u0432\u043F\u0440\u0430\u0446\u044E\u044E\u0442\u044C,
+        \u0449\u043E\u0431 \u043A\u043E\u0436\u0435\u043D \u0437\u043D\u0430\u0439\u0448\u043E\u0432
+        \u0441\u043E\u0431\u0456 \u0433\u0430\u0440\u043D\u0443 \u043C\u0443\u0448\u043B\u044E."
       character: {fileID: 11400000, guid: 86fb86ff7dffee44d8b310d37bfc48f2, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: Much more social than the real hermits, lol.
+      phrase_ua: "\u0422\u0435\u0436 \u043C\u0435\u043D\u0456 \u0441\u0430\u043C\u0456\u0442\u043D\u0438\u043A\u0438,
+        \u0445\u0435\u0445."
       character: {fileID: 11400000, guid: 91dd0d23654ae9b4ca68ba119065d25a, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: Well, to be fair, in our game idea the crabs are rather lazy...
+      phrase_ua: "\u041D\u0443, \u0437\u0430\u0440\u0430\u0434\u0438 \u0441\u043F\u0440\u0430\u0432\u0435\u0434\u043B\u0438\u0432\u043E\u0441\u0442\u0456,
+        \u0443 \u043D\u0430\u0448\u0456\u0439 \u0456\u0434\u0435\u0457 \u0440\u0430\u043A\u0438
+        \u0441\u043A\u043E\u0440\u0456\u0448 \u043B\u0456\u043D\u0438\u0432\u0456\u2026"
       character: {fileID: 11400000, guid: 859d3e346855ad445a35acdd07a1fb6e, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: That's true.
+      phrase_ua: "\u0406 \u043F\u0440\u0430\u0432\u0434\u0430."
       character: {fileID: 11400000, guid: 86fb86ff7dffee44d8b310d37bfc48f2, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: What if they evolve?
+      phrase_ua: "\u0410 \u0449\u043E \u044F\u043A\u0449\u043E \u0432\u043E\u043D\u0438
+        \u0435\u0432\u043E\u043B\u044E\u0446\u0456\u043E\u043D\u0443\u044E\u0442\u044C?"
       character: {fileID: 11400000, guid: 1c501611fc7fdb245b9f44201a9c1e24, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: And create a developed hermit crab society?
+      phrase_ua: "\u0406 \u0441\u0442\u0432\u043E\u0440\u044F\u0442\u044C \u0440\u043E\u0437\u0432\u0438\u043D\u0435\u043D\u0438\u0439
+        \u0440\u0430\u0447\u043A\u043E\u0432\u0438\u0439 \u0441\u043E\u0446\u0456\u0443\u043C?"
       character: {fileID: 11400000, guid: 1c501611fc7fdb245b9f44201a9c1e24, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: And wear stylish hats instead of shells!
+      phrase_ua: "\u0406 \u0431\u0443\u0434\u0443\u0442\u044C \u043D\u043E\u0441\u0438\u0442\u0438
+        \u0441\u0442\u0438\u043B\u044C\u043D\u0456 \u043A\u0430\u043F\u0435\u043B\u044E\u0445\u0438
+        \u0437\u0430\u043C\u0456\u0441\u0442\u044C \u043C\u0443\u0448\u0435\u043B\u044C!"
       character: {fileID: 11400000, guid: 91dd0d23654ae9b4ca68ba119065d25a, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: Nice!
+      phrase_ua: "\u041A\u043B\u0430\u0441!"
       character: {fileID: 11400000, guid: 1c501611fc7fdb245b9f44201a9c1e24, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: Uhmm, sounds fun but a bit far away from the initial idea.
+      phrase_ua: "\u041C\u043C\u043C, \u0437\u0432\u0443\u0447\u0438\u0442\u044C
+        \u0432\u0435\u0441\u0435\u043B\u043E, \u0430\u043B\u0435 \u0442\u0440\u043E\u0445\u0438
+        \u0434\u0430\u043B\u0435\u043A\u0443\u0432\u0430\u0442\u043E \u0432\u0456\u0434
+        \u043F\u043E\u0447\u0430\u0442\u043A\u043E\u0432\u043E\u0457 \u0456\u0434\u0435\u0457."
       character: {fileID: 11400000, guid: 859d3e346855ad445a35acdd07a1fb6e, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: Maybe let's brainstorm a bit more?
+      phrase_ua: "\u041C\u043E\u0436\u0435, \u0434\u0430\u0432\u0430\u0439\u0442\u0435
+        \u0449\u0435 \u043F\u043E\u0431\u0440\u0435\u0439\u043D\u0448\u0442\u043E\u0440\u043C\u0438\u043C\u043E?"
       character: {fileID: 11400000, guid: 859d3e346855ad445a35acdd07a1fb6e, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: Hmm... Growing a business?
+      phrase_ua: "\u0425\u043C\u043C\u2026 \u0420\u043E\u0437\u0432\u0438\u0442\u043E\u043A
+        \u0431\u0456\u0437\u043D\u0435\u0441\u0443?"
       character: {fileID: 11400000, guid: 1c501611fc7fdb245b9f44201a9c1e24, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: But now I can't help but imagine something like the Spore.
+      phrase_ua: "\u0410 \u0432\u0437\u0430\u0433\u0430\u043B\u0456 \u044F \u0442\u0435\u043F\u0435\u0440
+        \u043D\u0435 \u043C\u043E\u0436\u0443 \u0432\u0438\u043A\u0438\u043D\u0443\u0442\u0438
+        \u0437 \u0433\u043E\u043B\u043E\u0432\u0438 \u0456\u0434\u0435\u044E \u0437\u0440\u043E\u0431\u0438\u0442\u0438
+        \u0449\u043E\u0441\u044C \u0442\u0438\u043F\u0443 Spore."
       character: {fileID: 11400000, guid: 1c501611fc7fdb245b9f44201a9c1e24, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: Growing, evolving...
+      phrase_ua: "\u0417\u0440\u043E\u0441\u0442\u0430\u043D\u043D\u044F, \u0435\u0432\u043E\u043B\u044E\u0446\u0456\u044F\u2026"
       character: {fileID: 11400000, guid: 1c501611fc7fdb245b9f44201a9c1e24, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: Oh, by the way!
+      phrase_ua: "\u041E, \u0434\u043E \u0440\u0435\u0447\u0456!"
       character: {fileID: 11400000, guid: 86fb86ff7dffee44d8b310d37bfc48f2, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: I recently played a cozy zen game about koi fish.
+      phrase_ua: "\u042F \u043D\u0435\u0449\u043E\u0434\u0430\u0432\u043D\u043E \u0433\u0440\u0430\u043B\u0430
+        \u0443 \u0437\u0430\u0442\u0438\u0448\u043D\u0443 \u0434\u0437\u0435\u043D-\u0433\u0440\u0443
+        \u043F\u0440\u043E \u0440\u0438\u0431\u043E\u043A \u043A\u043E\u0456."
       character: {fileID: 11400000, guid: 86fb86ff7dffee44d8b310d37bfc48f2, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: You swim around, gather food particles and then choose an ability.
+      phrase_ua: "\u0422\u0438 \u0442\u0430\u043C \u043F\u043B\u0430\u0432\u0430\u0454\u0448,
+        \u0437\u0431\u0438\u0440\u0430\u0454\u0448 \u0447\u0430\u0441\u0442\u0438\u043D\u043A\u0438
+        \u0457\u0436\u0456, \u0430 \u043F\u043E\u0442\u0456\u043C \u0437'\u044F\u0432\u043B\u044F\u0454\u0442\u044C\u0441\u044F
+        \u0432\u0438\u0431\u0456\u0440 \u0437\u0434\u0456\u0431\u043D\u043E\u0441\u0442\u0435\u0439."
       character: {fileID: 11400000, guid: 86fb86ff7dffee44d8b310d37bfc48f2, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: Become faster, more agile or something else.
+      phrase_ua: "\u0422\u0438 \u043C\u043E\u0436\u0435\u0448 \u0437\u0431\u0456\u043B\u044C\u0448\u0438\u0442\u0438
+        \u0448\u0432\u0438\u0434\u043A\u0456\u0441\u0442\u044C, \u0433\u043D\u0443\u0447\u043A\u0456\u0441\u0442\u044C
+        \u0430\u0431\u043E\u0449\u043E."
       character: {fileID: 11400000, guid: 86fb86ff7dffee44d8b310d37bfc48f2, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: You start eating just simple zooplankton...
+      phrase_ua: "\u0406 \u0441\u043F\u043E\u0447\u0430\u0442\u043A\u0443 \u0442\u0438
+        \u0457\u0441\u0438 \u043B\u0438\u0448 \u043F\u0440\u043E\u0441\u0442\u0435\u043D\u044C\u043A\u0438\u0439
+        \u0437\u043E\u043E\u043F\u043B\u0430\u043D\u043A\u0442\u043E\u043D\u2026"
       character: {fileID: 11400000, guid: 86fb86ff7dffee44d8b310d37bfc48f2, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: But then you become strong enough to hunt other fish.
+      phrase_ua: "\u0410 \u043E\u0442 \u0434\u0430\u043B\u0456 \u0441\u0442\u0430\u0454\u0448
+        \u0434\u043E\u0441\u0442\u0430\u0442\u043D\u044C\u043E \u043A\u0440\u0443\u0442\u0438\u043C,
+        \u0449\u043E\u0431 \u0445\u0430\u0432\u0430\u0442\u0438 \u0456\u043D\u0448\u0438\u0445
+        \u0440\u0438\u0431."
       character: {fileID: 11400000, guid: 86fb86ff7dffee44d8b310d37bfc48f2, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: Hunt other fish? Sounds kinda violent for a zen game....
+      phrase_ua: "\u0425\u0430\u0432\u0430\u0442\u0438 \u0456\u043D\u0448\u0438\u0445
+        \u0440\u0438\u0431? \u042F\u043A\u043E\u0441\u044C \u0437\u0430\u0431\u0430\u0433\u0430\u0442\u043E
+        \u043D\u0430\u0441\u0438\u043B\u043B\u044F, \u044F\u043A \u0434\u043B\u044F
+        \u0434\u0437\u0435\u043D-\u0433\u0440\u0438.. "
       character: {fileID: 11400000, guid: 91dd0d23654ae9b4ca68ba119065d25a, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: Haha.
+      phrase_ua: "\u0410\u0445\u0430\u0445."
       character: {fileID: 11400000, guid: 859d3e346855ad445a35acdd07a1fb6e, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: Well, it doesn't feel violent.
+      phrase_ua: "\u041D\u0443, \u0432\u043E\u043D\u043E \u043D\u0435 \u0432\u0456\u0434\u0447\u0443\u0432\u0430\u0454\u0442\u044C\u0441\u044F
+        \u0436\u043E\u0440\u0441\u0442\u043E\u043A\u043E."
       character: {fileID: 11400000, guid: 86fb86ff7dffee44d8b310d37bfc48f2, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: Not like violence is that bad.
+      phrase_ua: "\u041D\u0435 \u0442\u0435 \u0449\u043E\u0431 \u0436\u043E\u0440\u0441\u0442\u043E\u043A\u0456\u0441\u0442\u044C
+        \u2013 \u0446\u0435 \u0449\u043E\u0441\u044C \u043F\u043E\u0433\u0430\u043D\u0435."
       character: {fileID: 11400000, guid: 859d3e346855ad445a35acdd07a1fb6e, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: Some hyper-aggressive bullet hell is also an option.
+      phrase_ua: "\u042F\u043A\u0438\u0439-\u043D\u0435\u0431\u0443\u0434\u044C \u0433\u0456\u043F\u0435\u0440-\u0430\u0433\u0440\u0435\u0441\u0438\u0432\u043D\u0438\u0439
+        \u0431\u0443\u043B\u0435\u0442 \u0445\u0435\u043B \u2013 \u0442\u0435\u0436
+        \u0432\u0430\u0440\u0456\u0430\u043D\u0442."
       character: {fileID: 11400000, guid: 859d3e346855ad445a35acdd07a1fb6e, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: I love slashers, by the way.
+      phrase_ua: "\u0414\u043E \u0440\u0435\u0447\u0456, \u044F \u0441\u043B\u0435\u0448\u0435\u0440\u0438
+        \u043B\u044E\u0431\u043B\u044E."
       character: {fileID: 11400000, guid: 1c501611fc7fdb245b9f44201a9c1e24, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: Let's make a slasher with crabs!
+      phrase_ua: "\u0413\u043E \u0437\u0440\u043E\u0431\u0438\u043C\u043E \u0441\u043B\u0435\u0448\u0435\u0440
+        \u0437 \u0440\u0430\u0447\u043A\u0430\u043C\u0438!"
       character: {fileID: 11400000, guid: 91dd0d23654ae9b4ca68ba119065d25a, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: Right! They evolve, build their civilization...
+      phrase_ua: "\u0422\u043E\u0447\u043D\u043E! \u0420\u0430\u0447\u043A\u0438
+        \u0435\u0432\u043E\u043B\u044E\u0446\u0456\u043E\u043D\u0443\u044E\u0442\u044C,
+        \u0431\u0443\u0434\u0443\u044E\u0442\u044C \u0446\u0438\u0432\u0456\u043B\u0456\u0437\u0430\u0446\u0456\u044E\u2026"
       character: {fileID: 11400000, guid: 1c501611fc7fdb245b9f44201a9c1e24, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: And then go to the space and we get space battles with giant enemies.
+      phrase_ua: "\u0410 \u043F\u043E\u0442\u0456\u043C \u0432\u0438\u0445\u043E\u0434\u044F\u0442\u044C
+        \u0443 \u043A\u043E\u0441\u043C\u043E\u0441, \u0456 \u043E\u0442 \u0443 \u043D\u0430\u0441
+        \u0432\u0436\u0435 \u043C\u0456\u0436\u0433\u0430\u043B\u0430\u043A\u0442\u0438\u0447\u043D\u0456
+        \u0431\u0438\u0442\u0432\u0438 \u0437 \u0432\u0435\u043B\u0435\u0442\u0435\u043D\u0441\u044C\u043A\u0438\u043C\u0438
+        \u0432\u043E\u0440\u043E\u0433\u0430\u043C\u0438."
       character: {fileID: 11400000, guid: 1c501611fc7fdb245b9f44201a9c1e24, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: With robots?
+      phrase_ua: "\u0417 \u0440\u043E\u0431\u043E\u0442\u0430\u043C\u0438?"
       character: {fileID: 11400000, guid: 859d3e346855ad445a35acdd07a1fb6e, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: Robo crabs?
+      phrase_ua: "\u0420\u043E\u0431\u043E-\u0440\u0430\u043A\u0430\u043C\u0438?"
       character: {fileID: 11400000, guid: 91dd0d23654ae9b4ca68ba119065d25a, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: You sure love crabs...
+      phrase_ua: "\u041D\u0434\u044F\u043C, \u0442\u0438 \u0440\u0435\u0430\u043B\u044C\u043D\u043E
+        \u043B\u044E\u0431\u0438\u0448 \u0440\u0430\u043A\u0456\u0432\u2026"
       character: {fileID: 11400000, guid: 859d3e346855ad445a35acdd07a1fb6e, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: Who doesn't?
+      phrase_ua: "\u0410 \u0445\u0442\u043E \u0436 \u043D\u0435 \u043B\u044E\u0431\u0438\u0442\u044C?"
       character: {fileID: 11400000, guid: 1c501611fc7fdb245b9f44201a9c1e24, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: So you're fighting giant robo crabs.
+      phrase_ua: "\u0417\u043D\u0430\u0447\u0438\u0442\u044C, \u043C\u0438 \u0431'\u0454\u043C\u043E\u0441\u044F
+        \u0437 \u0433\u0456\u0433\u0430-\u0440\u043E\u0431\u043E-\u0440\u0430\u043A\u0430\u043C\u0438."
       character: {fileID: 11400000, guid: 1c501611fc7fdb245b9f44201a9c1e24, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: And you're... a tiny crab?
+      phrase_ua: "\u0410 \u043C\u0438 \u0441\u0430\u043C\u0456\u2026 \u043A\u0440\u0438\u0445\u0456\u0442\u043D\u0438\u0439
+        \u0440\u0430\u0447\u043E\u043A?"
       character: {fileID: 11400000, guid: 1c501611fc7fdb245b9f44201a9c1e24, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: Maybe you're a blob?
+      phrase_ua: "\u041C\u043E\u0436\u0435, \u043C\u0438 \u0431\u043B\u043E\u0431?"
       character: {fileID: 11400000, guid: 859d3e346855ad445a35acdd07a1fb6e, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: Oh! You're a blob and you can't attack...
+      phrase_ua: "\u041E\u043E! \u041C\u0438 \u2013 \u0431\u043B\u043E\u0431, \u044F\u043A\u0438\u0439
+        \u043D\u0435 \u043C\u043E\u0436\u0435 \u0430\u0442\u0430\u043A\u0443\u0432\u0430\u0442\u0438\u2026"
       character: {fileID: 11400000, guid: 859d3e346855ad445a35acdd07a1fb6e, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: But you can sneak inside giant enemies and destroy them from inside!
+      phrase_ua: "\u0410\u043B\u0435 \u043C\u043E\u0436\u0435 \u043F\u0440\u043E\u043D\u0438\u043A\u043D\u0443\u0442\u0438
+        \u0432 \u043D\u0430\u0434\u0440\u0430 \u0441\u0432\u043E\u0457\u0445 \u0432\u043E\u0440\u043E\u0433\u0456\u0432
+        \u0456 \u0437\u043D\u0435\u0448\u043A\u043E\u0434\u0438\u0442\u0438 \u0457\u0445
+        \u0437\u0441\u0435\u0440\u0435\u0434\u0438\u043D\u0438!"
       character: {fileID: 11400000, guid: 859d3e346855ad445a35acdd07a1fb6e, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: Oohh.
+      phrase_ua: "\u041E\u043E\u043E\u043E."
       character: {fileID: 11400000, guid: 1c501611fc7fdb245b9f44201a9c1e24, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: And then it gives you some abilities?
+      phrase_ua: "\u0406 \u0446\u0435 \u0434\u0430\u0454 \u0439\u043E\u043C\u0443
+        \u044F\u043A\u0456\u0441\u044C \u0437\u0434\u0456\u0431\u043D\u043E\u0441\u0442\u0456?"
       character: {fileID: 11400000, guid: 86fb86ff7dffee44d8b310d37bfc48f2, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: How about taking control over those robots?
+      phrase_ua: "\u041C\u043E\u0436\u0435, \u043A\u043E\u043D\u0442\u0440\u043E\u043B\u044C
+        \u043D\u0430\u0434 \u0437\u0430\u0445\u043E\u043F\u043B\u0435\u043D\u0438\u043C
+        \u0440\u043E\u0431\u043E\u0442\u043E\u043C?"
       character: {fileID: 11400000, guid: 91dd0d23654ae9b4ca68ba119065d25a, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: It could work, I think!
+      phrase_ua: "\u041C\u043E\u0433\u043B\u043E \u0431\u0438 \u0441\u043F\u0440\u0430\u0446\u044E\u0432\u0430\u0442\u0438,
+        \u044F \u0434\u0443\u043C\u0430\u044E!"
       character: {fileID: 11400000, guid: 1c501611fc7fdb245b9f44201a9c1e24, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: And everything goes BOOM! BANG! KABOOM!
+      phrase_ua: "\u0406 \u0432\u0441\u0435 \u0442\u0430\u043A\u0435 \u0411\u0423\u041C!
+        \u0411\u0410\u0425! \u0411\u0410\u0411\u0410\u0425!"
       character: {fileID: 11400000, guid: 1c501611fc7fdb245b9f44201a9c1e24, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: And enemies go pew-pew-pew.
+      phrase_ua: "\u0410 \u0432\u043E\u0440\u043E\u0433\u0438 \u0442\u0430\u043A\u0456:
+        \u043F\u0456\u0443-\u043F\u0456\u0443-\u043F\u0456\u0443."
       character: {fileID: 11400000, guid: 1c501611fc7fdb245b9f44201a9c1e24, type: 2}
       emotion: 
       startGame: bulletHell
@@ -1227,6 +1393,8 @@ MonoBehaviour:
   - globalEventName: BulletHell:Death
     dialogueList:
     - phrase: Oh no. Stay determined!
+      phrase_ua: "\u041E \u043D\u0456. \u041D\u0435 \u0432\u0442\u0440\u0430\u0447\u0430\u0439
+        \u0440\u0456\u0448\u0443\u0447\u0456\u0441\u0442\u044C!"
       character: {fileID: 11400000, guid: 1c501611fc7fdb245b9f44201a9c1e24, type: 2}
       emotion: 
       startGame: 
@@ -1235,60 +1403,86 @@ MonoBehaviour:
   - globalEventName: BulletHell:Win
     dialogueList:
     - phrase: Yay! You defeated it!
+      phrase_ua: "\u0423\u0440\u0430! \u0426\u0435 \u043F\u0435\u0440\u0435\u043C\u043E\u0433\u0430!"
       character: {fileID: 11400000, guid: 859d3e346855ad445a35acdd07a1fb6e, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: Now you could grab his hand and use it as a weapon...
+      phrase_ua: "\u0422\u0435\u043F\u0435\u0440 \u0442\u0438 \u043C\u0456\u0433
+        \u0431\u0438 \u0437\u0430\u0445\u043E\u043F\u0438\u0442\u0438 \u0441\u0432\u043E\u0454\u044E
+        \u0431\u043B\u043E\u0431\u043D\u0456\u0441\u0442\u044E \u0439\u043E\u0433\u043E
+        \u043A\u0456\u043D\u0446\u0456\u0432\u043A\u0443 \u0456 \u043F\u0443\u043B\u044F\u0442\u0438
+        \u0437 \u043D\u0435\u0457\u2026"
       character: {fileID: 11400000, guid: 859d3e346855ad445a35acdd07a1fb6e, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: ...becoming armed and extremely dangerous.
+      phrase_ua: "\u2026\u0456 \u0441\u0442\u0430\u0442\u0438 \u043E\u0437\u0431\u0440\u043E\u0454\u043D\u0438\u043C
+        \u0456 \u0432\u043A\u0440\u0430\u0439 \u043D\u0435\u0431\u0435\u0437\u043F\u0435\u0447\u043D\u0438\u043C."
       character: {fileID: 11400000, guid: 859d3e346855ad445a35acdd07a1fb6e, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: I thought we'd control the whole robot...
+      phrase_ua: "\u042F \u0434\u0443\u043C\u0430\u0432, \u043C\u0438 \u0437\u0430\u0445\u043E\u043F\u0438\u043C\u043E
+        \u043E\u0434\u0440\u0430\u0437\u0443 \u0432\u0441\u044C\u043E\u0433\u043E
+        \u0440\u043E\u0431\u043E\u0442\u0430\u2026"
       character: {fileID: 11400000, guid: 91dd0d23654ae9b4ca68ba119065d25a, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: Well, it's fallen apart.
+      phrase_ua: "\u041D\u0443, \u0432\u0456\u043D \u0440\u043E\u0437\u0432\u0430\u043B\u0438\u0432\u0441\u044F."
       character: {fileID: 11400000, guid: 859d3e346855ad445a35acdd07a1fb6e, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: I think the harder the boss, the bigger the award.
+      phrase_ua: "\u042F \u0434\u0443\u043C\u0430\u044E, \u0447\u0438\u043C \u0432\u0438\u0449\u0435
+        \u0440\u0438\u0437\u0438\u043A \u2013 \u0442\u0438\u043C \u0431\u0456\u043B\u044C\u0448\u0430
+        \u043D\u0430\u0433\u043E\u0440\u043E\u0434\u0430."
       character: {fileID: 11400000, guid: 86fb86ff7dffee44d8b310d37bfc48f2, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: The first one gives you a weapon, the second one something better.
+      phrase_ua: "\u041F\u0435\u0440\u0448\u0438\u0439 \u0431\u043E\u0441 \u0434\u0430\u0454
+        \u043F\u0440\u043E\u0441\u0442\u043E \u0437\u0431\u0440\u043E\u044E, \u0434\u0440\u0443\u0433\u0438\u0439
+        \u2013 \u0449\u043E\u0441\u044C \u043D\u0430\u0432\u0456\u0442\u044C \u043A\u0440\u0430\u0449\u0435."
       character: {fileID: 11400000, guid: 86fb86ff7dffee44d8b310d37bfc48f2, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: And so on.
+      phrase_ua: "\u0406 \u0442\u0430\u043A \u0434\u0430\u043B\u0456."
       character: {fileID: 11400000, guid: 86fb86ff7dffee44d8b310d37bfc48f2, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: True, I think we'd need many bosses.
+      phrase_ua: "\u0406 \u043F\u0440\u0430\u0432\u0434\u0430, \u0442\u0443\u0442
+        \u043A\u043B\u0430\u0441\u043D\u043E \u0431\u0443\u043B\u043E \u0431\u0438
+        \u0434\u043E\u0434\u0430\u0442\u0438 \u0431\u0430\u0433\u0430\u0446\u044C\u043A\u043E
+        \u0431\u043E\u0441\u0456\u0432."
       character: {fileID: 11400000, guid: 1c501611fc7fdb245b9f44201a9c1e24, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: Hmm, that's a large scope.
+      phrase_ua: "\u0425\u043C\u043C, \u0437\u0432\u0443\u0447\u0438\u0442\u044C
+        \u044F\u043A \u0432\u0435\u043B\u0438\u0446\u044C\u043A\u0438\u0439 \u043E\u0431\u0441\u044F\u0433
+        \u0440\u043E\u0431\u043E\u0442\u0438."
       character: {fileID: 11400000, guid: 859d3e346855ad445a35acdd07a1fb6e, type: 2}
       emotion: 
       startGame: 
@@ -1297,102 +1491,152 @@ MonoBehaviour:
   - globalEventName: Dialogue:AfterBulletHell
     dialogueList:
     - phrase: Robot game sounds so fun, I like the mechanics.
+      phrase_ua: "\u0420\u043E\u0431\u043E\u0433\u0440\u0430 \u0437\u0432\u0443\u0447\u0438\u0442\u044C
+        \u043E\u0444\u0456\u0433\u0435\u043D\u043D\u043E, \u043C\u0435\u043D\u0456
+        \u043F\u043E\u0434\u043E\u0431\u0430\u0454\u0442\u044C\u0441\u044F \u043C\u0435\u0445\u0430\u043D\u0456\u043A\u0430."
       character: {fileID: 11400000, guid: 91dd0d23654ae9b4ca68ba119065d25a, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: Yeah. But let's discuss some more ideas before we pick the one.
+      phrase_ua: "\u0423\u0433\u0443. \u0410\u043B\u0435 \u0434\u0430\u0432\u0430\u0439\u0442\u0435
+        \u043E\u0431\u0433\u043E\u0432\u043E\u0440\u0438\u043C\u043E \u0449\u0435
+        \u043F\u0430\u0440\u0443-\u0442\u0440\u0456\u0439\u043A\u0443 \u0456\u0434\u0435\u0439,
+        \u043F\u0435\u0440\u0448 \u043D\u0456\u0436 \u0437\u0443\u043F\u0438\u043D\u0438\u043C\u043E\u0441\u044F
+        \u043D\u0430 \u043A\u043E\u043D\u043A\u0440\u0435\u0442\u043D\u0456\u0439."
       character: {fileID: 11400000, guid: 859d3e346855ad445a35acdd07a1fb6e, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: 'Starting small... '
+      phrase_ua: "\u041F\u043E\u0447\u0438\u043D\u0430\u0442\u0438 \u0437 \u043C\u0430\u043B\u043E\u0433\u043E\u2026"
       character: {fileID: 11400000, guid: 1c501611fc7fdb245b9f44201a9c1e24, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: The theme is broad. There is a lot of room for imagination.
+      phrase_ua: "\u0422\u0435\u043C\u0430 \u0448\u0438\u0440\u043E\u043A\u0430.
+        \u0404 \u0431\u0430\u0433\u0430\u0442\u043E \u043F\u0440\u043E\u0441\u0442\u043E\u0440\u0443
+        \u0434\u043B\u044F \u0443\u044F\u0432\u0438."
       character: {fileID: 11400000, guid: 86fb86ff7dffee44d8b310d37bfc48f2, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: Tenori complained a bit that the theme is too broad.
+      phrase_ua: "\u0422\u0435\u043D\u043E\u0440\u0456 \u0442\u0440\u043E\u0445\u0438
+        \u0436\u0430\u043B\u0456\u043B\u0430\u0441\u044F, \u0449\u043E \u0442\u0435\u043C\u0430
+        \u0437\u0430\u043D\u0430\u0434\u0442\u043E \u0448\u0438\u0440\u043E\u043A\u0430."
       character: {fileID: 11400000, guid: 91dd0d23654ae9b4ca68ba119065d25a, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: That's right... I mean, almost in any genre you might start small.
+      phrase_ua: "\u0426\u0435 \u0442\u0430\u043A\u2026 \u0423 \u0441\u0435\u043D\u0441\u0456,
+        \u043F\u0440\u0430\u043A\u0442\u0438\u0447\u043D\u043E \u0432 \u0431\u0443\u0434\u044C-\u044F\u043A\u043E\u043C\u0443
+        \u0436\u0430\u043D\u0440\u0456 \u0454 \u043E\u0446\u0435 \u201C\u043F\u043E\u0447\u0438\u043D\u0430\u0442\u0438
+        \u0437 \u043C\u0430\u043B\u043E\u0433\u043E\u201D."
       character: {fileID: 11400000, guid: 859d3e346855ad445a35acdd07a1fb6e, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: Strategy? Metroidvania? RPG?
+      phrase_ua: "\u0421\u0442\u0440\u0430\u0442\u0435\u0436\u043A\u0430? \u041C\u0435\u0442\u0440\u043E\u0456\u0434\u0432\u0430\u043D\u0456\u044F?
+        \u0420\u041F\u0413?"
       character: {fileID: 11400000, guid: 859d3e346855ad445a35acdd07a1fb6e, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: 'In most of those games you start small anyways. '
+      phrase_ua: "\u0423 \u0431\u0456\u043B\u044C\u0448\u043E\u0441\u0442\u0456 \u0446\u0438\u0445
+        \u0456\u0433\u043E\u0440 \u0442\u0438 \u0442\u0430\u043A \u0447\u0438 \u0456\u043D\u0430\u043A\u0448\u0435
+        \u043F\u043E\u0447\u0438\u043D\u0430\u0454\u0448 \u0437 \u043C\u0430\u043B\u043E\u0433\u043E."
       character: {fileID: 11400000, guid: 859d3e346855ad445a35acdd07a1fb6e, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: Should we handle "Start small" a bit more metaphorically?
+      phrase_ua: "\u0422\u043E\u0434\u0456 \u043D\u0430\u043C \u0432\u0430\u0440\u0442\u043E
+        \u043E\u0431\u0456\u0433\u0440\u0430\u0442\u0438 \u0446\u044E \u0442\u0435\u043C\u0443
+        \u0431\u0456\u043B\u044C\u0448 \u043C\u0435\u0442\u0430\u0444\u043E\u0440\u0438\u0447\u043D\u043E?"
       character: {fileID: 11400000, guid: 1c501611fc7fdb245b9f44201a9c1e24, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: Maybe. By the way, you had an idea about growing a business, right?
+      phrase_ua: "\u041C\u043E\u0436\u0435. \u0414\u043E \u0440\u0435\u0447\u0456,
+        \u0430 \u0432 \u0442\u0435\u0431\u0435 \u0436 \u0431\u0443\u043B\u0430 \u0456\u0434\u0435\u044F
+        \u0437 \u0440\u043E\u0437\u0432\u0438\u0442\u043A\u043E\u043C \u0431\u0456\u0437\u043D\u0435\u0441\u0443,
+        \u0432\u0456\u0440\u043D\u043E?"
       character: {fileID: 11400000, guid: 86fb86ff7dffee44d8b310d37bfc48f2, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: Yeah. Growing a start-up.
+      phrase_ua: "\u0410\u0433\u0430. \u0420\u043E\u0437\u0432\u0438\u0442\u043E\u043A
+        \u0441\u0442\u0430\u0440\u0442-\u0430\u043F\u0443."
       character: {fileID: 11400000, guid: 1c501611fc7fdb245b9f44201a9c1e24, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: Either like your typical cafe game or something more like Factorio.
+      phrase_ua: "\u0429\u043E\u0441\u044C \u0442\u0438\u043F\u0443 \u0442\u0438\u0445
+        \u0456\u0433\u043E\u0440, \u0434\u0435 \u0442\u0438 \u043A\u0435\u0440\u0443\u0454\u0448
+        \u043A\u0430\u0432'\u044F\u0440\u043D\u0435\u044E, \u043D\u0443 \u0430\u0431\u043E
+        \u0449\u043E\u0441\u044C \u0442\u0438\u043F\u0443 Factorio."
       character: {fileID: 11400000, guid: 1c501611fc7fdb245b9f44201a9c1e24, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: What about growing a political movement?
+      phrase_ua: "\u0410 \u044F\u043A \u0449\u043E\u0434\u043E \u043A\u0435\u0440\u0443\u0432\u0430\u043D\u043D\u044F
+        \u043F\u043E\u043B\u0456\u0442\u0438\u0447\u043D\u0438\u043C \u0440\u0443\u0445\u043E\u043C?"
       character: {fileID: 11400000, guid: 86fb86ff7dffee44d8b310d37bfc48f2, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: To "fight capitalism"?
+      phrase_ua: "\u0422\u0438\u043F\u0443 \u0431\u0443\u043D\u0442 \u043F\u0440\u043E\u0442\u0438
+        \u043A\u0430\u043F\u0456\u0442\u0430\u043B\u0456\u0437\u043C\u0443?"
       character: {fileID: 11400000, guid: 91dd0d23654ae9b4ca68ba119065d25a, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: To fight capitalism, lol.
+      phrase_ua: "\u0411\u0443\u043D\u0442 \u043F\u0440\u043E\u0442\u0438 \u043A\u0430\u043F\u0456\u0442\u0430\u043B\u0456\u0437\u043C\u0443,
+        \u0430\u0433\u0430."
       character: {fileID: 11400000, guid: 86fb86ff7dffee44d8b310d37bfc48f2, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
-    - phrase: That's funny. But actually, I unironically like this idea.
+    - phrase: Heh. That's funny. But actually, I unironically like this idea.
+      phrase_ua: "\u041F\u0445\u0435\u0445. \u0414\u043E\u0442\u0435\u043F\u043D\u043E.
+        \u0410\u043B\u0435, \u0431\u0435\u0437 \u0436\u0430\u0440\u0442\u0456\u0432,
+        \u043C\u0435\u043D\u0456 \u043F\u043E\u0434\u043E\u0431\u0430\u0454\u0442\u044C\u0441\u044F
+        \u0446\u044F \u0456\u0434\u0435\u044F."
       character: {fileID: 11400000, guid: 859d3e346855ad445a35acdd07a1fb6e, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: Maybe the player could customize the political movement?
+      phrase_ua: "\u041C\u043E\u0436\u0435, \u0433\u0440\u0430\u0432\u0435\u0446\u044C
+        \u043C\u0456\u0433 \u0431\u0438 \u0441\u0430\u043C \u043A\u0430\u0441\u0442\u043E\u043C\u0456\u0437\u0443\u0432\u0430\u0442\u0438
+        \u043F\u043E\u043B\u0456\u0442\u0438\u0447\u043D\u0438\u0439 \u0440\u0443\u0445?"
       character: {fileID: 11400000, guid: 859d3e346855ad445a35acdd07a1fb6e, type: 2}
       emotion: 
       startGame: 
@@ -1400,144 +1644,214 @@ MonoBehaviour:
       globalEvent: 
     - phrase: So that they're not limited with socialism, capitalism or anything
         else specifically.
+      phrase_ua: "\u0429\u043E\u0431 \u043D\u0435 \u043E\u0431\u043C\u0435\u0436\u0443\u0432\u0430\u0442\u0438
+        \u0439\u043E\u0433\u043E \u043A\u043E\u043D\u043A\u0440\u0435\u0442\u043D\u0438\u043C
+        \u0441\u043E\u0446\u0456\u0430\u043B\u0456\u0437\u043C\u043E\u043C, \u043A\u0430\u043F\u0456\u0442\u0430\u043B\u0456\u0437\u043C\u043E\u043C
+        \u0447\u0438 \u0447\u0438\u043C\u043E\u0441\u044C \u0456\u043D\u0448\u0438\u043C."
       character: {fileID: 11400000, guid: 859d3e346855ad445a35acdd07a1fb6e, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: Do you imagine it like a strategy?
+      phrase_ua: "\u0423\u044F\u0432\u043B\u044F\u0454\u0448 \u0446\u0435 \u044F\u043A
+        \u0441\u0442\u0440\u0430\u0442\u0435\u0433\u0456\u044E?"
       character: {fileID: 11400000, guid: 91dd0d23654ae9b4ca68ba119065d25a, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: More like Plague Inc.?
+      phrase_ua: "\u0421\u043A\u043E\u0440\u0456\u0448\u0435 \u044F\u043A Plague
+        Inc.?"
       character: {fileID: 11400000, guid: 859d3e346855ad445a35acdd07a1fb6e, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: Hmm. Right, "start small" is not necessarily about positive things.
+      phrase_ua: "\u0425\u043C\u043C. \u0410 \u0440\u0435\u0430\u043B\u044C\u043D\u043E,
+        \u201C\u043F\u043E\u0447\u0430\u0442\u0438 \u0437 \u043C\u0430\u043B\u043E\u0433\u043E\u201D
+        \u2013 \u0446\u0435 \u0436 \u043D\u0435 \u043E\u0431\u043E\u0432'\u044F\u0437\u043A\u043E\u0432\u043E
+        \u043F\u0440\u043E \u0449\u043E\u0441\u044C \u043F\u043E\u0437\u0438\u0442\u0438\u0432\u043D\u0435."
       character: {fileID: 11400000, guid: 1c501611fc7fdb245b9f44201a9c1e24, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: It can also be about negative ones, like lying.
+      phrase_ua: "\u041C\u043E\u0436\u0435 \u0431\u0443\u0442\u0438 \u0456 \u043F\u0440\u043E
+        \u043D\u0435\u0433\u0430\u0442\u0438\u0432\u043D\u0435. \u0421\u043A\u0430\u0436\u0456\u043C\u043E,
+        \u043F\u0440\u043E \u0431\u0440\u0435\u0445\u043D\u044E."
       character: {fileID: 11400000, guid: 1c501611fc7fdb245b9f44201a9c1e24, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: "I know some stories from real life about how a small lie\u2026"
+      phrase_ua: "\u042F \u0437\u043D\u0430\u044E \u0440\u0435\u0430\u043B\u044C\u043D\u0456
+        \u0456\u0441\u0442\u043E\u0440\u0456\u0457 \u043F\u0440\u043E \u0442\u0435,
+        \u044F\u043A \u043C\u0430\u043B\u0435\u043D\u044C\u043A\u0430 \u0431\u0440\u0435\u0445\u043D\u044F\u2026"
       character: {fileID: 11400000, guid: 1c501611fc7fdb245b9f44201a9c1e24, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: "\u2026becomes bigger and bigger."
+      phrase_ua: "\u2026\u0440\u043E\u0441\u0442\u0435 \u044F\u043A \u0442\u043E\u0439
+        \u0441\u043D\u0456\u0436\u043D\u0438\u0439 \u043A\u043E\u043C."
       character: {fileID: 11400000, guid: 1c501611fc7fdb245b9f44201a9c1e24, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: 'And then you can''t help but keep lying. '
+      phrase_ua: "\u0406 \u043F\u043E\u0442\u0456\u043C \u0442\u0438 \u0432\u0436\u0435
+        \u043D\u0435 \u043C\u043E\u0436\u0435\u0448 \u043D\u0435 \u0431\u0440\u0435\u0445\u0430\u0442\u0438."
       character: {fileID: 11400000, guid: 1c501611fc7fdb245b9f44201a9c1e24, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
-    - phrase: Because otherwise your first small lies will also fall apart.
+    - phrase: Because otherwise everything will fall apart. Including your first
+        small lies.
+      phrase_ua: "\u0411\u043E \u043F\u0435\u0440\u0435\u0441\u0442\u0430\u043D\u0435\u0448
+        \u2013 \u0456 \u0440\u043E\u0437\u0432\u0430\u043B\u0438\u0442\u044C\u0441\u044F
+        \u0432\u0441\u0435. \u0412\u043A\u043B\u044E\u0447\u0430\u044E\u0447\u0438
+        \u0442\u0432\u043E\u0457 \u043F\u0435\u0440\u0448\u0456 \u043C\u0430\u043B\u0435\u043D\u044C\u043A\u0456
+        \u0432\u0438\u0432\u0435\u0440\u0442\u0438."
       character: {fileID: 11400000, guid: 1c501611fc7fdb245b9f44201a9c1e24, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: Oh, that's deep...
+      phrase_ua: "\u041E\u0443, \u0430 \u0446\u0435 \u0433\u043B\u0438\u0431\u043E\u043A\u043E\u2026"
       character: {fileID: 11400000, guid: 859d3e346855ad445a35acdd07a1fb6e, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: So what choices do you have in this game?
+      phrase_ua: "\u0422\u043E \u044F\u043A\u0438\u0439 \u0432\u0438\u0431\u0456\u0440
+        \u0454 \u0443 \u0446\u0456\u0439 \u0433\u0440\u0456?"
       character: {fileID: 11400000, guid: 91dd0d23654ae9b4ca68ba119065d25a, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: Do you choose "the lesser of two evils"?
+      phrase_ua: "\u0422\u0438 \u0447\u0438\u0441\u0442\u043E \u043E\u0431\u0438\u0440\u0430\u0454\u0448
+        \u201C\u043C\u0435\u043D\u0448\u0435 \u0437 \u0434\u0432\u043E\u0445 \u0437\u043E\u043B\u201D?"
       character: {fileID: 11400000, guid: 91dd0d23654ae9b4ca68ba119065d25a, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: Yeah. You choose the most convincing lie.
+      phrase_ua: "\u0410\u0433\u0430. \u0422\u0438 \u043E\u0431\u0438\u0440\u0430\u0454\u0448
+        \u043D\u0430\u0439\u043F\u0435\u0440\u0435\u043A\u043E\u043D\u043B\u0438\u0432\u0456\u0448\u0443
+        \u0431\u0440\u0435\u0445\u043D\u044E."
       character: {fileID: 11400000, guid: 1c501611fc7fdb245b9f44201a9c1e24, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: And then realize you shouldn't have lied in the first place.
+      phrase_ua: "\u0429\u043E\u0431 \u043F\u043E\u0442\u0456\u043C \u0437\u0440\u043E\u0437\u0443\u043C\u0456\u0442\u0438,
+        \u0449\u043E \u0437 \u0441\u0430\u043C\u043E\u0433\u043E \u043F\u043E\u0447\u0430\u0442\u043A\u0443
+        \u0442\u0440\u0435\u0431\u0430 \u0431\u0443\u043B\u043E \u0431\u0443\u0442\u0438
+        \u0447\u0435\u0441\u043D\u0438\u043C."
       character: {fileID: 11400000, guid: 1c501611fc7fdb245b9f44201a9c1e24, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: It could be like an interactive story.
+      phrase_ua: "\u0426\u0435 \u043C\u043E\u0433\u043B\u043E \u0431\u0438 \u0431\u0443\u0442\u0438
+        \u0449\u043E\u0441\u044C \u0442\u0438\u043F\u0443 \u0456\u043D\u0442\u0435\u0440\u0430\u043A\u0442\u0438\u0432\u043D\u043E\u0457
+        \u0456\u0441\u0442\u043E\u0440\u0456\u0457."
       character: {fileID: 11400000, guid: 1c501611fc7fdb245b9f44201a9c1e24, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: Hmm. I combined it in my mind with the business idea.
+      phrase_ua: "\u0425\u043C\u043C. \u041F\u043E\u0454\u0434\u043D\u0430\u043B\u0430
+        \u0446\u0435 \u0432 \u0441\u0432\u043E\u0457\u0439 \u0433\u043E\u043B\u043E\u0432\u0456
+        \u0437 \u0456\u0434\u0435\u0454\u044E \u0440\u043E\u0437\u0432\u0438\u0442\u043A\u0443
+        \u0431\u0456\u0437\u043D\u0435\u0441\u0443."
       character: {fileID: 11400000, guid: 86fb86ff7dffee44d8b310d37bfc48f2, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: Hmm? Like a lie factory?
+      phrase_ua: "\u0425\u043C\u043C? \u0422\u0438\u043F\u0443 \u0444\u0430\u0431\u0440\u0438\u043A\u0430
+        \u0431\u0440\u0435\u0445\u043D\u0456?"
       character: {fileID: 11400000, guid: 859d3e346855ad445a35acdd07a1fb6e, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: A game about leading a cult!
+      phrase_ua: "\u0413\u0440\u0430, \u0434\u0435 \u0442\u0438 \u0440\u043E\u0437\u0432\u0438\u0432\u0430\u0454\u0448
+        \u043A\u0443\u043B\u044C\u0442!"
       character: {fileID: 11400000, guid: 86fb86ff7dffee44d8b310d37bfc48f2, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: You start small, with just a few followers and some main idea.
+      phrase_ua: "\u0422\u0438 \u043F\u043E\u0447\u0438\u043D\u0430\u0454\u0448 \u0437
+        \u043C\u0430\u043B\u043E\u0433\u043E, \u043B\u0438\u0448\u0435 \u0437 \u043F\u0430\u0440\u0438
+        \u043F\u0440\u0438\u0445\u0438\u043B\u044C\u043D\u0438\u043A\u0456\u0432
+        \u0442\u0430 \u044F\u043A\u043E\u0457\u0441\u044C \u0433\u043E\u043B\u043E\u0432\u043D\u043E\u0457
+        \u0456\u0434\u0435\u0457."
       character: {fileID: 11400000, guid: 86fb86ff7dffee44d8b310d37bfc48f2, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: Then you make decisions and balance resources.
+      phrase_ua: "\u0410 \u043F\u043E\u0442\u0456\u043C \u043F\u0440\u0438\u0439\u043C\u0430\u0454\u0448
+        \u0440\u0456\u0448\u0435\u043D\u043D\u044F \u0442\u0430 \u0431\u0430\u043B\u0430\u043D\u0441\u0438\u0448
+        \u0440\u0435\u0441\u0443\u0440\u0441\u0438."
       character: {fileID: 11400000, guid: 86fb86ff7dffee44d8b310d37bfc48f2, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: Your main resources could be... Faith and people.
+      phrase_ua: "\u0410 \u0433\u043E\u043B\u043E\u0432\u043D\u0438\u043C\u0438 \u0440\u0435\u0441\u0443\u0440\u0441\u0430\u043C\u0438
+        \u043C\u043E\u0436\u0443\u0442\u044C \u0431\u0443\u0442\u0438\u2026 \u0432\u0456\u0440\u0430
+        \u0442\u0430 \u043B\u044E\u0434\u0438."
       character: {fileID: 11400000, guid: 86fb86ff7dffee44d8b310d37bfc48f2, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: You promise them happiness and serenity. Or anything else.
+      phrase_ua: "\u0422\u0438 \u043E\u0431\u0456\u0446\u044F\u0454\u0448 \u0432\u0441\u0456\u043C
+        \u0449\u0430\u0441\u0442\u044F \u0456 \u0441\u043F\u043E\u043A\u0456\u0439.
+        \u0410\u0431\u043E \u0449\u043E\u0441\u044C \u0449\u0435."
       character: {fileID: 11400000, guid: 86fb86ff7dffee44d8b310d37bfc48f2, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: You send them to "spread the message".
+      phrase_ua: "\u0422\u0438 \u0432\u0456\u0434\u043F\u0440\u0430\u0432\u043B\u044F\u0454\u0448
+        \u0457\u0445 \u201C\u043D\u0435\u0441\u0442\u0438 \u043F\u043E\u0441\u043B\u0430\u043D\u043D\u044F\u201D
+        \u0443 \u0441\u0432\u0456\u0442."
       character: {fileID: 11400000, guid: 86fb86ff7dffee44d8b310d37bfc48f2, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: You create rules and punishments.
+      phrase_ua: "\u0421\u0442\u0432\u043E\u0440\u044E\u0454\u0448 \u043F\u0440\u0430\u0432\u0438\u043B\u0430
+        \u0456 \u043F\u043E\u043A\u0430\u0440\u0430\u043D\u043D\u044F."
       character: {fileID: 11400000, guid: 86fb86ff7dffee44d8b310d37bfc48f2, type: 2}
       emotion: 
       startGame: 
@@ -1545,79 +1859,128 @@ MonoBehaviour:
       globalEvent: 
     - phrase: But you need to be careful not to lose the trust of your followers
         too early.
+      phrase_ua: "\u0410\u043B\u0435 \u043F\u0440\u0438 \u0446\u044C\u043E\u043C\u0443
+        \u043C\u0430\u0454\u0448 \u0431\u0443\u0442\u0438 \u043E\u0431\u0435\u0440\u0435\u0436\u043D\u0438\u043C,
+        \u0449\u043E\u0431 \u043D\u0435 \u0432\u0442\u0440\u0430\u0442\u0438\u0442\u0438
+        \u0434\u043E\u0432\u0456\u0440\u0443 \u0441\u0432\u043E\u0457\u0445 \u0444\u043E\u043B\u043E\u0432\u0435\u0440\u0456\u0432
+        \u0437\u0430\u0440\u0430\u043D\u043E."
       character: {fileID: 11400000, guid: 86fb86ff7dffee44d8b310d37bfc48f2, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: Oh, like you can't just tell them the world will end tomorrow?
+      phrase_ua: "\u041E, \u0442\u0438\u043F\u0443 \u043D\u0435 \u043C\u043E\u0436\u043D\u0430
+        \u043E\u0442\u0430\u043A \u0432\u0437\u044F\u0442\u0438 \u0456 \u0441\u043A\u0430\u0437\u0430\u0442\u0438
+        \u0457\u043C, \u0449\u043E \u0437\u0430\u0432\u0442\u0440\u0430 \u043A\u0456\u043D\u0435\u0446\u044C
+        \u0441\u0432\u0456\u0442\u0443, \u044F\u043A\u0449\u043E \u0457\u0445 \u0432\u0456\u0440\u0430
+        \u043D\u0435 \u0441\u0443\u043F\u0435\u0440 \u0441\u0438\u043B\u044C\u043D\u0430?"
       character: {fileID: 11400000, guid: 859d3e346855ad445a35acdd07a1fb6e, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: Yeah. They'd see the world didn't end and you'd lose many followers.
+      phrase_ua: "\u0422\u0430\u043A. \u0412\u043E\u043D\u0438 \u043F\u043E\u0431\u0430\u0447\u0430\u0442\u044C,
+        \u0449\u043E \u043A\u0456\u043D\u0435\u0446\u044C \u0441\u0432\u0456\u0442\u0443
+        \u043D\u0435 \u043D\u0430\u0441\u0442\u0430\u0432, \u0456 \u0442\u0438 \u0432\u0442\u0440\u0430\u0442\u0438\u0448
+        \u0431\u0430\u0433\u0430\u0442\u043E \u043B\u044E\u0434\u0435\u0439."
       character: {fileID: 11400000, guid: 86fb86ff7dffee44d8b310d37bfc48f2, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
-    - phrase: But if their faith is strong, they'll believe and make something like
-        that one cult did?
+    - phrase: But if their faith is strong, they'll believe and do something like
+        that one notorious cult members did?
+      phrase_ua: "\u0410 \u044F\u043A\u0449\u043E \u0432\u0456\u0440\u0430 \u0434\u043E\u0441\u0442\u0430\u0442\u043D\u044C\u043E
+        \u0441\u0438\u043B\u044C\u043D\u0430, \u0432\u043E\u043D\u0438 \u043F\u043E\u0432\u0456\u0440\u044F\u0442\u044C
+        \u0456 \u0437\u0440\u043E\u0431\u043B\u044F\u0442\u044C \u0442\u0430\u043A,
+        \u044F\u043A \u043B\u044E\u0434\u0438 \u0437 \u0442\u043E\u0433\u043E \u0441\u0443\u043C\u043D\u043E\u0437\u0432\u0456\u0441\u043D\u043E\u0433\u043E
+        \u043A\u0443\u043B\u044C\u0442\u0443?"
       character: {fileID: 11400000, guid: 91dd0d23654ae9b4ca68ba119065d25a, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: Was it scientologists?
+      phrase_ua: "\u0426\u0435 \u0436 \u0431\u0443\u043B\u0438 \u0441\u0430\u0454\u043D\u0442\u043E\u043B\u043E\u0433\u0438?"
       character: {fileID: 11400000, guid: 91dd0d23654ae9b4ca68ba119065d25a, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: The ones who massively took their lives in a ritual?
+      phrase_ua: "\u0422\u0456, \u0445\u0442\u043E \u043C\u0430\u0441\u043E\u0432\u043E
+        \u043F\u043E\u0437\u0431\u0430\u0432\u0438\u0432 \u0441\u0435\u0431\u0435
+        \u0436\u0438\u0442\u0442\u044F \u0432 \u0440\u0438\u0442\u0443\u0430\u043B\u0456?"
       character: {fileID: 11400000, guid: 859d3e346855ad445a35acdd07a1fb6e, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: Yeah, I guess it was them.
+      phrase_ua: "\u0410\u0433\u0430, \u0434\u0443\u043C\u0430\u044E, \u0446\u0435
+        \u0431\u0443\u043B\u0438 \u0432\u043E\u043D\u0438."
       character: {fileID: 11400000, guid: 86fb86ff7dffee44d8b310d37bfc48f2, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: So we're creating our own cult?
+      phrase_ua: "\u0422\u043E \u043C\u0438 \u0441\u0442\u0432\u043E\u0440\u044E\u0454\u043C\u043E
+        \u0441\u0432\u0456\u0439 \u0432\u043B\u0430\u0441\u043D\u0438\u0439 \u043A\u0443\u043B\u044C\u0442?"
       character: {fileID: 11400000, guid: 1c501611fc7fdb245b9f44201a9c1e24, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: Let's go!
+      phrase_ua: "\u041F\u043E\u0433\u043D\u0430\u043B\u0438!"
       character: {fileID: 11400000, guid: 1c501611fc7fdb245b9f44201a9c1e24, type: 2}
       emotion: 
       startGame: cult
       endsGame: 0
       globalEvent: 
     - phrase: "So the main theme could be\u2026 happiness."
+      phrase_ua: "\u041E\u0442\u0436\u0435, \u0433\u043E\u043B\u043E\u0432\u043D\u043E\u044E
+        \u0442\u0435\u043C\u043E\u044E \u043C\u043E\u0433\u043B\u043E \u0431\u0438
+        \u0431\u0443\u0442\u0438\u2026 \u0449\u0430\u0441\u0442\u044F."
       character: {fileID: 11400000, guid: 86fb86ff7dffee44d8b310d37bfc48f2, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: Who doesn't want to be happy?
+      phrase_ua: "\u0425\u0442\u043E \u0436 \u043D\u0435 \u0445\u043E\u0447\u0435
+        \u0431\u0443\u0442\u0438 \u0449\u0430\u0441\u043B\u0438\u0432\u0438\u043C?"
       character: {fileID: 11400000, guid: 86fb86ff7dffee44d8b310d37bfc48f2, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
-    - phrase: Make your decisions, but be careful with them.
+    - phrase: 'Make your decisions, but be careful with them: the amount of your
+        followers matters, as well as their faith.'
+      phrase_ua: "\u041F\u0440\u0438\u0439\u043C\u0430\u0439 \u0440\u0456\u0448\u0435\u043D\u043D\u044F,
+        \u0430\u043B\u0435 \u043E\u0431\u0435\u0440\u0435\u0436\u043D\u043E: \u043C\u0430\u0454
+        \u0437\u043D\u0430\u0447\u0435\u043D\u043D\u044F \u0456 \u0432\u0456\u0440\u0430,
+        \u0456 \u043A\u0456\u043B\u044C\u043A\u0456\u0441\u0442\u044C \u043F\u043E\u0441\u043B\u0456\u0434\u043E\u0432\u043D\u0438\u043A\u0456\u0432."
+      character: {fileID: 11400000, guid: 86fb86ff7dffee44d8b310d37bfc48f2, type: 2}
+      emotion: 
+      startGame: 
+      endsGame: 0
+      globalEvent: 
+    - phrase: Don't let the frog notice that the water is about to boil.
+      phrase_ua: "\u041D\u0435 \u0434\u0430\u0439 \u0436\u0430\u0431\u0446\u0456
+        \u0437\u0440\u043E\u0437\u0443\u043C\u0456\u0442\u0438, \u0449\u043E \u043C\u043E\u043B\u043E\u043A\u043E
+        \u043E\u0442-\u043E\u0442 \u0437\u0430\u043A\u0438\u043F\u0438\u0442\u044C."
       character: {fileID: 11400000, guid: 86fb86ff7dffee44d8b310d37bfc48f2, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: And let the sadness disappear.
+      phrase_ua: "\u0406 \u043D\u0435\u0445\u0430\u0439 \u0437\u043D\u0438\u043A\u043D\u0435
+        \u0441\u043C\u0443\u0442\u043E\u043A \u043D\u0430 \u0446\u0456\u0439 \u0437\u0435\u043C\u043B\u0456."
       character: {fileID: 11400000, guid: 86fb86ff7dffee44d8b310d37bfc48f2, type: 2}
       emotion: 
       startGame: 
@@ -1625,19 +1988,26 @@ MonoBehaviour:
       globalEvent: 
   - globalEventName: Cult:Victory
     dialogueList:
-    - phrase: They love you! All their fate is in your hands now.
+    - phrase: They love you! Worship you! All their fate is in your hands now.
+      phrase_ua: "\u0412\u043E\u043D\u0438 \u043B\u044E\u0431\u043B\u044F\u0442\u044C
+        \u0442\u0435\u0431\u0435! \u0411\u043E\u0433\u043E\u0442\u0432\u043E\u0440\u044F\u0442\u044C
+        \u0442\u0435\u0431\u0435! \u0407\u0445\u043D\u044F \u0434\u043E\u043B\u044F
+        \u0442\u0435\u043F\u0435\u0440 \u0443 \u0442\u0432\u043E\u0457\u0445 \u0440\u0443\u043A\u0430\u0445."
       character: {fileID: 11400000, guid: 86fb86ff7dffee44d8b310d37bfc48f2, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: Let's bring the Happiness to this world, bwahaha.
+      phrase_ua: "\u041F\u0440\u0438\u043D\u0435\u0441\u0435\u043C\u043E \u0436 \u0429\u0430\u0441\u0442\u044F
+        \u0432 \u0446\u0435\u0439 \u0441\u0432\u0456\u0442, \u0431\u0432\u0430\u0445\u0430\u0445\u0430\u0445\u0430."
       character: {fileID: 11400000, guid: 859d3e346855ad445a35acdd07a1fb6e, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: Hallelujah!
+      phrase_ua: "\u0410\u043B\u0456\u043B\u0443\u044F!"
       character: {fileID: 11400000, guid: 1c501611fc7fdb245b9f44201a9c1e24, type: 2}
       emotion: 
       startGame: 
@@ -1646,12 +2016,16 @@ MonoBehaviour:
   - globalEventName: Cult:Defeat
     dialogueList:
     - phrase: This won't do. Wanna try again?
+      phrase_ua: "\u0422\u0430\u043A \u0441\u043F\u0440\u0430\u0432\u0430 \u043D\u0435
+        \u043F\u0456\u0434\u0435. \u0425\u043E\u0447\u0435\u0448 \u0441\u043F\u0440\u043E\u0431\u0443\u0432\u0430\u0442\u0438
+        \u0449\u0435 \u0440\u0430\u0437?"
       character: {fileID: 11400000, guid: 86fb86ff7dffee44d8b310d37bfc48f2, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: Make them believe.
+      phrase_ua: "\u0417\u043C\u0443\u0441\u044C \u0457\u0445 \u043F\u043E\u0432\u0456\u0440\u0438\u0442\u0438."
       character: {fileID: 11400000, guid: 86fb86ff7dffee44d8b310d37bfc48f2, type: 2}
       emotion: 
       startGame: cult
@@ -1660,102 +2034,142 @@ MonoBehaviour:
   - globalEventName: Dialogue:AfterCult
     dialogueList:
     - phrase: There are loads of real cults we could take the inspiration from.
+      phrase_ua: "\u0406\u0441\u043D\u0443\u0454 \u0431\u0435\u0437\u043B\u0456\u0447
+        \u0440\u0435\u0430\u043B\u044C\u043D\u0438\u0445 \u043A\u0443\u043B\u044C\u0442\u0456\u0432,
+        \u0437 \u044F\u043A\u0438\u0445 \u043C\u0438 \u043C\u043E\u0433\u043B\u0438
+        \u0431\u0438 \u0431\u0440\u0430\u0442\u0438 \u043D\u0430\u0442\u0445\u043D\u0435\u043D\u043D\u044F."
       character: {fileID: 11400000, guid: 86fb86ff7dffee44d8b310d37bfc48f2, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: What a treat, right?
+      phrase_ua: "\u042F\u043A \u0447\u0443\u0434\u043E\u0432\u043E, \u043F\u0440\u0430\u0432\u0434\u0430?"
       character: {fileID: 11400000, guid: 859d3e346855ad445a35acdd07a1fb6e, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: Could we also make a cult that worships hermit crabs?
+      phrase_ua: "\u0410 \u043C\u043E\u0436\u043D\u0430 \u0441\u0442\u0432\u043E\u0440\u0438\u0442\u0438
+        \u043A\u0443\u043B\u044C\u0442, \u0449\u043E\u0431 \u043F\u043E\u043A\u043B\u043E\u043D\u044F\u0442\u0438\u0441\u044F
+        \u0440\u0430\u0447\u043A\u0430\u043C-\u0441\u0430\u043C\u0456\u0442\u043D\u0438\u043A\u0430\u043C?"
       character: {fileID: 11400000, guid: 91dd0d23654ae9b4ca68ba119065d25a, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: You can create it in real life.
+      phrase_ua: "\u041C\u043E\u0436\u0435\u0448 \u0441\u0442\u0432\u043E\u0440\u0438\u0442\u0438
+        \u0439\u043E\u0433\u043E \u0432 \u0440\u0435\u0430\u043B\u044C\u043D\u043E\u043C\u0443
+        \u0436\u0438\u0442\u0442\u0456."
       character: {fileID: 11400000, guid: 86fb86ff7dffee44d8b310d37bfc48f2, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: Oohh!
+      phrase_ua: "\u041E\u043E\u043E\u043E!"
       character: {fileID: 11400000, guid: 1c501611fc7fdb245b9f44201a9c1e24, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: Good idea!
+      phrase_ua: "\u0410 \u0446\u0435 \u0433\u0430\u0440\u043D\u0430 \u0456\u0434\u0435\u044F!"
       character: {fileID: 11400000, guid: 91dd0d23654ae9b4ca68ba119065d25a, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: I'm in.
+      phrase_ua: "\u0417\u0430\u043F\u0438\u0448\u0456\u0442\u044C \u0442\u0443\u0434\u0438
+        \u0456 \u043C\u0435\u043D\u0435."
       character: {fileID: 11400000, guid: 1c501611fc7fdb245b9f44201a9c1e24, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: Oh no...
+      phrase_ua: "\u041E\u0445 \u043D\u043E\u0443\u2026"
       character: {fileID: 11400000, guid: 859d3e346855ad445a35acdd07a1fb6e, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: Oh yes.
+      phrase_ua: "\u041E\u0443 \u0439\u0435\u0441."
       character: {fileID: 11400000, guid: 86fb86ff7dffee44d8b310d37bfc48f2, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: Okay, on a serious note, the cult game sounds awesome.
+      phrase_ua: "\u041E\u043A\u0435\u0439, \u043D\u0443 \u044F\u043A\u0449\u043E
+        \u0441\u0435\u0440\u0439\u043E\u0437\u043D\u043E, \u0456\u0434\u0435\u044F
+        \u0437 \u043A\u0443\u043B\u044C\u0442\u043E\u043C \u2013 \u043F\u0440\u043E\u0441\u0442\u043E
+        \u0432\u043E\u0433\u043E\u043D\u044C."
       character: {fileID: 11400000, guid: 859d3e346855ad445a35acdd07a1fb6e, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: I'd like to make it...
+      phrase_ua: "\u042F \u0431\u0438 \u043F\u0440\u0430\u0432\u0434\u0430 \u0445\u043E\u0442\u0456\u043B\u0430
+        \u0457\u0457 \u0437\u0440\u043E\u0431\u0438\u0442\u0438\u2026"
       character: {fileID: 11400000, guid: 859d3e346855ad445a35acdd07a1fb6e, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: But isn't it too much of work?
+      phrase_ua: "\u0410\u043B\u0435 \u0447\u0438 \u043D\u0435 \u0437\u0430\u0431\u0430\u0433\u0430\u0442\u043E
+        \u0440\u043E\u0431\u043E\u0442\u0438?"
       character: {fileID: 11400000, guid: 859d3e346855ad445a35acdd07a1fb6e, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: Would we be able to finish it in 10 days?
+      phrase_ua: "\u0427\u0438 \u0437\u043C\u043E\u0436\u0435\u043C\u043E \u043C\u0438
+        \u0434\u043E\u0440\u043E\u0431\u0438\u0442\u0438 \u0457\u0457 \u0437\u0430
+        10 \u0434\u043D\u0456\u0432?"
       character: {fileID: 11400000, guid: 859d3e346855ad445a35acdd07a1fb6e, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: Because I don't think so...
+      phrase_ua: "\u0411\u043E \u044F \u0442\u0430\u043A \u043D\u0435 \u0434\u0443\u043C\u0430\u044E\u2026"
       character: {fileID: 11400000, guid: 859d3e346855ad445a35acdd07a1fb6e, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: Good point... That sounds a bit too much for 10 days.
+      phrase_ua: "\u0426\u0435 \u0441\u043B\u0443\u0448\u043D\u0435 \u043F\u0438\u0442\u0430\u043D\u043D\u044F\u2026
+        \u0417\u0432\u0443\u0447\u0438\u0442\u044C \u0434\u0456\u0439\u0441\u043D\u043E
+        \u0442\u0440\u043E\u0445\u0438 \u0441\u043A\u043B\u0430\u0434\u043D\u043E
+        \u0434\u043B\u044F 10-\u0442\u0438 \u0434\u043D\u0456\u0432."
       character: {fileID: 11400000, guid: 1c501611fc7fdb245b9f44201a9c1e24, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: Yeah, it would be better to build a game around something small.
+      phrase_ua: "\u0422\u0430\u043A, \u0431\u0443\u043B\u043E \u0431\u0438 \u043A\u0440\u0430\u0449\u0435
+        \u043F\u043E\u0431\u0443\u0434\u0443\u0432\u0430\u0442\u0438 \u0433\u0440\u0443
+        \u043D\u0430\u0432\u043A\u043E\u043B\u043E \u0447\u043E\u0433\u043E\u0441\u044C
+        \u043C\u0430\u043B\u0435\u043D\u044C\u043A\u043E\u0433\u043E."
       character: {fileID: 11400000, guid: 91dd0d23654ae9b4ca68ba119065d25a, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: Around one mechanic or some succinct concept.
+      phrase_ua: "\u041D\u0430\u0432\u043A\u043E\u043B\u043E \u043E\u0434\u043D\u0456\u0454\u0457
+        \u043C\u0435\u0445\u0430\u043D\u0456\u043A\u0438 \u0447\u0438 \u044F\u043A\u043E\u0457\u0441\u044C
+        \u043F\u0440\u043E\u0441\u0442\u043E\u0457 \u043A\u043E\u043D\u0446\u0435\u043F\u0446\u0456\u0457."
       character: {fileID: 11400000, guid: 91dd0d23654ae9b4ca68ba119065d25a, type: 2}
       emotion: 
       startGame: 
@@ -1763,66 +2177,95 @@ MonoBehaviour:
       globalEvent: 
     - phrase: But oh my dude, it's so hard to keep the concept simple when you start
         thinking about it.
+      phrase_ua: "\u0410\u043B\u0435 \u043E \u043C\u0456\u0439 \u0434\u044E\u0434,
+        \u044F\u043A \u0436\u0435 \u0441\u043A\u043B\u0430\u0434\u043D\u043E \u0437\u0430\u043B\u0438\u0448\u0430\u0442\u0438
+        \u0456\u0434\u0435\u044E \u043F\u0440\u043E\u0441\u0442\u043E\u044E, \u043A\u043E\u043B\u0438
+        \u0431\u0435\u0440\u0435\u0448\u0441\u044F \u0457\u0457 \u043F\u0440\u043E\u0434\u0443\u043C\u0443\u0432\u0430\u0442\u0438."
       character: {fileID: 11400000, guid: 91dd0d23654ae9b4ca68ba119065d25a, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: Keep it simple? So the "Start small" applies to us, too, huh.
+      phrase_ua: "\u0417\u0430\u043B\u0438\u0448\u0430\u0442\u0438 \u043F\u0440\u043E\u0441\u0442\u043E\u044E?
+        \u0422\u043E \u201C\u043F\u043E\u0447\u0430\u0442\u0438 \u0437 \u043C\u0430\u043B\u043E\u0433\u043E\u201D
+        \u0441\u0442\u043E\u0441\u0443\u0454\u0442\u044C\u0441\u044F \u0456 \u043D\u0430\u0441
+        \u0442\u0435\u0436, \u0435\u0433\u0435 \u0436?"
       character: {fileID: 11400000, guid: 1c501611fc7fdb245b9f44201a9c1e24, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: ... Let's make a game about ourselves!
+      phrase_ua: "\u2026 \u0410 \u0434\u0430\u0432\u0430\u0439\u0442\u0435 \u0437\u0440\u043E\u0431\u0438\u043C\u043E
+        \u0433\u0440\u0443 \u043F\u0440\u043E \u043D\u0430\u0441 \u0441\u0430\u043C\u0438\u0445!"
       character: {fileID: 11400000, guid: 859d3e346855ad445a35acdd07a1fb6e, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: A metagame about us discussing our game ideas!
+      phrase_ua: "\u041C\u0435\u0442\u0430\u0433\u0440\u0443 \u043F\u0440\u043E \u0442\u0435,
+        \u044F\u043A \u043C\u0438 \u0431\u0440\u0435\u0439\u043D\u0448\u0442\u043E\u0440\u043C\u0438\u043C\u043E
+        \u0456\u0434\u0435\u0457 \u0434\u043B\u044F \u0433\u0440\u0438!"
       character: {fileID: 11400000, guid: 859d3e346855ad445a35acdd07a1fb6e, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: Oh. My. Gosh.
+      phrase_ua: "\u041E\u0446\u0435 \u0442\u0430\u043A-\u0442\u0430\u043A."
       character: {fileID: 11400000, guid: 1c501611fc7fdb245b9f44201a9c1e24, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: Wait.
+      phrase_ua: "\u0427\u0435\u043A\u0430\u0439\u0442\u0435."
       character: {fileID: 11400000, guid: 1c501611fc7fdb245b9f44201a9c1e24, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: So everything I'm saying now is a part of our future game?
+      phrase_ua: "\u0422\u043E\u0434\u0456 \u0432\u0441\u0435, \u0449\u043E \u044F
+        \u0437\u0430\u0440\u0430\u0437 \u043A\u0430\u0436\u0443, \u2013 \u0446\u0435
+        \u0447\u0430\u0441\u0442\u0438\u043D\u0430 \u043D\u0430\u0448\u043E\u0457
+        \u0433\u0440\u0438?"
       character: {fileID: 11400000, guid: 1c501611fc7fdb245b9f44201a9c1e24, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: Riight.
+      phrase_ua: "\u0422\u043E\u043E\u0447\u043D\u043E."
       character: {fileID: 11400000, guid: 859d3e346855ad445a35acdd07a1fb6e, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: Maybe we should've recorded our discussion. I'll take some notes!
+      phrase_ua: "\u041C\u043E\u0436\u0435, \u0442\u0440\u0435\u0431\u0430 \u0431\u0443\u043B\u043E
+        \u0437\u0430\u043F\u0438\u0441\u0443\u0432\u0430\u0442\u0438 \u043D\u0430\u0448\u0443
+        \u0440\u043E\u0437\u043C\u043E\u0432\u0443. \u0417\u0430\u0440\u0430\u0437
+        \u0437\u0440\u043E\u0431\u043B\u044E \u043F\u0430\u0440\u0443 \u043D\u043E\u0442\u0430\u0442\u043E\u043A!"
       character: {fileID: 11400000, guid: 86fb86ff7dffee44d8b310d37bfc48f2, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: Now I feel so weird talking knowing it's all gonna be in the game.
+      phrase_ua: "\u042F \u0442\u0435\u043F\u0435\u0440 \u0442\u0430\u043A \u0434\u0438\u0432\u043D\u043E
+        \u0441\u0435\u0431\u0435 \u043F\u043E\u0447\u0443\u0432\u0430\u044E, \u043A\u043E\u043B\u0438
+        \u0433\u043E\u0432\u043E\u0440\u044E \u0456 \u0437\u043D\u0430\u044E, \u0449\u043E
+        \u0446\u0435 \u0432\u0441\u0435 \u0431\u0443\u0434\u0435 \u0443 \u0433\u0440\u0456."
       character: {fileID: 11400000, guid: 1c501611fc7fdb245b9f44201a9c1e24, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: Hahaha.
+      phrase_ua: "\u0410\u0445\u0430\u0445\u0430."
       character: {fileID: 11400000, guid: 859d3e346855ad445a35acdd07a1fb6e, type: 2}
       emotion: 
       startGame: 
@@ -1830,36 +2273,53 @@ MonoBehaviour:
       globalEvent: 
     - phrase: But really. I feel like I'm talking inside the game already. This moment
         is a game.
+      phrase_ua: "\u041D\u0456, \u0440\u0435\u0430\u043B\u044C\u043D\u043E. \u042F
+        \u0432\u0456\u0434\u0447\u0443\u0432\u0430\u044E, \u0449\u043E \u043F\u0440\u044F\u043C\u043E
+        \u0437\u0430\u0440\u0430\u0437 \u0440\u043E\u0437\u043C\u043E\u0432\u043B\u044F\u044E
+        \u0432\u0441\u0435\u0440\u0435\u0434\u0438\u043D\u0456 \u0433\u0440\u0438.
+        \u0426\u0435\u0439 \u043C\u043E\u043C\u0435\u043D\u0442 \u2013 \u0432\u0436\u0435
+        \u0433\u0440\u0430."
       character: {fileID: 11400000, guid: 1c501611fc7fdb245b9f44201a9c1e24, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: Blob blob bloop bloop.
+      phrase_ua: "\u0411\u043B\u043E\u0431 \u0431\u043B\u043E\u0431 \u0431\u043B\u0443\u043F
+        \u0431\u043B\u0443\u043F."
       character: {fileID: 11400000, guid: 91dd0d23654ae9b4ca68ba119065d25a, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: ... bloop.
+      phrase_ua: "\u2026 \u0431\u043B\u0443\u043F."
       character: {fileID: 11400000, guid: 859d3e346855ad445a35acdd07a1fb6e, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: Okay, and if we don't manage to finish something...
+      phrase_ua: "\u041A\u043B\u0430\u0441, \u0430 \u044F\u043A\u0449\u043E \u043C\u0438
+        \u0440\u0430\u043F\u0442\u043E\u043C \u043D\u0435 \u0432\u0441\u0442\u0438\u0433\u043D\u0435\u043C\u043E
+        \u0449\u043E\u0441\u044C \u0434\u043E\u0440\u043E\u0431\u0438\u0442\u0438\u2026"
       character: {fileID: 11400000, guid: 91dd0d23654ae9b4ca68ba119065d25a, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: ...we'll just make it a part of the game!
+      phrase_ua: "\u2026 \u043F\u0440\u043E\u0441\u0442\u043E \u0437\u0440\u043E\u0431\u0438\u043C\u043E
+        \u0446\u0435 \u0447\u0430\u0441\u0442\u0438\u043D\u043E\u044E \u0433\u0440\u0438!"
       character: {fileID: 11400000, guid: 91dd0d23654ae9b4ca68ba119065d25a, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: Right! We can wrap it up any moment.
+      phrase_ua: "\u0422\u043E\u0447\u043D\u043E! \u041C\u043E\u0436\u0435\u043C\u043E
+        \u0437\u0430\u043A\u0456\u043D\u0447\u0438\u0442\u0438 \u0457\u0457 \u0432
+        \u0431\u0443\u0434\u044C-\u044F\u043A\u0443 \u043C\u0438\u0442\u044C."
       character: {fileID: 11400000, guid: 86fb86ff7dffee44d8b310d37bfc48f2, type: 2}
       emotion: 
       startGame: 
@@ -1867,42 +2327,63 @@ MonoBehaviour:
       globalEvent: 
     - phrase: Just say "sorry, we didn't have time to finish it, we should've started
         small".
+      phrase_ua: "\u041F\u0440\u043E\u0441\u0442\u043E \u0441\u043A\u0430\u0436\u0435\u043C\u043E:
+        \u201C\u0421\u043E\u0440\u0456, \u0443 \u043D\u0430\u0441 \u043D\u0435 \u0432\u0438\u0441\u0442\u0430\u0447\u0438\u043B\u043E
+        \u0447\u0430\u0441\u0443 \u0446\u0435 \u0434\u043E\u0440\u043E\u0431\u0438\u0442\u0438,
+        \u0442\u0440\u0435\u0431\u0430 \u0431\u0443\u043B\u043E \u043F\u043E\u0447\u0438\u043D\u0430\u0442\u0438
+        \u0437 \u043C\u0430\u043B\u043E\u0433\u043E.\u201D"
       character: {fileID: 11400000, guid: 86fb86ff7dffee44d8b310d37bfc48f2, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: And thank them for playing.
+      phrase_ua: "\u0406 \u043F\u043E\u0434\u044F\u043A\u0443\u0454\u043C\u043E \u0457\u043C,
+        \u0449\u043E \u0437\u0456\u0433\u0440\u0430\u043B\u0438."
       character: {fileID: 11400000, guid: 859d3e346855ad445a35acdd07a1fb6e, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: Thanks for playing! We were happy to have you here.
+      phrase_ua: "\u0414\u044F\u043A\u0443\u0454\u043C\u043E, \u0449\u043E \u0437\u0456\u0433\u0440\u0430\u043B\u0438!
+        \u041C\u0438 \u0442\u0430\u043A \u0440\u0430\u0434\u0456, \u0449\u043E \u0432\u0438
+        \u0437\u0430\u0437\u0438\u0440\u043D\u0443\u043B\u0438 \u0434\u043E \u043D\u0430\u0441."
       character: {fileID: 11400000, guid: 86fb86ff7dffee44d8b310d37bfc48f2, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: Hope you've enjoyed our game.
+      phrase_ua: "\u0421\u043F\u043E\u0434\u0456\u0432\u0430\u044E\u0441\u044F, \u0432\u0430\u043C
+        \u0441\u043F\u043E\u0434\u043E\u0431\u0430\u043B\u0430\u0441\u044F \u043D\u0430\u0448\u0430
+        \u0433\u0440\u0430."
       character: {fileID: 11400000, guid: 91dd0d23654ae9b4ca68ba119065d25a, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: If so, please press the like button...
+      phrase_ua: "\u042F\u043A\u0449\u043E \u0442\u0430\u043A, \u0442\u0438\u0441\u043D\u0456\u0442\u044C
+        \u0432\u043F\u043E\u0434\u043E\u0431\u0430\u0439\u043A\u0443\u2026"
       character: {fileID: 11400000, guid: 859d3e346855ad445a35acdd07a1fb6e, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: "\u2026leave a comment and subscribe to our channel. Hehe."
+      phrase_ua: "\u041F\u0438\u0448\u0456\u0442\u044C \u043A\u043E\u043C\u0435\u043D\u0442\u0430\u0440
+        \u0456 \u043F\u0456\u0434\u043F\u0438\u0441\u0443\u0439\u0442\u0435\u0441\u044F
+        \u043D\u0430 \u043D\u0430\u0448 \u043A\u0430\u043D\u0430\u043B. \u0425\u0435\u0445\u0435."
       character: {fileID: 11400000, guid: 859d3e346855ad445a35acdd07a1fb6e, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: Take care, fellow blobs. Have a nice time!
+      phrase_ua: "\u0411\u0435\u0440\u0435\u0436\u0456\u0442\u044C \u0441\u0435\u0431\u0435,
+        \u0448\u0430\u043D\u043E\u0432\u043D\u0456 \u0431\u043B\u043E\u0431\u0438.
+        \u0413\u0430\u0440\u043D\u043E\u0433\u043E \u0432\u0430\u043C \u0434\u043D\u044F!"
       character: {fileID: 11400000, guid: 1c501611fc7fdb245b9f44201a9c1e24, type: 2}
       emotion: 
       startGame: 
@@ -1911,6 +2392,7 @@ MonoBehaviour:
   - globalEventName: MainGame:End
     dialogueList:
     - phrase: 'And remember:'
+      phrase_ua: "\u0406 \u043F\u0430\u043C'\u044F\u0442\u0430\u0439\u0442\u0435:"
       character: {fileID: 11400000, guid: 57ecb8e3aa5076541bad0cc67c6fa3c2, type: 2}
       emotion: 
       startGame: 
@@ -1918,18 +2400,25 @@ MonoBehaviour:
       globalEvent: 
     - phrase: It's important to start small when creating a game for a short game
         jam.
+      phrase_ua: "\u0412\u0430\u0436\u043B\u0438\u0432\u043E \u043F\u043E\u0447\u0438\u043D\u0430\u0442\u0438
+        \u0437 \u043C\u0430\u043B\u043E\u0433\u043E, \u043A\u043E\u043B\u0438 \u0441\u0442\u0432\u043E\u0440\u044E\u0454\u0442\u0435
+        \u0433\u0440\u0443 \u043D\u0430 \u043A\u043E\u0440\u043E\u0442\u043A\u0438\u0439
+        \u0433\u0435\u0439\u043C-\u0434\u0436\u0435\u043C."
       character: {fileID: 11400000, guid: 57ecb8e3aa5076541bad0cc67c6fa3c2, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: But a more important thing is to have fun.
+      phrase_ua: "\u041E\u0434\u043D\u0430\u043A \u0449\u0435 \u0432\u0430\u0436\u043B\u0438\u0432\u0456\u0448\u0435
+        \u043E\u0442\u0440\u0438\u043C\u0430\u0442\u0438 \u0437\u0430\u0434\u043E\u0432\u043E\u043B\u0435\u043D\u043D\u044F."
       character: {fileID: 11400000, guid: 57ecb8e3aa5076541bad0cc67c6fa3c2, type: 2}
       emotion: 
       startGame: 
       endsGame: 0
       globalEvent: 
     - phrase: Thanks for playing!
+      phrase_ua: "\u0414\u044F\u043A\u0443\u0454\u043C\u043E \u0437\u0430 \u0433\u0440\u0443!"
       character: {fileID: 11400000, guid: 57ecb8e3aa5076541bad0cc67c6fa3c2, type: 2}
       emotion: 
       startGame: 

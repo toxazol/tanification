@@ -89,7 +89,7 @@ public class DialogueManager : MonoBehaviour
             this.speakerRenderer.DisplaySpeaker(currDialog[currLine].character, currDialog[currLine].emotion);
         }
         
-        this.typewriter.StartTyping(currDialog[currLine].phrase_ua);
+        this.typewriter.StartTyping(MainMenu.GAME_LANGUAGE == "en" ? currDialog[currLine].phrase : currDialog[currLine].phrase_ua);
         
         currLine++;
         end = currLine >= currDialog.Count;

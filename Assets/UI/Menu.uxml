@@ -1,0 +1,10 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/menyStyles.uss?fileID=7433441132597879392&amp;guid=68b7b6404192a6e4490b785c926520d8&amp;type=3#menyStyles" />
+    <ui:VisualElement name="menuContainer" style="flex-grow: 1; background-color: rgb(0, 0, 0);">
+        <ui:Button text="Play" parse-escape-sequences="true" display-tooltip-when-elided="true" name="playBtn" style="margin-top: auto; margin-right: auto; margin-bottom: auto; margin-left: auto; height: 32px; width: 160px;" />
+        <ui:GroupBox name="LangRadio" style="flex-direction: row; position: absolute; margin-top: auto; margin-right: auto; margin-bottom: auto; margin-left: auto; top: auto; left: auto; right: 10px; bottom: 8px;">
+            <ui:RadioButton value="1" name="uaRadio" style="color: rgb(255, 255, 255); flex-direction: row;" />
+            <ui:RadioButton value="2" name="enRadio" style="color: rgb(255, 255, 255);" />
+        </ui:GroupBox>
+    </ui:VisualElement>
+</ui:UXML>

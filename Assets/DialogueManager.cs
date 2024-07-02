@@ -57,6 +57,8 @@ public class DialogueManager : MonoBehaviour
     }
     void OnNext(InputValue value)
     {
+        if (MainMenu.IS_ACTIVE) return;
+
         if (this.typewriter.typing) {
             this.typewriter.ShowText();
             return;

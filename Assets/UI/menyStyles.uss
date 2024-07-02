@@ -5,3 +5,7 @@
 #enRadio .unity-radio-button__checkmark-background {
     background-image: url("project://database/Assets/UI/Sprites/Flag_of_the_United_Kingdom_(1-2).svg.png?fileID=2800000&guid=ff7bb82694c8e984cb79235c2e8c161d&type=3#Flag_of_the_United_Kingdom_(1-2).svg");
 }
+
+#unity-checkmark {
+    background-color: rgba(81, 255, 0, 0);
+}

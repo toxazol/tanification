@@ -7,6 +7,7 @@ using UnityEngine.UIElements;
 public class MainMenu : MonoBehaviour
 {
     public static string GAME_LANGUAGE = "en";
+    public static bool IS_ACTIVE = true;
 
     // Start is called before the first frame update
     void OnEnable()
@@ -18,8 +19,8 @@ public class MainMenu : MonoBehaviour
         RadioButton radioButtonEn = root.Q<RadioButton>("enRadio");
 
         // Add event listeners
-        radioButtonUa.RegisterValueChangedCallback(evt => OnRadioButtonChanged(evt.newValue, "en"));
-        radioButtonEn.RegisterValueChangedCallback(evt => OnRadioButtonChanged(evt.newValue, "ua"));
+        radioButtonUa.RegisterValueChangedCallback(evt => OnRadioButtonChanged(evt.newValue, "ua"));
+        radioButtonEn.RegisterValueChangedCallback(evt => OnRadioButtonChanged(evt.newValue, "en"));
 
         Button playButton = root.Q<Button>("playBtn");
         playButton.clicked += OnPlayButtonClicked;
@@ -38,6 +39,8 @@ public class MainMenu : MonoBehaviour
     {
         // Handle button click
         Debug.Log("Play button clicked!");
+
+        IS_ACTIVE = false;
 
         gameObject.SetActive(false);
     }

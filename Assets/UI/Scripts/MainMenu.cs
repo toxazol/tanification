@@ -9,6 +9,8 @@ public class MainMenu : MonoBehaviour
     public static string GAME_LANGUAGE = "en";
     public static bool IS_ACTIVE = true;
 
+    private Button playButton;
+
     // Start is called before the first frame update
     void OnEnable()
     {
@@ -22,7 +24,7 @@ public class MainMenu : MonoBehaviour
         radioButtonUa.RegisterValueChangedCallback(evt => OnRadioButtonChanged(evt.newValue, "ua"));
         radioButtonEn.RegisterValueChangedCallback(evt => OnRadioButtonChanged(evt.newValue, "en"));
 
-        Button playButton = root.Q<Button>("playBtn");
+        playButton = root.Q<Button>("playBtn");
         playButton.clicked += OnPlayButtonClicked;
     }
 
@@ -31,6 +33,11 @@ public class MainMenu : MonoBehaviour
         if (isSelected)
         {
             GAME_LANGUAGE = selectedValue;
+            if(GAME_LANGUAGE == "ua") {
+                playButton.text = "Грати";
+            } else {
+                playButton.text = "Play";
+            }
             Debug.Log("Selected value: " + selectedValue);
         }
     }

@@ -23517,7 +23517,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f266f2e172ff80442927a46cdab1d61c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletHellDeath: {fileID: 8300000, guid: b64890fc284f5d941bd35aa76731012f, type: 3}
+  bulletHellDeath: {fileID: 8300000, guid: 74ebf13f010e1954d9c46336ffec1662, type: 3}
   bulletHellWin: {fileID: 8300000, guid: 1453629eb3bc3ec42b036f33c3f205f3, type: 3}
 --- !u!1 &813813670
 GameObject:

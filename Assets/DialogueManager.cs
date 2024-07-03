@@ -55,7 +55,7 @@ public class DialogueManager : MonoBehaviour
             });
         });
     }
-    void OnNext(InputValue value)
+    public void OnNext(InputValue value)
     {
         if (MainMenu.IS_ACTIVE) return;
 

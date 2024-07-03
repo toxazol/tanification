@@ -27,6 +27,12 @@ public class StatsManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        if (MainMenu.GAME_LANGUAGE == "ua") {
+            uiDocument.rootVisualElement.Q<Label>("actionMenuTitle").text =  "Дії";
+            uiDocument.rootVisualElement.Q<Label>("followersLabel").text =  "Посіпаки: ";
+            uiDocument.rootVisualElement.Q<Label>("faithLabel").text =  "Віра ";
+        }
+        
         followerCountElement = uiDocument.rootVisualElement.Q<Label>(followerCounterID);
         faithBar = uiDocument.rootVisualElement.Q<VisualElement>(faithBarID);
         cultStats.faith = 0;

@@ -9,3 +9,7 @@
 #unity-checkmark {
     background-color: rgba(81, 255, 0, 0);
 }
+
+.playButton {
+    text-shadow: #BDD18E 0px 0px 20px;
+}

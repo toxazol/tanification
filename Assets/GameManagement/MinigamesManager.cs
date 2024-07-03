@@ -8,6 +8,7 @@ public class MinigamesManager : MonoBehaviour
     [Header("Events")]
     [SerializeField] StringEventChannelSO gameStart;
     [SerializeField] StringEventChannelSO gameEnd;
+    [SerializeField] MainMenu mainMenu;
 
     public static MinigamesManager Instance { get; private set; }
     void Awake()
@@ -27,6 +28,7 @@ public class MinigamesManager : MonoBehaviour
     {
         gameStart.OnEventRaised += startMinigame;
         gameEnd.OnEventRaised += unloadMinigame;
+        mainMenu.gameObject.SetActive(true);
     }
 
     // Update is called once per frame

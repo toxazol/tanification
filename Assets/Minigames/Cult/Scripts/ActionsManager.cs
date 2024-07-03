@@ -31,7 +31,7 @@ public class ActionsManager : MonoBehaviour
         Button actionButton = new Button();
         actionButton.name = "action_" + index;
         actionButton.AddToClassList("actionButton");
-        actionButton.text = action.name;
+        actionButton.text = MainMenu.GAME_LANGUAGE == "en" ? action.name : action.name_ua;
         buttonsContainer.Add(actionButton);
         actionButton.clickable.clickedWithEventInfo += ActionButtonClick;
         usedButtons.Add(index);
@@ -72,6 +72,7 @@ public class ActionsManager : MonoBehaviour
     [Serializable]
     public class CultAction {
         public string name;
+        public string name_ua;
         public CultStats requred;
         public CultStats goodOutcome;
         public CultStats badOutcome;

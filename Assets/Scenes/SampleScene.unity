@@ -223,7 +223,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &115750071
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -236,6 +236,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43364d83feea70f48b4ff94d2b6acd25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialogueManager: {fileID: 586073159}
 --- !u!114 &115750072
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -313,6 +314,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameStart: {fileID: 11400000, guid: 4b22c18827894cd47a53f5a5ad6d0dbe, type: 2}
   gameEnd: {fileID: 11400000, guid: b2672031ab1ebc247a7b8e9d871df23d, type: 2}
+  mainMenu: {fileID: 115750071}
 --- !u!1 &181791509
 GameObject:
   m_ObjectHideFlags: 0

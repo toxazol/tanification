@@ -12,7 +12,6 @@
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
     background-color: rgb(139, 103, 86);
-    -unity-font-definition: url("project://database/Assets/UI/Fonts/alagard%20SDF.asset?fileID=11400000&guid=1afc0ef737c864241bb109aae1872ec6&type=2#alagard SDF");
     font-size: 30px;
     color: rgb(46, 37, 32);
     margin-top: 15px;

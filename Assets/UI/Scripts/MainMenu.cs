@@ -6,6 +6,7 @@ using UnityEngine.UIElements;
 
 public class MainMenu : MonoBehaviour
 {
+    public DialogueManager dialogueManager;
     public static string GAME_LANGUAGE = "en";
     public static bool IS_ACTIVE = true;
 
@@ -50,6 +51,8 @@ public class MainMenu : MonoBehaviour
         IS_ACTIVE = false;
 
         gameObject.SetActive(false);
+
+        dialogueManager.OnNext(null);
     }
 
 }
